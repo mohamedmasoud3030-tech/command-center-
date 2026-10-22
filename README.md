@@ -22,7 +22,7 @@
 |---|---|---|---|---|---|
 | 💇 **LenaBeauty** لارا بيوتي | `larabeauty-` 🔒 | إدارة صالون/سبا (عُمان) — حجوزات، كاشير، محفظة | المرحلة 2: تسليم **أول عميل حقيقي** | 2026-10-22 | 🟢 نشط ومنظم |
 | 👗 **LENA Dress** معرض الفساتين | `carmen-gallery-` 🔒 | إدارة معرض فساتين مناسبات كامل (تأجير/بيع/غسيل) | v020 — جاهزية بيع، إصلاح CI حديث | 2026-10-22 | 🟡 نشط — محتاج دمج مستندات مكررة |
-| 🧱 **LENA Supply** للتوريدات | `Lenastore` 🔒 | إدارة مواد ومشتريات مشروع إنشائي | **جاهز إنتاج** — لكن متوقف منذ 11 سبتمبر | 2026-09-11 | 🔴 خامل — ينقصه AGENTS.md |
+| 🧱 **LENA Supply** للتوريدات | `Lenastore` 🔒 | إدارة مواد ومشتريات مشروع إنشائي | **جاهز إنتاج** + قرار استئناف (2026-10-21) | 2026-10-21 | 🟡 مستأنَف — [PR #16](https://github.com/mohamedmasoud3030-tech/Lenastore/pull/16) بانتظار دمجك |
 | 🌐 **LENA Digital House** | `platform` 🔓 | الموقع الأم ثنائي اللغة + استقبال استفسارات العملاء | حي على الإنترنت، وثائقه اتوحدت حديثاً | 2026-10-21 | 🟢 نشط ومنظم |
 | 🏪 **Nile Systems** | `nilesys` 🔓 | كتالوج أنظمة أعمال جاهزة (POS، مطعم، عيادة، HR…) للسوق المصري | R1 مسلّم: POS إنتاجي فوق المحركات + موقع حي | 2026-10-22 | 🟢 نشط ومنظم |
 
@@ -33,7 +33,7 @@
 | 🏠 **MALEK** مالك | `malek` 🔒 | إدارة أملاك وإيجارات + محاسبة (عربي أولاً) | **v1.0.0-rc.2** — إصدار مرشح شامل | 2026-10-22 | 🟢 نشط ومنظم |
 | 📈 **Terranex** | `Terranex` 🔒 | منصة استثمار (عقار/زراعة/مواشي) + محاسبة ملاك | Pre-Pilot: استعداد تشغيل تجريبي + أسبوع 1 حملة تسويق | 2026-10-22 | 🟡 نشط — فيه ملاحظتين (تحت) |
 | 🍽️ **Hospitality Ops** | `starting` 🔒 | إدارة ضيافة ومناسبات لمكاتب الخدمات (عُمان) | هندسة قوية جداً — قبل الإصدار الرسمي | 2026-10-18 | 🟢 نشط ومنظم |
-| ♻️ **Kayyal** | `bug-free-garbanzo` 🔒 | إدارة مخزن إعادة تدوير (وزن/فرز/بيع) | Stage 0: الأساسيات بس — متوقف منذ 15 سبتمبر | 2026-09-15 | 🔴 خامل — ينقصه AGENTS.md |
+| ♻️ **Kayyal** | `bug-free-garbanzo` 🔒 | إدارة مخزن إعادة تدوير (وزن/فرز/بيع) | Stage 0 مكتمل + قرار استئناف (2026-10-21) | 2026-10-21 | 🟡 مستأنَف — [PR #4](https://github.com/mohamedmasoud3030-tech/bug-free-garbanzo/pull/4) بانتظار دمجك |
 
 ### 🤖 أدواتك
 
@@ -43,11 +43,28 @@
 
 ---
 
-## ⚠️ 3 حاجات محتاجة قرار منك
+## ⚠️ حالة النقاط الثلاثة (متحدثة 2026-10-21)
 
-1. **🔓 ملف بيئات مرفوع في Terranex:** ملف `.env.production` موجود على GitHub. المفتاح اللي فيه نوعه «publishable» — يعني مصمم يتشاف، **مفيش خطر حقيقي**، لكن الأصح يتشال من المستودع. التفاصيل: `reports/2026-10-21-inventory.md`.
-2. **😴 مشروعين نايمين من شهر+:** `Lenastore` (جاهز إنتاج!) و `bug-free-garbanzo` (أساسيات بس). قرر: بتكمّلهم ولا تجميد رسمي عشان ميتشتتوش؟
-3. **📁 تسويق Terranex جوه مستودع الكود:** مجلد `التسويق-والإدارة` (كابشنات، حملات، فيديوهات) جوه مستودع البرمجة. مش غلط، لكنه عامل زحمة (195 مستند). المقترح في `reports/cleanup-plan.md`.
+1. **🔓 ملف بيئات Terranex:** اتفتح PR يشيله من المستودع — باقي **خطوة منك:** بعد الدمج، دوّر مفتاح Supabase كاحتياط (Supabase → Settings → API → Rotate anon key — دقيقتين).
+2. **😴 النائمان:** ✅ **قررت الاستئناف** — اتطبّق: اتبنى لكل واحد `AGENTS.md` + `docs/STATUS.md` وقرار الاستئناف متسجل جواهم (PRs بانتظار دمجك).
+3. **📁 تسويق Terranex:** قررنا **الإبقاء مكانه حالياً** (حملة أسبوع-1 شغالة) مع فهرسة واضحة في AGENTS.md — يُعاد تقييمه بعد انتهاء الحملة.
+
+### 🧹 سجل تنفيذ خطة التنظيف (2026-10-21) — 10 PRs بانتظار دمجك
+
+| المستودع | ما تم | الرابط |
+|---|---|---|
+| `larabeauty-` | ربط مركز القيادة | [PR #92](https://github.com/mohamedmasoud3030-tech/larabeauty-/pull/92) |
+| `nilesys` | ربط مركز القيادة | [PR #15](https://github.com/mohamedmasoud3030-tech/nilesys/pull/15) |
+| `platform` | ربط مركز القيادة | [PR #103](https://github.com/mohamedmasoud3030-tech/platform/pull/103) |
+| `starting` | ربط مركز القيادة | [PR #61](https://github.com/mohamedmasoud3030-tech/starting/pull/61) |
+| `malek` | ربط + توثيق ازدواج المهارات | [PR #1845](https://github.com/mohamedmasoud3030-tech/malek/pull/1845) |
+| `carmen-gallery-` | ربط + إزالة تكرار DELIVERY | [PR #155](https://github.com/mohamedmasoud3030-tech/carmen-gallery-/pull/155) |
+| `Terranex` | ربط + **حذف .env.production** + تحصين .gitignore + فهرس المهارات | [PR #190](https://github.com/mohamedmasoud3030-tech/Terranex/pull/190) |
+| `mosaid` | وسم 5 نسخ مكررة بمؤشرات للمرجع | [PR #11](https://github.com/mohamedmasoud3030-tech/mosaid/pull/11) |
+| `Lenastore` | تجهيز: AGENTS.md + STATUS.md + قرار الاستئناف | [PR #16](https://github.com/mohamedmasoud3030-tech/Lenastore/pull/16) |
+| `bug-free-garbanzo` | تجهيز: AGENTS.md + STATUS.md + قرار الاستئناف | [PR #4](https://github.com/mohamedmasoud3030-tech/bug-free-garbanzo/pull/4) |
+
+> **إزاي تدمج:** افتح كل رابط ← راجع تبويب Files changed ← استنى CI لو موجود ← Merge pull request ← Confirm. لو فضلت، اطلب مني أدمجهم لك.
 
 ---
 
