@@ -81,10 +81,11 @@ Full details: `PROJECTS.md`. Machine-readable scan: `data/inventory-2026-10-21.j
 ## 6. Standard operating loop (every management session)
 
 1. **Sync** — fetch repo list + latest pushes via GitHub API (read-only first).
-2. **Read before write** — repo `AGENTS.md` → status file → recent commits. State what you understood in 5 lines before acting.
-3. **Report** — compare against `PROJECTS.md`; list what changed, what's stale, what needs the owner.
-4. **Propose → get approval → execute** — one batch at a time, with a declared skill per task (§4).
-5. **Update the center** — reflect completed work in `README.md` / `PROJECTS.md` the same session.
+2. **Check the session registry** — read README's «سجل الجلسات النشطة والـ PRs المفتوحة» (single ownership registry). Open PRs listed there belong to their owning sessions: **never touch, rebase, merge, close, or delete their branches.** Only an owning session updates its own row; the portfolio manager verifies claims against the API before recording (2026-10-23 handovers: all claims verified, plus one unreported PR found).
+3. **Read before write** — repo `AGENTS.md` → status file → recent commits. State what you understood in 5 lines before acting.
+4. **Report** — compare against `PROJECTS.md`; list what changed, what's stale, what needs the owner.
+5. **Propose → get approval → execute** — one batch at a time, with a declared skill per task (§4).
+6. **Update the center** — reflect completed work in `README.md` / `PROJECTS.md` / `reports/` the same session.
 
 ## 7. Documentation governance rules
 
@@ -109,7 +110,7 @@ Full details: `PROJECTS.md`. Machine-readable scan: `data/inventory-2026-10-21.j
 - Publishing anything externally (Vercel, Supabase, stores).
 
 **Never:**
-- Commit secrets or real `.env` files; if found in git history, flag immediately (known case: `Terranex/.env.production` holds a *publishable* Supabase key — low risk, pending removal).
+- Commit secrets or real `.env` files; if found in git history, flag immediately (the one known case — `Terranex/.env.production`, publishable key — was removed from git on 2026-10-22; key rotation is the owner's manual step).
 - Force-push, delete history, or rotate credentials without explicit owner instruction.
 - Mark a task "done" without evidence (test output, CI green, or a merged PR).
 - Create duplicate docs when a canonical one exists.
@@ -122,14 +123,21 @@ A management change is complete only when:
 3. `README.md` dashboard reflects the new reality,
 4. The owner received the Arabic summary with pending decisions.
 
-## 10. Known issues register (from 2026-10-21 scan)
+## 10. Known issues register (updated 2026-10-23, post-merge + post-handover)
 
-| # | Issue | Severity | Proposed action |
+**Resolved by the 20-PR merge (2026-10-22/23):** 1 (`.env.production` removed; key rotation = owner's manual step) · 2 (Lenastore + garbanzo resumed & equipped) · 4 (phase-0 copies tagged as pointers) · 5 (carmen DELIVERY merged) · 6 (duplicates pointer-stubbed) · 7 (111 skill files synced from master; center library wins).
+
+| # | Issue | Severity | Status / action |
 |---|---|---|---|
-| 1 | `Terranex/.env.production` committed (publishable key) | Low | Untrack from git, rotate key as precaution |
-| 2 | `Lenastore`, `bug-free-garbanzo` dormant 5+ weeks, no AGENTS.md | Medium | Owner decision: resume vs. freeze; add AGENTS.md either way |
-| 3 | Marketing folder inside `Terranex` code repo (195 docs total) | Low | Keep for now; consider split later |
-| 4 | `mosaid` phase-0 docs duplicated in two trees | Low | Canonicalize to `docs/phase0/` |
-| 5 | `carmen-gallery-` `DELIVERY/` duplicates `docs/` files | Low | Merge, keep canonical in `docs/` |
-| 6 | 8 spots of byte-identical docs across repos | Low | Archive duplicates per cleanup-plan |
-| 7 | Skill libraries duplicated across 7 repos | Info | Keep per-repo copies small; center holds the master set |
+| 1 | `Terranex/.env.production` key rotation | Low | ✅ removed from git · ⏳ **owner manual:** rotate Supabase key (Settings → API) |
+| 2 | `malek#1844` open, **0 check-runs on head `9e74b75`** (verified) | Medium | Do NOT merge until checks appear & pass; deployed prod runs from `e5b19ef` (2 commits # apart: deploy + docs record) |
+| 3 | `mosaid#9` open; needs rebase onto main (`a0557b4` + later) | Medium | **Only its owning session** (`arena/480a335a-mosaid`) rebases; then merge. Post-merge: move 9.5MB windows zip to a GitHub Release |
+| 4 | `Terranex#188` open — marketing-ops session **actively pushing** (head moved `e9c169f`→`b95d759` between reports) | Info | Never touch; head-branch deletion once nearly killed it — **always API-confirm `merged:true` before deleting any PR head branch** |
+| 5 | `bug-free-garbanzo#2` open — old feature PR, predates governance era, no owning session confirmed | Medium | Owner decision: review-and-revive (rebase) vs. documented close |
+| 6 | GitHub artifact-storage quota full → CI red at upload step despite green tests | Info | Transient (6–12h); re-run failed upload jobs only |
+| 7 | `/home/user/office/` local "HQ" (ROADMAP/PORTFOLIO/CHARTER) **not in git** | Medium | Retired as authority: command-center- (this repo) is the single HQ; essence archived in `reports/handoffs/` |
+| 8 | Local clones `/home/user/*` are stale vs origin/main | Medium | Any session MUST start from a fresh clone; never trust local copies |
+| 9 | `nilesys` API release 2.3 blocked on owner creating DB login (role `nile_app`) via Supabase dashboard | Info | Owner action when ready to run cashier on live data (demo data currently on `nilesys-seven.vercel.app`) |
+| 10 | Lenastore future undecided (internal activation vs sale-demo) | Info | Owner decision; office session + manager both recommend sale-demo first |
+| 11 | malek has no `docs/STATUS.md` **by design** — Canonical Pack governs (AGENTS.md forbids parallel status docs); deployment reality logged in `docs/source-of-truth/07_*.md` | Info | Accepted exception; do not force a STATUS.md there |
+| 12 | Owner PAT shared in chat (2026-10-22) | High | **Owner manual:** revoke at github.com/settings/tokens after this work concludes (walkthrough promised) |
