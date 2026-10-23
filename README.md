@@ -115,6 +115,32 @@
 
 > المهارات محصودة وموحدة من أفضل ما في مشاريعك نفسها (مهارات nilesys المبنية على `obra/superpowers` + carmen + malek + platform) على المعيار المفتوح Agent Skills. أي نسخة داخل مستودع تخالفها — **المكتبة هنا تكسب**.
 
+> 📌 آخر تحديث: 2026-10-22 — **تدقيق شامل للمركز: سليم ✅** (التقرير: `reports/2026-10-22-center-audit.md`) + مزامنة 111 مهارة عبر 10 PRs.
+
+### 🧰 سجل موجة مزامنة المهارات (2026-10-22) — 10 PRs إضافية بانتظار دمجك
+
+| المستودع | المهارات | الرابط |
+|---|---|---|
+| `larabeauty-` | 12 كاملة | [PR #93](https://github.com/mohamedmasoud3030-tech/larabeauty-/pull/93) |
+| `malek` | 12 (في `skills/` بجانب القديمة) | [PR #1846](https://github.com/mohamedmasoud3030-tech/malek/pull/1846) |
+| `nilesys` | 12 (تحديث الـ8 الأم + إضافات) | [PR #16](https://github.com/mohamedmasoud3030-tech/nilesys/pull/16) |
+| `carmen-gallery-` | 12 | [PR #156](https://github.com/mohamedmasoud3030-tech/carmen-gallery-/pull/156) |
+| `Terranex` | 12 | [PR #191](https://github.com/mohamedmasoud3030-tech/Terranex/pull/191) |
+| `platform` | 12 | [PR #104](https://github.com/mohamedmasoud3030-tech/platform/pull/104) |
+| `starting` | 12 | [PR #63](https://github.com/mohamedmasoud3030-tech/starting/pull/63) |
+| `Lenastore` | 12 جديدة من الصفر | [PR #17](https://github.com/mohamedmasoud3030-tech/Lenastore/pull/17) |
+| `bug-free-garbanzo` | 10 (بلا واجهات) | [PR #5](https://github.com/mohamedmasoud3030-tech/bug-free-garbanzo/pull/5) |
+| `mosaid` | 5 مصغرة (لمطوري الوكيل) | [PR #13](https://github.com/mohamedmasoud3030-tech/mosaid/pull/13) |
+
+> فلسفة التخصيص موثقة في `reports/2026-10-22-center-audit.md` §2 — ملخّصها: كل مستودع أخذ فقط ما تثبت فجوته، ولا حذف لأي مهارة قديمة.
+
+## 🛠️ أدوات المركز
+
+| الأداة | وظيفتها |
+|---|---|
+| `tools/inventory-scan.py` | ماسح الجرد (قراءة فقط) — شغّله في أي وقت لتحديث صورة الواقع ومقارنة «قبل/بعد» |
+| ماسح الروابط والفحص الذاتي | نفس فحوصات تقرير التدقيق — تُعاد عند أي شك في سلامة المركز |
+
 ## 🗺️ خريطة مركز القيادة
 
 ```
@@ -127,6 +153,7 @@ command-center/
 ├── reports/                     ← تقارير الجرد وخطة التنظيف (بأدلتها)
 ├── templates/                   ← قوالب STATUS.md و AGENTS.md الموحدة
 ├── prompts/                     ← برومبتات معتمدة (تسليم الجلسات…)
+├── tools/                       ← 🛠️ أدوات المدير (ماسح الجرد)
 └── data/                        ← الجرد الخام JSON (للمقارنة مستقبلاً)
 ```
 
