@@ -1,0 +1,3888 @@
+{
+ "generated": "2026-10-23T01:08:35Z",
+ "repos": [
+  {
+   "full_name": "mohamedmasoud3030-tech/mosaid",
+   "visibility": "public",
+   "description": "A lightweight, extensible personal AI agent designed for Android/Termux, Telegram control, safe tools, coding workflows, and future modular skills.",
+   "language": "Go",
+   "pushed_at": "2026-10-23T01:07:59Z",
+   "default_branch": "main",
+   "files_total": 261,
+   "docs": [
+    {
+     "path": ".agents/skills/code-review/SKILL.md",
+     "size": 2449
+    },
+    {
+     "path": ".agents/skills/source-driven-development/SKILL.md",
+     "size": 2997
+    },
+    {
+     "path": ".agents/skills/systematic-debugging/SKILL.md",
+     "size": 1939
+    },
+    {
+     "path": ".agents/skills/test-driven-development/SKILL.md",
+     "size": 1941
+    },
+    {
+     "path": ".agents/skills/verification-before-completion/SKILL.md",
+     "size": 2260
+    },
+    {
+     "path": "README.md",
+     "size": 3896
+    },
+    {
+     "path": "docs/README.md",
+     "size": 1385
+    },
+    {
+     "path": "docs/SECURITY.md",
+     "size": 3044
+    },
+    {
+     "path": "docs/STATUS.md",
+     "size": 4287
+    },
+    {
+     "path": "docs/TECHNICAL_DECISIONS.md",
+     "size": 5730
+    },
+    {
+     "path": "docs/THIRD_PARTY_NOTICES.md",
+     "size": 3498
+    },
+    {
+     "path": "docs/architecture/proposed-architecture.md",
+     "size": 7914
+    },
+    {
+     "path": "docs/decisions/ADR-0001-picoclaw-conditional-selection.md",
+     "size": 4804
+    },
+    {
+     "path": "docs/security/DEPENDENCY-REVIEW.md",
+     "size": 919
+    },
+    {
+     "path": "docs/security/HARDENING.md",
+     "size": 2335
+    },
+    {
+     "path": "docs/security/THREAT-MODEL.md",
+     "size": 5094
+    },
+    {
+     "path": "docs/security/VULNERABILITY-STATUS.md",
+     "size": 973
+    },
+    {
+     "path": "docs/specs/phone-kit/PHASE0-RELEASE-ASSETS.md",
+     "size": 2281
+    },
+    {
+     "path": "docs/specs/phone-kit/PHASE13-WORKFLOW-ACTIVATION.md",
+     "size": 1086
+    },
+    {
+     "path": "docs/specs/phone-kit/PHASE14-PHONE-KIT.md",
+     "size": 6512
+    },
+    {
+     "path": "docs/specs/phone-kit/activation/README.md",
+     "size": 3180
+    },
+    {
+     "path": "phase0-android-runtime/README.md",
+     "size": 3566
+    },
+    {
+     "path": "phase0-android-runtime/docs/ACCEPTANCE-CRITERIA.md",
+     "size": 4395
+    },
+    {
+     "path": "phase0-android-runtime/docs/EXECUTION-REPORT.md",
+     "size": 7463
+    },
+    {
+     "path": "phase0-android-runtime/docs/MANUAL-STEPS.md",
+     "size": 1588
+    },
+    {
+     "path": "phase0-android-runtime/docs/PHONE-GUIDE.md",
+     "size": 2943
+    },
+    {
+     "path": "phase0-android-runtime/docs/SOURCE-VERIFICATION.md",
+     "size": 6585
+    },
+    {
+     "path": "phase0-android-runtime/docs/THREAT-NOTES.md",
+     "size": 5092
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/android-build-targets.txt",
+     "size": 7354
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/android-elf-summary.txt",
+     "size": 780
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/android-file-types.txt",
+     "size": 478
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/android-inner-sha256.txt",
+     "size": 242
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/android-zip-files.txt",
+     "size": 65
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/android-zip-list.txt",
+     "size": 361
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/base-channel-auth-tail.go.txt",
+     "size": 3441
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/base-channel-auth.go.txt",
+     "size": 6513
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/custom-binary-build-summary.txt",
+     "size": 101
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/custom-binary-elf.txt",
+     "size": 229
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/custom-binary-file.txt",
+     "size": 216
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/custom-binary-go-version-m.txt",
+     "size": 8783
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/custom-binary-sha256.txt",
+     "size": 156
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/custom-build-reproducibility.txt",
+     "size": 176
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/downloaded-sha256.txt",
+     "size": 343
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/elf-runtime.txt",
+     "size": 1723
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/embedded-metadata.txt",
+     "size": 25415
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/experimental-repo-identity.txt",
+     "size": 148
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/go-mod-verify.txt",
+     "size": 21
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/govulncheck-binary-exit.txt",
+     "size": 36
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/govulncheck-binary.txt",
+     "size": 849
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/govulncheck-help.txt",
+     "size": 1080
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/govulncheck-json-summary.txt",
+     "size": 287
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/govulncheck-version.txt",
+     "size": 135
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/linux-arm64-elf.txt",
+     "size": 533
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/linux-arm64-file-types.txt",
+     "size": 567
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/linux-arm64-inner-sha256.txt",
+     "size": 437
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/linux-arm64-list.txt",
+     "size": 243
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/makefile-header.txt",
+     "size": 4203
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/native-config-load-status.txt",
+     "size": 1763
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/official-android-go-version-m.txt",
+     "size": 9304
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/official-checksum-verify.txt",
+     "size": 32
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/official-checksums.txt",
+     "size": 3088
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/official-linux-go-version-m.txt",
+     "size": 9677
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/official-rebuild-comparison.txt",
+     "size": 996
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/openpgp-reachability.txt",
+     "size": 29
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/patch-apply-check.txt",
+     "size": 17
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/phase0-compile-go1.25.12.txt",
+     "size": 158
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/phase0-core-tests-final.txt",
+     "size": 114
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/phase0-core-tests-go1.25.12.txt",
+     "size": 61
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/phase0-integration-tests-excluding-disabled-kagi.txt",
+     "size": 61
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/phase0-patch-sha256.txt",
+     "size": 135
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/phase0-patch-tests-final.txt",
+     "size": 1887
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/phase0-patch-tests.txt",
+     "size": 111
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/phase0-telegram-tests-final.txt",
+     "size": 61
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/phone-kit-build.txt",
+     "size": 198
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/phone-kit-contents.txt",
+     "size": 992
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/phone-kit-inner-verify.txt",
+     "size": 1762
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/phone-kit-reproducible-rebuild.txt",
+     "size": 269
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/pinned-source-sha256.txt",
+     "size": 156
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/redaction-selftest.txt",
+     "size": 32
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/secret-scan.txt",
+     "size": 18
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/security-overrides-patch-sha256.txt",
+     "size": 140
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/supervisor-selftest.txt",
+     "size": 547
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/telegram-auth-code-index.txt",
+     "size": 28286
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/telegram-handleMessages.go.txt",
+     "size": 4974
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/tool-policy-code-index.txt",
+     "size": 28393
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/turn-profile.go.txt",
+     "size": 0
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/turn_profile_policy.go.txt",
+     "size": 3265
+    },
+    {
+     "path": "phase0-android-runtime/evidence/inspection/verify-config-selftest.txt",
+     "size": 264
+    },
+    {
+     "path": "phase0-android-runtime/manifests/go-mod-graph.txt",
+     "size": 81745
+    },
+    {
+     "path": "phase0-android-runtime/manifests/go-modules-all.txt",
+     "size": 9516
+    },
+    {
+     "path": "phase0-android-runtime/manifests/go-version-m.txt",
+     "size": 8783
+    },
+    {
+     "path": "phase0-android-runtime/templates/PHASE0-RESULT-REPORT.md",
+     "size": 2604
+    },
+    {
+     "path": "phase0-android-runtime/tests/README.md",
+     "size": 777
+    },
+    {
+     "path": "phase14-android-package/README.md",
+     "size": 3558
+    },
+    {
+     "path": "phase14-android-package/docs/MODEL-FREE-TIER.md",
+     "size": 2543
+    },
+    {
+     "path": "phase14-android-package/docs/PHONE-GUIDE.ar.md",
+     "size": 9662
+    },
+    {
+     "path": "phase14-android-package/docs/TEST-PLAN.md",
+     "size": 4519
+    },
+    {
+     "path": "skills/coding/SKILL.md",
+     "size": 399
+    },
+    {
+     "path": "skills/image-generation/SKILL.md",
+     "size": 540
+    },
+    {
+     "path": "skills/research/SKILL.md",
+     "size": 365
+    },
+    {
+     "path": "skills/social-publishing/SKILL.md",
+     "size": 755
+    }
+   ],
+   "agent_files": [
+    ".agents/skills/code-review/SKILL.md",
+    ".agents/skills/source-driven-development/SKILL.md",
+    ".agents/skills/systematic-debugging/SKILL.md",
+    ".agents/skills/test-driven-development/SKILL.md",
+    ".agents/skills/verification-before-completion/SKILL.md",
+    "internal/skills/loader.go",
+    "internal/skills/manifest.go",
+    "internal/skills/registry.go",
+    "internal/skills/schema.go",
+    "internal/skills/skills_test.go",
+    "internal/skills/tools_adapter.go",
+    "skills/coding/SKILL.md",
+    "skills/coding/skill.json",
+    "skills/image-generation/SKILL.md",
+    "skills/image-generation/skill.json",
+    "skills/research/SKILL.md",
+    "skills/research/skill.json",
+    "skills/social-publishing/SKILL.md",
+    "skills/social-publishing/skill.json"
+   ],
+   "skills": [
+    "code-review",
+    "coding",
+    "image-generation",
+    "research",
+    "social-publishing",
+    "source-driven-development",
+    "systematic-debugging",
+    "test-driven-development",
+    "verification-before-completion"
+   ],
+   "env_files": [
+    ".env.example",
+    "phase0-android-runtime/.env.example"
+   ],
+   "workflows": [
+    ".github/workflows/phase0-ci.yml",
+    ".github/workflows/product-ci.yml"
+   ],
+   "tree_truncated": false
+  },
+  {
+   "full_name": "mohamedmasoud3030-tech/bug-free-garbanzo",
+   "visibility": "private",
+   "description": "recycling-warehouse-management-system",
+   "language": "TypeScript",
+   "pushed_at": "2026-10-23T01:07:58Z",
+   "default_branch": "main",
+   "files_total": 86,
+   "docs": [
+    {
+     "path": ".agents/skills/code-review/SKILL.md",
+     "size": 2449
+    },
+    {
+     "path": ".agents/skills/database-postgres-rls/SKILL.md",
+     "size": 2532
+    },
+    {
+     "path": ".agents/skills/decision-governance/SKILL.md",
+     "size": 2621
+    },
+    {
+     "path": ".agents/skills/financial-correctness/SKILL.md",
+     "size": 3134
+    },
+    {
+     "path": ".agents/skills/implementation-planning/SKILL.md",
+     "size": 2496
+    },
+    {
+     "path": ".agents/skills/security-review/SKILL.md",
+     "size": 3644
+    },
+    {
+     "path": ".agents/skills/source-driven-development/SKILL.md",
+     "size": 2997
+    },
+    {
+     "path": ".agents/skills/systematic-debugging/SKILL.md",
+     "size": 1939
+    },
+    {
+     "path": ".agents/skills/test-driven-development/SKILL.md",
+     "size": 1941
+    },
+    {
+     "path": ".agents/skills/verification-before-completion/SKILL.md",
+     "size": 2260
+    },
+    {
+     "path": "AGENTS.md",
+     "size": 2691
+    },
+    {
+     "path": "README.md",
+     "size": 20
+    },
+    {
+     "path": "ci/README.md",
+     "size": 1830
+    },
+    {
+     "path": "docs/API_CONTRACT.md",
+     "size": 6774
+    },
+    {
+     "path": "docs/ARCHITECTURE.md",
+     "size": 24083
+    },
+    {
+     "path": "docs/AUDIT_IMMUTABILITY_RULES.md",
+     "size": 2602
+    },
+    {
+     "path": "docs/AUTH_SESSION_CONTRACT.md",
+     "size": 4749
+    },
+    {
+     "path": "docs/BUYERS_DIRECTORY_CONTRACT.md",
+     "size": 4372
+    },
+    {
+     "path": "docs/CODING_RULES.md",
+     "size": 2683
+    },
+    {
+     "path": "docs/DATABASE_CONTRACT.md",
+     "size": 21451
+    },
+    {
+     "path": "docs/DATABASE_RULES.md",
+     "size": 3129
+    },
+    {
+     "path": "docs/ERROR_CONTRACT.md",
+     "size": 3724
+    },
+    {
+     "path": "docs/FINANCIAL_RULES.md",
+     "size": 7628
+    },
+    {
+     "path": "docs/FRONTEND_RULES.md",
+     "size": 3032
+    },
+    {
+     "path": "docs/INVENTORY_RULES.md",
+     "size": 4343
+    },
+    {
+     "path": "docs/MIGRATION_RULES.md",
+     "size": 2158
+    },
+    {
+     "path": "docs/OPERATIONS_RUNBOOK.md",
+     "size": 4484
+    },
+    {
+     "path": "docs/PRD.md",
+     "size": 112708
+    },
+    {
+     "path": "docs/PRIVACY_SECURITY_RULES.md",
+     "size": 3088
+    },
+    {
+     "path": "docs/PROJECT_RULES.md",
+     "size": 2742
+    },
+    {
+     "path": "docs/PWA_RULES.md",
+     "size": 1879
+    },
+    {
+     "path": "docs/README.md",
+     "size": 3612
+    },
+    {
+     "path": "docs/RLS_SECURITY_CONTRACT.md",
+     "size": 6245
+    },
+    {
+     "path": "docs/SEED_DATA_RULES.md",
+     "size": 1704
+    },
+    {
+     "path": "docs/STATUS.md",
+     "size": 1860
+    },
+    {
+     "path": "docs/TESTING_CONTRACT.md",
+     "size": 4173
+    },
+    {
+     "path": "docs/TRACEABILITY_MATRIX.md",
+     "size": 6415
+    },
+    {
+     "path": "docs/TRANSACTION_STATE_MACHINE.md",
+     "size": 3522
+    },
+    {
+     "path": "docs/adr/0001-authentication.md",
+     "size": 2559
+    },
+    {
+     "path": "docs/adr/0002-tenant-isolation.md",
+     "size": 1838
+    },
+    {
+     "path": "docs/adr/0003-database-access-model.md",
+     "size": 1730
+    },
+    {
+     "path": "docs/adr/0004-decimal-arithmetic.md",
+     "size": 1842
+    },
+    {
+     "path": "docs/adr/0005-transaction-atomicity.md",
+     "size": 1922
+    },
+    {
+     "path": "docs/adr/0006-costing-model.md",
+     "size": 1780
+    },
+    {
+     "path": "docs/adr/0007-regrade-allocation.md",
+     "size": 2276
+    },
+    {
+     "path": "docs/adr/0008-historical-corrections.md",
+     "size": 1876
+    },
+    {
+     "path": "docs/adr/0009-cash-reconciliation.md",
+     "size": 2081
+    },
+    {
+     "path": "docs/adr/0010-pwa-offline-policy.md",
+     "size": 1942
+    },
+    {
+     "path": "docs/adr/0011-buyers-directory.md",
+     "size": 2450
+    },
+    {
+     "path": "docs/adr/0012-audit-immutability.md",
+     "size": 1958
+    },
+    {
+     "path": "docs/adr/README.md",
+     "size": 1418
+    },
+    {
+     "path": "docs/pilot-yard-visit-checklist.md",
+     "size": 5733
+    }
+   ],
+   "agent_files": [
+    ".agents/skills/code-review/SKILL.md",
+    ".agents/skills/database-postgres-rls/SKILL.md",
+    ".agents/skills/decision-governance/SKILL.md",
+    ".agents/skills/financial-correctness/SKILL.md",
+    ".agents/skills/implementation-planning/SKILL.md",
+    ".agents/skills/security-review/SKILL.md",
+    ".agents/skills/source-driven-development/SKILL.md",
+    ".agents/skills/systematic-debugging/SKILL.md",
+    ".agents/skills/test-driven-development/SKILL.md",
+    ".agents/skills/verification-before-completion/SKILL.md",
+    "AGENTS.md"
+   ],
+   "skills": [
+    "code-review",
+    "database-postgres-rls",
+    "decision-governance",
+    "financial-correctness",
+    "implementation-planning",
+    "security-review",
+    "source-driven-development",
+    "systematic-debugging",
+    "test-driven-development",
+    "verification-before-completion"
+   ],
+   "env_files": [],
+   "workflows": [],
+   "tree_truncated": false
+  },
+  {
+   "full_name": "mohamedmasoud3030-tech/Lenastore",
+   "visibility": "private",
+   "description": "Material’s manger ",
+   "language": "TypeScript",
+   "pushed_at": "2026-10-23T01:07:57Z",
+   "default_branch": "main",
+   "files_total": 125,
+   "docs": [
+    {
+     "path": ".agents/skills/code-review/SKILL.md",
+     "size": 2449
+    },
+    {
+     "path": ".agents/skills/database-postgres-rls/SKILL.md",
+     "size": 2532
+    },
+    {
+     "path": ".agents/skills/decision-governance/SKILL.md",
+     "size": 2621
+    },
+    {
+     "path": ".agents/skills/financial-correctness/SKILL.md",
+     "size": 3134
+    },
+    {
+     "path": ".agents/skills/frontend-rtl-design/SKILL.md",
+     "size": 2797
+    },
+    {
+     "path": ".agents/skills/implementation-planning/SKILL.md",
+     "size": 2496
+    },
+    {
+     "path": ".agents/skills/release-readiness/SKILL.md",
+     "size": 2594
+    },
+    {
+     "path": ".agents/skills/security-review/SKILL.md",
+     "size": 3644
+    },
+    {
+     "path": ".agents/skills/source-driven-development/SKILL.md",
+     "size": 2997
+    },
+    {
+     "path": ".agents/skills/systematic-debugging/SKILL.md",
+     "size": 1939
+    },
+    {
+     "path": ".agents/skills/test-driven-development/SKILL.md",
+     "size": 1941
+    },
+    {
+     "path": ".agents/skills/verification-before-completion/SKILL.md",
+     "size": 2260
+    },
+    {
+     "path": "AGENTS.md",
+     "size": 2507
+    },
+    {
+     "path": "README.md",
+     "size": 2446
+    },
+    {
+     "path": "contract-diagnostics.txt",
+     "size": 197
+    },
+    {
+     "path": "docs/ARCHITECTURE.md",
+     "size": 843
+    },
+    {
+     "path": "docs/DECISIONS.md",
+     "size": 924
+    },
+    {
+     "path": "docs/PRODUCT.md",
+     "size": 895
+    },
+    {
+     "path": "docs/README.md",
+     "size": 992
+    },
+    {
+     "path": "docs/RUNBOOK.md",
+     "size": 734
+    },
+    {
+     "path": "docs/STATUS.md",
+     "size": 2287
+    },
+    {
+     "path": "docs/specs/SUPABASE_MIGRATION_LEDGER.md",
+     "size": 3539
+    },
+    {
+     "path": "docs/specs/design/LENA_SUPPLY_UI_CONTRACT.md",
+     "size": 5033
+    },
+    {
+     "path": "docs/specs/design/LENA_SUPPLY_VISUAL_REGRESSION_RULES.md",
+     "size": 2311
+    }
+   ],
+   "agent_files": [
+    ".agents/skills/code-review/SKILL.md",
+    ".agents/skills/database-postgres-rls/SKILL.md",
+    ".agents/skills/decision-governance/SKILL.md",
+    ".agents/skills/financial-correctness/SKILL.md",
+    ".agents/skills/frontend-rtl-design/SKILL.md",
+    ".agents/skills/implementation-planning/SKILL.md",
+    ".agents/skills/release-readiness/SKILL.md",
+    ".agents/skills/security-review/SKILL.md",
+    ".agents/skills/source-driven-development/SKILL.md",
+    ".agents/skills/systematic-debugging/SKILL.md",
+    ".agents/skills/test-driven-development/SKILL.md",
+    ".agents/skills/verification-before-completion/SKILL.md",
+    "AGENTS.md"
+   ],
+   "skills": [
+    "code-review",
+    "database-postgres-rls",
+    "decision-governance",
+    "financial-correctness",
+    "frontend-rtl-design",
+    "implementation-planning",
+    "release-readiness",
+    "security-review",
+    "source-driven-development",
+    "systematic-debugging",
+    "test-driven-development",
+    "verification-before-completion"
+   ],
+   "env_files": [
+    ".env.example"
+   ],
+   "workflows": [
+    ".github/workflows/contract-diagnostics-commit.yml",
+    ".github/workflows/contract-diagnostics.yml",
+    ".github/workflows/quality.yml"
+   ],
+   "tree_truncated": false
+  },
+  {
+   "full_name": "mohamedmasoud3030-tech/starting",
+   "visibility": "private",
+   "description": "Al Rayan Turkish Restaurant",
+   "language": "TypeScript",
+   "pushed_at": "2026-10-23T01:07:56Z",
+   "default_branch": "main",
+   "files_total": 688,
+   "docs": [
+    {
+     "path": ".agents/skills/code-review/SKILL.md",
+     "size": 2449
+    },
+    {
+     "path": ".agents/skills/database-postgres-rls/SKILL.md",
+     "size": 2532
+    },
+    {
+     "path": ".agents/skills/decision-governance/SKILL.md",
+     "size": 2621
+    },
+    {
+     "path": ".agents/skills/financial-correctness/SKILL.md",
+     "size": 3134
+    },
+    {
+     "path": ".agents/skills/frontend-rtl-design/SKILL.md",
+     "size": 2797
+    },
+    {
+     "path": ".agents/skills/implementation-planning/SKILL.md",
+     "size": 2496
+    },
+    {
+     "path": ".agents/skills/implementation/SKILL.md",
+     "size": 3457
+    },
+    {
+     "path": ".agents/skills/postgres-rls/SKILL.md",
+     "size": 3594
+    },
+    {
+     "path": ".agents/skills/release-readiness/SKILL.md",
+     "size": 2594
+    },
+    {
+     "path": ".agents/skills/security-review/SKILL.md",
+     "size": 3644
+    },
+    {
+     "path": ".agents/skills/security-threat-model/SKILL.md",
+     "size": 2930
+    },
+    {
+     "path": ".agents/skills/source-driven-development/SKILL.md",
+     "size": 2997
+    },
+    {
+     "path": ".agents/skills/systematic-debugging/SKILL.md",
+     "size": 1939
+    },
+    {
+     "path": ".agents/skills/test-driven-development/SKILL.md",
+     "size": 1941
+    },
+    {
+     "path": ".agents/skills/verification-before-completion/SKILL.md",
+     "size": 2260
+    },
+    {
+     "path": "AGENTS.md",
+     "size": 8150
+    },
+    {
+     "path": "README.md",
+     "size": 5229
+    },
+    {
+     "path": "docs/ARCHITECTURE.md",
+     "size": 10314
+    },
+    {
+     "path": "docs/DECISIONS.md",
+     "size": 1151
+    },
+    {
+     "path": "docs/OPERATIONS.md",
+     "size": 16863
+    },
+    {
+     "path": "docs/OPERATIONS_GUIDE_SIMPLE.md",
+     "size": 6857
+    },
+    {
+     "path": "docs/PRODUCT.md",
+     "size": 1357
+    },
+    {
+     "path": "docs/README.md",
+     "size": 2021
+    },
+    {
+     "path": "docs/RUNBOOK.md",
+     "size": 792
+    },
+    {
+     "path": "docs/STATUS.md",
+     "size": 1582
+    },
+    {
+     "path": "docs/architecture/01-product-and-domain.md",
+     "size": 2002
+    },
+    {
+     "path": "docs/architecture/02-event-lifecycle.md",
+     "size": 2025
+    },
+    {
+     "path": "docs/architecture/03-commercial-model.md",
+     "size": 3523
+    },
+    {
+     "path": "docs/architecture/04-security-and-tenancy.md",
+     "size": 5169
+    },
+    {
+     "path": "docs/architecture/05-inventory-model.md",
+     "size": 2577
+    },
+    {
+     "path": "docs/architecture/06-roadmap.md",
+     "size": 6932
+    },
+    {
+     "path": "docs/architecture/07-import-classification.md",
+     "size": 3399
+    },
+    {
+     "path": "docs/architecture/08-owner-voice-mode.md",
+     "size": 7236
+    },
+    {
+     "path": "docs/architecture/09-quick-quote.md",
+     "size": 3862
+    },
+    {
+     "path": "docs/architecture/10-warehouse-operations.md",
+     "size": 7782
+    },
+    {
+     "path": "docs/architecture/11-consumable-inventory.md",
+     "size": 10838
+    },
+    {
+     "path": "docs/architecture/12-procurement-core.md",
+     "size": 14533
+    },
+    {
+     "path": "docs/architecture/13-customer-payments.md",
+     "size": 4320
+    },
+    {
+     "path": "docs/architecture/14-operational-dashboard.md",
+     "size": 3675
+    },
+    {
+     "path": "docs/architecture/15-staff-attendance.md",
+     "size": 5229
+    },
+    {
+     "path": "docs/architecture/16-invoicing.md",
+     "size": 3741
+    },
+    {
+     "path": "docs/architecture/17-product-consolidation-foundation.md",
+     "size": 5062
+    },
+    {
+     "path": "docs/architecture/18-r10-closeout.md",
+     "size": 3445
+    },
+    {
+     "path": "docs/architecture/19-r11-domain-audit.md",
+     "size": 8060
+    },
+    {
+     "path": "docs/architecture/20-r11-quotation-and-operator-experience.md",
+     "size": 5480
+    },
+    {
+     "path": "docs/architecture/21-staff-join-decision.md",
+     "size": 4209
+    },
+    {
+     "path": "docs/architecture/22-office-document-center.md",
+     "size": 5660
+    },
+    {
+     "path": "docs/architecture/23-command-center-assisted-face-and-today.md",
+     "size": 8421
+    },
+    {
+     "path": "docs/ci/README.md",
+     "size": 2071
+    },
+    {
+     "path": "docs/specs/ASSISTANT_VERIFICATION.md",
+     "size": 7424
+    },
+    {
+     "path": "docs/specs/BRAND_IDENTITY.md",
+     "size": 8277
+    },
+    {
+     "path": "docs/specs/DATA_MODEL.md",
+     "size": 13634
+    },
+    {
+     "path": "docs/specs/FACE_ENGINE.md",
+     "size": 64548
+    },
+    {
+     "path": "docs/specs/PRODUCT_SPEC.md",
+     "size": 16584
+    },
+    {
+     "path": "docs/specs/interface/DATA_DISPLAY_DECISIONS.md",
+     "size": 6933
+    },
+    {
+     "path": "docs/specs/interface/FORM_COMPONENT_STANDARD.md",
+     "size": 4729
+    },
+    {
+     "path": "docs/specs/interface/INTERFACE_MIGRATION_PLAN.md",
+     "size": 15203
+    },
+    {
+     "path": "docs/specs/interface/INTERFACE_ROUTE_INVENTORY.md",
+     "size": 18358
+    },
+    {
+     "path": "docs/specs/interface/PAGE_CONTENT_ARCHITECTURE.md",
+     "size": 11119
+    },
+    {
+     "path": "docs/specs/interface/PAGE_RATIONALIZATION_PLAN.md",
+     "size": 6759
+    },
+    {
+     "path": "docs/specs/interface/PAGE_TEMPLATE_MAP.md",
+     "size": 4929
+    },
+    {
+     "path": "docs/specs/interface/SHARED_COMPONENT_ARCHITECTURE.md",
+     "size": 7596
+    },
+    {
+     "path": "docs/specs/operations/DAY1_TEST_CHECKLIST.md",
+     "size": 3375
+    },
+    {
+     "path": "docs/specs/operations/assistant-session-runbook.md",
+     "size": 4861
+    },
+    {
+     "path": "docs/specs/operations/backup-restore.md",
+     "size": 7868
+    },
+    {
+     "path": "docs/specs/operations/deployment.md",
+     "size": 9199
+    },
+    {
+     "path": "docs/specs/operations/s8-production-closeout.md",
+     "size": 7163
+    },
+    {
+     "path": "docs/specs/operations/uat-checklist.md",
+     "size": 16167
+    },
+    {
+     "path": "docs/specs/operations/uat-s9-checklist.md",
+     "size": 6558
+    },
+    {
+     "path": "docs/specs/research/accounting-posting-contract.md",
+     "size": 135115
+    },
+    {
+     "path": "docs/specs/research/financial-component-harvest.md",
+     "size": 72468
+    },
+    {
+     "path": "docs/specs/research/operator-accounting-read-models.md",
+     "size": 20298
+    },
+    {
+     "path": "docs/specs/research/stage3-aging-statements.md",
+     "size": 13845
+    },
+    {
+     "path": "docs/specs/research/vat-gross-deposit-reconciliation.md",
+     "size": 12446
+    },
+    {
+     "path": "docs/ui-review/README.md",
+     "size": 657
+    },
+    {
+     "path": "src/features/procurement/OPERATOR_FLOWS.md",
+     "size": 7220
+    },
+    {
+     "path": "src/features/staff/face/__fixtures__/README.md",
+     "size": 1848
+    }
+   ],
+   "agent_files": [
+    ".agents/skills/code-review/SKILL.md",
+    ".agents/skills/database-postgres-rls/SKILL.md",
+    ".agents/skills/decision-governance/SKILL.md",
+    ".agents/skills/financial-correctness/SKILL.md",
+    ".agents/skills/frontend-rtl-design/SKILL.md",
+    ".agents/skills/implementation-planning/SKILL.md",
+    ".agents/skills/implementation/SKILL.md",
+    ".agents/skills/postgres-rls/SKILL.md",
+    ".agents/skills/release-readiness/SKILL.md",
+    ".agents/skills/security-review/SKILL.md",
+    ".agents/skills/security-threat-model/SKILL.md",
+    ".agents/skills/source-driven-development/SKILL.md",
+    ".agents/skills/systematic-debugging/SKILL.md",
+    ".agents/skills/test-driven-development/SKILL.md",
+    ".agents/skills/verification-before-completion/SKILL.md",
+    "AGENTS.md"
+   ],
+   "skills": [
+    "code-review",
+    "database-postgres-rls",
+    "decision-governance",
+    "financial-correctness",
+    "frontend-rtl-design",
+    "implementation",
+    "implementation-planning",
+    "postgres-rls",
+    "release-readiness",
+    "security-review",
+    "security-threat-model",
+    "source-driven-development",
+    "systematic-debugging",
+    "test-driven-development",
+    "verification-before-completion"
+   ],
+   "env_files": [
+    ".env.example"
+   ],
+   "workflows": [
+    ".github/workflows/ci.yml"
+   ],
+   "tree_truncated": false
+  },
+  {
+   "full_name": "mohamedmasoud3030-tech/platform",
+   "visibility": "public",
+   "description": "website",
+   "language": "TypeScript",
+   "pushed_at": "2026-10-23T01:07:54Z",
+   "default_branch": "main",
+   "files_total": 538,
+   "docs": [
+    {
+     "path": ".agents/skills/code-review/SKILL.md",
+     "size": 2449
+    },
+    {
+     "path": ".agents/skills/database-postgres-rls/SKILL.md",
+     "size": 2532
+    },
+    {
+     "path": ".agents/skills/decision-governance/SKILL.md",
+     "size": 2621
+    },
+    {
+     "path": ".agents/skills/financial-correctness/SKILL.md",
+     "size": 3134
+    },
+    {
+     "path": ".agents/skills/frontend-rtl-design/SKILL.md",
+     "size": 2797
+    },
+    {
+     "path": ".agents/skills/implementation-planning/SKILL.md",
+     "size": 2496
+    },
+    {
+     "path": ".agents/skills/platform-architecture-decisions/SKILL.md",
+     "size": 2431
+    },
+    {
+     "path": ".agents/skills/platform-architecture-decisions/references/decision-record.md",
+     "size": 1994
+    },
+    {
+     "path": ".agents/skills/platform-database/SKILL.md",
+     "size": 2658
+    },
+    {
+     "path": ".agents/skills/platform-database/references/postgres-rls.md",
+     "size": 2149
+    },
+    {
+     "path": ".agents/skills/platform-implementation-planning/SKILL.md",
+     "size": 2334
+    },
+    {
+     "path": ".agents/skills/platform-implementation-planning/references/plan-contract.md",
+     "size": 1855
+    },
+    {
+     "path": ".agents/skills/platform-implementation/SKILL.md",
+     "size": 2586
+    },
+    {
+     "path": ".agents/skills/platform-implementation/references/source-and-test-discipline.md",
+     "size": 1946
+    },
+    {
+     "path": ".agents/skills/platform-review/SKILL.md",
+     "size": 2444
+    },
+    {
+     "path": ".agents/skills/platform-review/references/review-rubric.md",
+     "size": 2258
+    },
+    {
+     "path": ".agents/skills/platform-skill-engineering/SKILL.md",
+     "size": 2610
+    },
+    {
+     "path": ".agents/skills/platform-skill-engineering/references/skill-design.md",
+     "size": 2150
+    },
+    {
+     "path": ".agents/skills/release-readiness/SKILL.md",
+     "size": 2594
+    },
+    {
+     "path": ".agents/skills/security-review/SKILL.md",
+     "size": 3644
+    },
+    {
+     "path": ".agents/skills/source-driven-development/SKILL.md",
+     "size": 2997
+    },
+    {
+     "path": ".agents/skills/systematic-debugging/SKILL.md",
+     "size": 1939
+    },
+    {
+     "path": ".agents/skills/test-driven-development/SKILL.md",
+     "size": 1941
+    },
+    {
+     "path": ".agents/skills/verification-before-completion/SKILL.md",
+     "size": 2260
+    },
+    {
+     "path": "AGENTS.md",
+     "size": 5773
+    },
+    {
+     "path": "README.md",
+     "size": 3322
+    },
+    {
+     "path": "REMEDIATION_PLAN.md",
+     "size": 14505
+    },
+    {
+     "path": "artifacts/lena/public/robots.txt",
+     "size": 83
+    },
+    {
+     "path": "artifacts/lena/src/features/core-intelligence/README.md",
+     "size": 2904
+    },
+    {
+     "path": "design-system/mohamed-masoud-platform/MASTER.md",
+     "size": 1057
+    },
+    {
+     "path": "docs/ARCHITECTURE.md",
+     "size": 30824
+    },
+    {
+     "path": "docs/DECISIONS.md",
+     "size": 24136
+    },
+    {
+     "path": "docs/PRODUCT.md",
+     "size": 112614
+    },
+    {
+     "path": "docs/README.md",
+     "size": 1986
+    },
+    {
+     "path": "docs/RUNBOOK.md",
+     "size": 18095
+    },
+    {
+     "path": "docs/STATUS.md",
+     "size": 68470
+    },
+    {
+     "path": "docs/specs/admin-support.md",
+     "size": 10211
+    },
+    {
+     "path": "docs/specs/help-support.md",
+     "size": 10247
+    },
+    {
+     "path": "docs/specs/localization.md",
+     "size": 8878
+    },
+    {
+     "path": "docs/specs/malek-subpath.md",
+     "size": 3608
+    },
+    {
+     "path": "docs/specs/measurement.md",
+     "size": 12332
+    },
+    {
+     "path": "docs/specs/onboarding.md",
+     "size": 15902
+    },
+    {
+     "path": "docs/specs/privacy-governance.md",
+     "size": 14054
+    },
+    {
+     "path": "docs/specs/seo.md",
+     "size": 8902
+    },
+    {
+     "path": "docs/specs/world-signal-source.md",
+     "size": 7091
+    },
+    {
+     "path": "test/lena-runtime-visual-guardian-v1/README.md",
+     "size": 6567
+    }
+   ],
+   "agent_files": [
+    ".agents/skills/code-review/SKILL.md",
+    ".agents/skills/database-postgres-rls/SKILL.md",
+    ".agents/skills/decision-governance/SKILL.md",
+    ".agents/skills/financial-correctness/SKILL.md",
+    ".agents/skills/frontend-rtl-design/SKILL.md",
+    ".agents/skills/implementation-planning/SKILL.md",
+    ".agents/skills/platform-architecture-decisions/SKILL.md",
+    ".agents/skills/platform-architecture-decisions/references/decision-record.md",
+    ".agents/skills/platform-database/SKILL.md",
+    ".agents/skills/platform-database/references/postgres-rls.md",
+    ".agents/skills/platform-implementation-planning/SKILL.md",
+    ".agents/skills/platform-implementation-planning/references/plan-contract.md",
+    ".agents/skills/platform-implementation/SKILL.md",
+    ".agents/skills/platform-implementation/references/source-and-test-discipline.md",
+    ".agents/skills/platform-review/SKILL.md",
+    ".agents/skills/platform-review/references/review-rubric.md",
+    ".agents/skills/platform-skill-engineering/SKILL.md",
+    ".agents/skills/platform-skill-engineering/references/skill-design.md",
+    ".agents/skills/release-readiness/SKILL.md",
+    ".agents/skills/security-review/SKILL.md",
+    ".agents/skills/source-driven-development/SKILL.md",
+    ".agents/skills/systematic-debugging/SKILL.md",
+    ".agents/skills/test-driven-development/SKILL.md",
+    ".agents/skills/verification-before-completion/SKILL.md",
+    "AGENTS.md",
+    "tools/verify-agent-skills.mjs"
+   ],
+   "skills": [
+    "code-review",
+    "database-postgres-rls",
+    "decision-governance",
+    "financial-correctness",
+    "frontend-rtl-design",
+    "implementation-planning",
+    "platform-architecture-decisions",
+    "platform-database",
+    "platform-implementation",
+    "platform-implementation-planning",
+    "platform-review",
+    "platform-skill-engineering",
+    "release-readiness",
+    "security-review",
+    "source-driven-development",
+    "systematic-debugging",
+    "test-driven-development",
+    "verification-before-completion"
+   ],
+   "env_files": [
+    ".env.example"
+   ],
+   "workflows": [
+    ".github/workflows/ci.yml",
+    ".github/workflows/update-visual-baselines.yml"
+   ],
+   "tree_truncated": false
+  },
+  {
+   "full_name": "mohamedmasoud3030-tech/Terranex",
+   "visibility": "private",
+   "description": "Investment",
+   "language": "PLpgSQL",
+   "pushed_at": "2026-10-23T01:07:53Z",
+   "default_branch": "main",
+   "files_total": 813,
+   "docs": [
+    {
+     "path": ".agents/skills/code-review/SKILL.md",
+     "size": 2449
+    },
+    {
+     "path": ".agents/skills/database-postgres-rls/SKILL.md",
+     "size": 2532
+    },
+    {
+     "path": ".agents/skills/decision-governance/SKILL.md",
+     "size": 2621
+    },
+    {
+     "path": ".agents/skills/financial-correctness/SKILL.md",
+     "size": 3134
+    },
+    {
+     "path": ".agents/skills/frontend-rtl-design/SKILL.md",
+     "size": 2797
+    },
+    {
+     "path": ".agents/skills/implementation-planning/SKILL.md",
+     "size": 2496
+    },
+    {
+     "path": ".agents/skills/release-readiness/SKILL.md",
+     "size": 2594
+    },
+    {
+     "path": ".agents/skills/security-review/SKILL.md",
+     "size": 3644
+    },
+    {
+     "path": ".agents/skills/source-driven-development/SKILL.md",
+     "size": 2997
+    },
+    {
+     "path": ".agents/skills/systematic-debugging/SKILL.md",
+     "size": 1939
+    },
+    {
+     "path": ".agents/skills/terranex-architecture-decision/SKILL.md",
+     "size": 3231
+    },
+    {
+     "path": ".agents/skills/terranex-architecture-decision/references/adr-template.md",
+     "size": 1435
+    },
+    {
+     "path": ".agents/skills/terranex-code-review/SKILL.md",
+     "size": 3365
+    },
+    {
+     "path": ".agents/skills/terranex-code-review/references/findings-format.md",
+     "size": 2009
+    },
+    {
+     "path": ".agents/skills/terranex-code-review/references/reviewer-routing.md",
+     "size": 2314
+    },
+    {
+     "path": ".agents/skills/terranex-database/SKILL.md",
+     "size": 4044
+    },
+    {
+     "path": ".agents/skills/terranex-database/references/database-checklist.md",
+     "size": 2670
+    },
+    {
+     "path": ".agents/skills/terranex-implementation-planning/SKILL.md",
+     "size": 3653
+    },
+    {
+     "path": ".agents/skills/terranex-implementation-planning/references/plan-template.md",
+     "size": 1248
+    },
+    {
+     "path": ".agents/skills/terranex-implementation/SKILL.md",
+     "size": 4034
+    },
+    {
+     "path": ".agents/skills/terranex-implementation/references/source-policy.md",
+     "size": 2411
+    },
+    {
+     "path": ".agents/skills/terranex-implementation/references/verification-matrix.md",
+     "size": 1661
+    },
+    {
+     "path": ".agents/skills/terranex-threat-model/SKILL.md",
+     "size": 3897
+    },
+    {
+     "path": ".agents/skills/terranex-threat-model/references/threat-model-template.md",
+     "size": 1221
+    },
+    {
+     "path": ".agents/skills/test-driven-development/SKILL.md",
+     "size": 1941
+    },
+    {
+     "path": ".agents/skills/verification-before-completion/SKILL.md",
+     "size": 2260
+    },
+    {
+     "path": "AGENTS.md",
+     "size": 22100
+    },
+    {
+     "path": "README.md",
+     "size": 5721
+    },
+    {
+     "path": "docs/ARCHITECTURE.md",
+     "size": 19683
+    },
+    {
+     "path": "docs/GREENFIELD_EXECUTION.md",
+     "size": 37136
+    },
+    {
+     "path": "docs/OPEN_BUSINESS_DECISIONS.md",
+     "size": 9442
+    },
+    {
+     "path": "docs/PRODUCT.md",
+     "size": 1407
+    },
+    {
+     "path": "docs/README.md",
+     "size": 2541
+    },
+    {
+     "path": "docs/ROADMAP_R0_R17.md",
+     "size": 10548
+    },
+    {
+     "path": "docs/STATUS.md",
+     "size": 2029
+    },
+    {
+     "path": "docs/agent-os/GAP_ANALYSIS.md",
+     "size": 3346
+    },
+    {
+     "path": "docs/agent-os/README.md",
+     "size": 1907
+    },
+    {
+     "path": "docs/agent-os/SKILL_DESIGN_STANDARD.md",
+     "size": 4210
+    },
+    {
+     "path": "docs/agent-os/SOURCE_REGISTRY.md",
+     "size": 3333
+    },
+    {
+     "path": "docs/decisions/0001_PRODUCT_FIRST_BUILD.md",
+     "size": 2576
+    },
+    {
+     "path": "docs/decisions/0002_SIMPLICITY_AND_VERTICAL_SLICES.md",
+     "size": 3886
+    },
+    {
+     "path": "docs/decisions/0003_S1_TERMS_AND_FUNDING.md",
+     "size": 3984
+    },
+    {
+     "path": "docs/decisions/0004_S2_COST_AND_CASH.md",
+     "size": 7284
+    },
+    {
+     "path": "docs/decisions/0005_S3_REAL_ESTATE_OPERATIONS.md",
+     "size": 7081
+    },
+    {
+     "path": "docs/decisions/0006_S4_REVENUE_AND_REALIZED_RESULT.md",
+     "size": 3467
+    },
+    {
+     "path": "docs/decisions/0007_S6_PERIOD_CLOSE_AND_CORRECTION.md",
+     "size": 6079
+    },
+    {
+     "path": "docs/decisions/0008_S5_ALLOCATION_AND_DISTRIBUTION.md",
+     "size": 7340
+    },
+    {
+     "path": "docs/decisions/0009_S7_PILOT_HARDENING.md",
+     "size": 15463
+    },
+    {
+     "path": "docs/decisions/0010_GUIDED_REAL_PROJECT_INTAKE.md",
+     "size": 785
+    },
+    {
+     "path": "docs/decisions/0011_HOSTED_PILOT_WORKSPACE.md",
+     "size": 2047
+    },
+    {
+     "path": "docs/decisions/0012_SECTOR_EXPANSION_SEQUENCE.md",
+     "size": 2489
+    },
+    {
+     "path": "docs/decisions/0013_GF013_AGRICULTURE_FOUNDATION.md",
+     "size": 7398
+    },
+    {
+     "path": "docs/decisions/0014_GF014_FIELD_ACTIVITY.md",
+     "size": 2508
+    },
+    {
+     "path": "docs/decisions/0015_GF015_INPUT_APPLICATION.md",
+     "size": 10280
+    },
+    {
+     "path": "docs/decisions/0016_GF016_HARVEST_INVENTORY.md",
+     "size": 6415
+    },
+    {
+     "path": "docs/decisions/0017_GF017_AGRICULTURAL_LAND_ASSET.md",
+     "size": 6082
+    },
+    {
+     "path": "docs/decisions/0018_GF018_AGRICULTURE_SALE_DISPATCH_REVENUE.md",
+     "size": 8941
+    },
+    {
+     "path": "docs/decisions/0019_GF019_AGRICULTURE_PROFITABILITY_CLOSEOUT_GATE.md",
+     "size": 9260
+    },
+    {
+     "path": "docs/decisions/0020_GF020_LIVESTOCK_FOUNDATION.md",
+     "size": 2674
+    },
+    {
+     "path": "docs/decisions/0021_GF021_LIVESTOCK_MOVEMENT_QUANTITY_WEIGHT.md",
+     "size": 4660
+    },
+    {
+     "path": "docs/decisions/0022_GF022_LIVESTOCK_BIOLOGICAL_QUANTITY_EVENTS.md",
+     "size": 9113
+    },
+    {
+     "path": "docs/decisions/0023_GF023_LIVESTOCK_OPERATIONS_COMPLETION.md",
+     "size": 9010
+    },
+    {
+     "path": "docs/decisions/0024_GF024_LIVESTOCK_COMMERCIAL_PROFITABILITY_CLOSEOUT.md",
+     "size": 10853
+    },
+    {
+     "path": "docs/decisions/0025_R1_PORTFOLIO_FOUNDATION.md",
+     "size": 5060
+    },
+    {
+     "path": "docs/decisions/0026_ROADMAP_ALIGNMENT_R0_TO_R17.md",
+     "size": 3891
+    },
+    {
+     "path": "docs/decisions/0027_GF025_PROCUREMENT_FOUNDATION.md",
+     "size": 9777
+    },
+    {
+     "path": "docs/decisions/0028_GF026_PROCUREMENT_RECEIVING.md",
+     "size": 7643
+    },
+    {
+     "path": "docs/decisions/0029_TARGET_COMPANY_PILOT_FOCUS.md",
+     "size": 3612
+    },
+    {
+     "path": "docs/decisions/0030_R4_PROCUREMENT_FINANCIAL_INTEGRATION.md",
+     "size": 6889
+    },
+    {
+     "path": "docs/decisions/0031_R4_PROCUREMENT_CONTRACTS_EVIDENCE.md",
+     "size": 6022
+    },
+    {
+     "path": "docs/decisions/0032_R8_CROSS_SECTOR_ASSET_AND_PERFORMANCE.md",
+     "size": 8074
+    },
+    {
+     "path": "docs/decisions/0033_PRE_OWNER_POLICY_SAFETY_BOUNDARY.md",
+     "size": 5611
+    },
+    {
+     "path": "docs/decisions/0034_H1_PROJECT_RESULT_TRUTH_AND_PROJECT_BRIEF.md",
+     "size": 14244
+    },
+    {
+     "path": "docs/decisions/0035_AI_AUTONOMOUS_DECISIONS_2026-08-17.md",
+     "size": 7381
+    },
+    {
+     "path": "docs/demo/PRESENTATION_ACCESS.md",
+     "size": 1363
+    },
+    {
+     "path": "docs/demo/REAL_ESTATE_SHOWCASE.md",
+     "size": 3452
+    },
+    {
+     "path": "docs/design/README.md",
+     "size": 15325
+    },
+    {
+     "path": "docs/design/ROUTE_REVIEW.md",
+     "size": 7512
+    },
+    {
+     "path": "docs/design/UI_UX_GUIDELINES.md",
+     "size": 17708
+    },
+    {
+     "path": "docs/design/UI_UX_GUIDELINES_AR.md",
+     "size": 23442
+    },
+    {
+     "path": "docs/greenfield/01_PRODUCT_CHARTER_AND_MARKET.md",
+     "size": 16890
+    },
+    {
+     "path": "docs/greenfield/02_OPERATING_MODEL_AND_JOURNEYS.md",
+     "size": 15970
+    },
+    {
+     "path": "docs/greenfield/03_DOMAIN_MODEL.md",
+     "size": 15693
+    },
+    {
+     "path": "docs/greenfield/04_SECTOR_MODELS.md",
+     "size": 13492
+    },
+    {
+     "path": "docs/greenfield/05_FINANCE_AND_ACCOUNTING.md",
+     "size": 17159
+    },
+    {
+     "path": "docs/greenfield/06_SYSTEM_ARCHITECTURE_AND_SECURITY.md",
+     "size": 8787
+    },
+    {
+     "path": "docs/greenfield/07_UX_INFORMATION_ARCHITECTURE.md",
+     "size": 12628
+    },
+    {
+     "path": "docs/greenfield/08_MVP_AND_DELIVERY_ROADMAP.md",
+     "size": 24802
+    },
+    {
+     "path": "docs/pilot-readiness/01_PILOT_READINESS_MAP.md",
+     "size": 29388
+    },
+    {
+     "path": "docs/pilot-readiness/02_DATA_INTAKE_CONTRACT.md",
+     "size": 23830
+    },
+    {
+     "path": "docs/pilot-readiness/03_OPENING_BALANCE_CONTROL_PACK.md",
+     "size": 13182
+    },
+    {
+     "path": "docs/pilot-readiness/04_PILOT_RUNBOOK_WEEKS_0_TO_4.md",
+     "size": 13279
+    },
+    {
+     "path": "docs/pilot-readiness/05_UAT_ACCEPTANCE_MATRIX.md",
+     "size": 15428
+    },
+    {
+     "path": "docs/pilot-readiness/06_RECONCILIATION_PROCEDURES.md",
+     "size": 12237
+    },
+    {
+     "path": "docs/pilot-readiness/07_INCIDENT_SUPPORT_MATRIX.md",
+     "size": 7318
+    },
+    {
+     "path": "docs/pilot-readiness/08_DEPLOYMENT_ENVIRONMENT_CHECKLIST.md",
+     "size": 8958
+    },
+    {
+     "path": "docs/pilot-readiness/09_PILOT_ROLES_AND_RESPONSIBILITIES.md",
+     "size": 7388
+    },
+    {
+     "path": "docs/pilot-readiness/10_COMMERCIAL_HANDOFF_REQUIREMENTS.md",
+     "size": 9661
+    },
+    {
+     "path": "docs/pilot-readiness/11_GA_READINESS_BACKLOG.md",
+     "size": 10909
+    },
+    {
+     "path": "docs/pilot-readiness/12_PRE_PILOT_ACTIVATION_AND_INTAKE_STATUS.md",
+     "size": 9098
+    },
+    {
+     "path": "docs/pilot-readiness/13_GUIDED_REAL_PROJECT_INTAKE.md",
+     "size": 3219
+    },
+    {
+     "path": "docs/pilot-readiness/README.md",
+     "size": 8941
+    },
+    {
+     "path": "docs/runbooks/BACKUP_AND_RESTORE.md",
+     "size": 11402
+    },
+    {
+     "path": "docs/runbooks/CLOSED_PERIOD_CORRECTION.md",
+     "size": 9093
+    },
+    {
+     "path": "docs/runbooks/CLOSE_RUN_GATE_FAILURE.md",
+     "size": 14973
+    },
+    {
+     "path": "docs/runbooks/CROSS_TENANT_OR_SECURITY_INCIDENT.md",
+     "size": 10149
+    },
+    {
+     "path": "docs/runbooks/FAILED_ALLOCATION_OR_DISTRIBUTION.md",
+     "size": 11418
+    },
+    {
+     "path": "docs/runbooks/FAILED_DEPLOYMENT_OR_MIGRATION.md",
+     "size": 8195
+    },
+    {
+     "path": "docs/runbooks/FAILED_OPENING_IMPORT.md",
+     "size": 10881
+    },
+    {
+     "path": "docs/runbooks/INCORRECT_POSTED_TRANSACTION.md",
+     "size": 7905
+    },
+    {
+     "path": "docs/runbooks/MEMBERSHIP_AND_ACCESS_INCIDENT.md",
+     "size": 8804
+    },
+    {
+     "path": "docs/runbooks/NON_CASH_CHECKPOINT_VARIANCE.md",
+     "size": 8672
+    },
+    {
+     "path": "docs/runbooks/README.md",
+     "size": 4850
+    },
+    {
+     "path": "docs/runbooks/SUPPORT_ESCALATION.md",
+     "size": 8465
+    },
+    {
+     "path": "docs/runbooks/UNRECONCILED_CASH.md",
+     "size": 8927
+    },
+    {
+     "path": "docs/specs/LEGACY_FREEZE.md",
+     "size": 800
+    },
+    {
+     "path": "docs/specs/ops/DB_DEVELOPMENT.md",
+     "size": 2448
+    },
+    {
+     "path": "docs/specs/owner/R14_OWNER_DECISION_RESOLUTION_PROTOCOL.md",
+     "size": 9162
+    },
+    {
+     "path": "docs/specs/owner/R14_OWNER_LETTER_AND_ANSWER_SHEET_AR.md",
+     "size": 15976
+    },
+    {
+     "path": "docs/specs/owner/R14_POLICY_IMPACT_MATRIX.md",
+     "size": 39431
+    },
+    {
+     "path": "docs/specs/owner/R14_TARGET_COMPANY_DECISION_PACK_AR.md",
+     "size": 38298
+    },
+    {
+     "path": "docs/specs/owner/TARGET_COMPANY_REFERENCE.md",
+     "size": 6662
+    },
+    {
+     "path": "docs/specs/standards/DATA_DISPLAY_DECISIONS.md",
+     "size": 10496
+    },
+    {
+     "path": "docs/specs/standards/FORM_COMPONENT_STANDARD.md",
+     "size": 4703
+    },
+    {
+     "path": "docs/specs/standards/INTERFACE_ROUTE_INVENTORY.md",
+     "size": 17595
+    },
+    {
+     "path": "docs/specs/standards/PAGE_CONTENT_ARCHITECTURE.md",
+     "size": 11152
+    },
+    {
+     "path": "docs/specs/standards/PAGE_TEMPLATE_MAP.md",
+     "size": 3105
+    },
+    {
+     "path": "docs/specs/standards/SHARED_COMPONENT_ARCHITECTURE.md",
+     "size": 7052
+    },
+    {
+     "path": "docs/specs/standards/TERMINOLOGY_REALIZED_RESULT.md",
+     "size": 3924
+    },
+    {
+     "path": "scripts/ui-preview/README.md",
+     "size": 2930
+    },
+    {
+     "path": "التسويق-والإدارة/README.md",
+     "size": 2465
+    },
+    {
+     "path": "التسويق-والإدارة/إدارة/تقارير-ومتابعة/تقرير-استرجاع-الفيديوهات-2026-10-19.md",
+     "size": 4869
+    },
+    {
+     "path": "التسويق-والإدارة/إدارة/تقارير-ومتابعة/تقرير-الاستلام-2026-10-18.md",
+     "size": 4746
+    },
+    {
+     "path": "التسويق-والإدارة/إدارة/تقارير-ومتابعة/تقرير-التحديث-الكامل-2026-10-19.md",
+     "size": 7754
+    },
+    {
+     "path": "التسويق-والإدارة/إدارة/تقارير-ومتابعة/تقرير-الدفعة-الثالثة-2026-10-19.md",
+     "size": 3960
+    },
+    {
+     "path": "التسويق-والإدارة/إدارة/تقارير-ومتابعة/تنظيف-عميق-2026-10-19.md",
+     "size": 4955
+    },
+    {
+     "path": "التسويق-والإدارة/إدارة/خطط-النشر/دليل-نشر-الأسبوع-الأول.md",
+     "size": 5040
+    },
+    {
+     "path": "التسويق-والإدارة/إدارة/خطط-النشر/كابشنات/01.txt",
+     "size": 336
+    },
+    {
+     "path": "التسويق-والإدارة/إدارة/خطط-النشر/كابشنات/02.txt",
+     "size": 347
+    },
+    {
+     "path": "التسويق-والإدارة/إدارة/خطط-النشر/كابشنات/03.txt",
+     "size": 202
+    },
+    {
+     "path": "التسويق-والإدارة/إدارة/خطط-النشر/كابشنات/04.txt",
+     "size": 289
+    },
+    {
+     "path": "التسويق-والإدارة/إدارة/خطط-النشر/كابشنات/05.txt",
+     "size": 200
+    },
+    {
+     "path": "التسويق-والإدارة/إدارة/خطط-النشر/كابشنات/06.txt",
+     "size": 229
+    },
+    {
+     "path": "التسويق-والإدارة/إدارة/خطط-النشر/كابشنات/07.txt",
+     "size": 188
+    },
+    {
+     "path": "التسويق-والإدارة/إدارة/دليل-المالك-غير-التقني.md",
+     "size": 3342
+    },
+    {
+     "path": "التسويق-والإدارة/إدارة/مهارات-الوكلاء/README.md",
+     "size": 767
+    },
+    {
+     "path": "التسويق-والإدارة/إدارة/وثائق-المشروع/00-تنظيم-المجموعة.md",
+     "size": 1673
+    },
+    {
+     "path": "التسويق-والإدارة/إدارة/وثائق-المشروع/00-خريطة-المستندات.md",
+     "size": 3903
+    },
+    {
+     "path": "التسويق-والإدارة/إدارة/وثائق-المشروع/00-ملف-المشروع-الرئيسي.md",
+     "size": 4001
+    },
+    {
+     "path": "التسويق-والإدارة/إدارة/وثائق-المشروع/01-معلومات-الشركة.md",
+     "size": 891
+    },
+    {
+     "path": "التسويق-والإدارة/إدارة/وثائق-المشروع/02-حالة-التشغيل.md",
+     "size": 3677
+    },
+    {
+     "path": "التسويق-والإدارة/إدارة/وثائق-المشروع/دليل-التفاوض-مع-المالك.md",
+     "size": 6793
+    },
+    {
+     "path": "التسويق-والإدارة/تسويق/فيديوهات-المنتجة/اقرأني.md",
+     "size": 2335
+    },
+    {
+     "path": "التسويق-والإدارة/تسويق/مواد-خام/README.md",
+     "size": 1160
+    },
+    {
+     "path": "التسويق-والإدارة/تسويق/مواد-وهوية/terranex-ops/OPS.md",
+     "size": 8288
+    },
+    {
+     "path": "التسويق-والإدارة/تسويق/مواد-وهوية/terranex-ops/SKILL.md",
+     "size": 9930
+    },
+    {
+     "path": "التسويق-والإدارة/تسويق/مواد-وهوية/terranex-ops/commands/ad.md",
+     "size": 1212
+    },
+    {
+     "path": "التسويق-والإدارة/تسويق/مواد-وهوية/terranex-ops/commands/caption.md",
+     "size": 1337
+    },
+    {
+     "path": "التسويق-والإدارة/تسويق/مواد-وهوية/terranex-ops/commands/discovery.md",
+     "size": 4020
+    },
+    {
+     "path": "التسويق-والإدارة/تسويق/مواد-وهوية/terranex-ops/commands/edit.md",
+     "size": 2787
+    },
+    {
+     "path": "التسويق-والإدارة/تسويق/مواد-وهوية/terranex-ops/commands/idea.md",
+     "size": 1564
+    },
+    {
+     "path": "التسويق-والإدارة/تسويق/مواد-وهوية/terranex-ops/commands/leads.md",
+     "size": 2908
+    },
+    {
+     "path": "التسويق-والإدارة/تسويق/مواد-وهوية/terranex-ops/commands/pitch.md",
+     "size": 4027
+    },
+    {
+     "path": "التسويق-والإدارة/تسويق/مواد-وهوية/terranex-ops/commands/review.md",
+     "size": 1498
+    },
+    {
+     "path": "التسويق-والإدارة/تسويق/مواد-وهوية/terranex-ops/commands/scenario.md",
+     "size": 2004
+    },
+    {
+     "path": "التسويق-والإدارة/تسويق/مواد-وهوية/terranex-ops/commands/script.md",
+     "size": 1630
+    },
+    {
+     "path": "التسويق-والإدارة/تسويق/مواد-وهوية/terranex-ops/context/brand-kit.md",
+     "size": 6983
+    },
+    {
+     "path": "التسويق-والإدارة/تسويق/مواد-وهوية/terranex-ops/context/compliance.md",
+     "size": 9015
+    },
+    {
+     "path": "التسويق-والإدارة/تسويق/مواد-وهوية/terranex-ops/context/learnings.md",
+     "size": 2789
+    },
+    {
+     "path": "التسويق-والإدارة/تسويق/مواد-وهوية/terranex-ops/context/product-marketing.md",
+     "size": 5189
+    },
+    {
+     "path": "التسويق-والإدارة/تسويق/مواد-وهوية/terranex-ops/output/campaigns/حملة-الإطلاق-أسبوع-١/2026-10-19-تقرير-الحملة.md",
+     "size": 2103
+    },
+    {
+     "path": "التسويق-والإدارة/تسويق/مواد-وهوية/terranex-ops/output/campaigns/حملة-الإطلاق-أسبوع-١/calendar.md",
+     "size": 2781
+    },
+    {
+     "path": "التسويق-والإدارة/تسويق/مواد-وهوية/terranex-ops/output/campaigns/حملة-الإعلان-المؤسسي-ممول-١/media-ready/09-اعلان-الشركة-ممول-23ث-وسام-3.5.md",
+     "size": 1715
+    },
+    {
+     "path": "التسويق-والإدارة/تسويق/مواد-وهوية/terranex-ops/output/campaigns/حملة-الإعلان-المؤسسي-ممول-١/media-ready/09b-اعلان-الشركة-بلا-وجه-14ث-وسام-3.5.md",
+     "size": 1880
+    },
+    {
+     "path": "التسويق-والإدارة/تسويق/مواد-وهوية/terranex-ops/output/campaigns/حملة-الإعلان-المؤسسي-ممول-١/تثبيت-الهوية-19-10.md",
+     "size": 3329
+    },
+    {
+     "path": "التسويق-والإدارة/تسويق/مواد-وهوية/terranex-ops/output/campaigns/حملة-الإعلان-المؤسسي-ممول-١/كابشن.txt",
+     "size": 358
+    },
+    {
+     "path": "التسويق-والإدارة/تسويق/مواد-وهوية/terranex-ops/output/captions/01-بومو-الشركة-الرئيسي.txt",
+     "size": 336
+    },
+    {
+     "path": "التسويق-والإدارة/تسويق/مواد-وهوية/terranex-ops/output/captions/02-الأحد-5-أسئلة-قبل-الاستثمار.txt",
+     "size": 347
+    },
+    {
+     "path": "التسويق-والإدارة/تسويق/مواد-وهوية/terranex-ops/output/captions/03-الثلاثاء-سؤال-تفاعلي.txt",
+     "size": 202
+    },
+    {
+     "path": "التسويق-والإدارة/تسويق/مواد-وهوية/terranex-ops/output/captions/04-الأربعاء-الوزن-على-الطبيعة.txt",
+     "size": 289
+    },
+    {
+     "path": "التسويق-والإدارة/تسويق/مواد-وهوية/terranex-ops/output/captions/05-الجمعة-محتوى-قيمي.txt",
+     "size": 200
+    },
+    {
+     "path": "التسويق-والإدارة/تسويق/مواد-وهوية/terranex-ops/output/captions/06-تحضير-بيتي-على-أصوله.txt",
+     "size": 229
+    },
+    {
+     "path": "التسويق-والإدارة/تسويق/مواد-وهوية/terranex-ops/output/captions/07-الضاني-مثل-البلسم.txt",
+     "size": 188
+    },
+    {
+     "path": "التسويق-والإدارة/تسويق/مواد-وهوية/terranex-ops/output/captions/09-اعلان-الشركة-ممول-23ث.txt",
+     "size": 383
+    },
+    {
+     "path": "التسويق-والإدارة/تسويق/مواد-وهوية/terranex-ops/requirements.txt",
+     "size": 945
+    },
+    {
+     "path": "التسويق-والإدارة/تسويق/مواد-وهوية/terranex-ops/studio/مخزون-الأدوات-المفتوحة.md",
+     "size": 7974
+    },
+    {
+     "path": "التسويق-والإدارة/تسويق/مواد-وهوية/terranex-ops/tests/evals.md",
+     "size": 3380
+    },
+    {
+     "path": "التسويق-والإدارة/تسويق/مواد-وهوية/terranex-ops/tests/security-review.md",
+     "size": 7999
+    },
+    {
+     "path": "التسويق-والإدارة/تسويق/مواد-وهوية/terranex-ops/tests/تقرير-الدمج-2026-10-18.md",
+     "size": 5934
+    },
+    {
+     "path": "التسويق-والإدارة/تسويق/مواد-وهوية/terranex-ops/سيناريو-تصوري/copy/caption.txt",
+     "size": 317
+    },
+    {
+     "path": "التسويق-والإدارة/تسويق/مواد-وهوية/terranex-ops/سيناريو-تصوري/copy/voiceover.txt",
+     "size": 477
+    },
+    {
+     "path": "التسويق-والإدارة/تسويق/مواد-وهوية/terranex-ops/سيناريو-تصوري/اقرأني-السيناريو.md",
+     "size": 8979
+    },
+    {
+     "path": "التسويق-والإدارة/وكيل-AI-ابدأ-هنا.md",
+     "size": 8311
+    }
+   ],
+   "agent_files": [
+    ".agents/skills/code-review/SKILL.md",
+    ".agents/skills/database-postgres-rls/SKILL.md",
+    ".agents/skills/decision-governance/SKILL.md",
+    ".agents/skills/financial-correctness/SKILL.md",
+    ".agents/skills/frontend-rtl-design/SKILL.md",
+    ".agents/skills/implementation-planning/SKILL.md",
+    ".agents/skills/release-readiness/SKILL.md",
+    ".agents/skills/security-review/SKILL.md",
+    ".agents/skills/source-driven-development/SKILL.md",
+    ".agents/skills/systematic-debugging/SKILL.md",
+    ".agents/skills/terranex-architecture-decision/SKILL.md",
+    ".agents/skills/terranex-architecture-decision/references/adr-template.md",
+    ".agents/skills/terranex-code-review/SKILL.md",
+    ".agents/skills/terranex-code-review/references/findings-format.md",
+    ".agents/skills/terranex-code-review/references/reviewer-routing.md",
+    ".agents/skills/terranex-database/SKILL.md",
+    ".agents/skills/terranex-database/references/database-checklist.md",
+    ".agents/skills/terranex-implementation-planning/SKILL.md",
+    ".agents/skills/terranex-implementation-planning/references/plan-template.md",
+    ".agents/skills/terranex-implementation/SKILL.md",
+    ".agents/skills/terranex-implementation/references/source-policy.md",
+    ".agents/skills/terranex-implementation/references/verification-matrix.md",
+    ".agents/skills/terranex-threat-model/SKILL.md",
+    ".agents/skills/terranex-threat-model/references/threat-model-template.md",
+    ".agents/skills/test-driven-development/SKILL.md",
+    ".agents/skills/verification-before-completion/SKILL.md",
+    "AGENTS.md",
+    "docs/agent-os/SKILL_DESIGN_STANDARD.md",
+    "التسويق-والإدارة/تسويق/مواد-وهوية/terranex-ops/SKILL.md"
+   ],
+   "skills": [
+    "code-review",
+    "database-postgres-rls",
+    "decision-governance",
+    "financial-correctness",
+    "frontend-rtl-design",
+    "implementation-planning",
+    "release-readiness",
+    "security-review",
+    "source-driven-development",
+    "systematic-debugging",
+    "terranex-architecture-decision",
+    "terranex-code-review",
+    "terranex-database",
+    "terranex-implementation",
+    "terranex-implementation-planning",
+    "terranex-ops",
+    "terranex-threat-model",
+    "test-driven-development",
+    "verification-before-completion"
+   ],
+   "env_files": [
+    ".env.example"
+   ],
+   "workflows": [
+    ".github/workflows/greenfield-ci.yml",
+    ".github/workflows/pilot-activation.yml"
+   ],
+   "tree_truncated": false
+  },
+  {
+   "full_name": "mohamedmasoud3030-tech/carmen-gallery-",
+   "visibility": "private",
+   "description": "dress-roomshow-app",
+   "language": "TypeScript",
+   "pushed_at": "2026-10-23T01:07:53Z",
+   "default_branch": "main",
+   "files_total": 579,
+   "docs": [
+    {
+     "path": ".agents/skills/README.md",
+     "size": 2142
+    },
+    {
+     "path": ".agents/skills/code-review/SKILL.md",
+     "size": 2449
+    },
+    {
+     "path": ".agents/skills/database-postgres-rls/SKILL.md",
+     "size": 2532
+    },
+    {
+     "path": ".agents/skills/decision-governance/SKILL.md",
+     "size": 2621
+    },
+    {
+     "path": ".agents/skills/financial-correctness/SKILL.md",
+     "size": 3134
+    },
+    {
+     "path": ".agents/skills/frontend-mobile-rtl/SKILL.md",
+     "size": 2660
+    },
+    {
+     "path": ".agents/skills/frontend-rtl-design/SKILL.md",
+     "size": 2797
+    },
+    {
+     "path": ".agents/skills/implementation-planning/SKILL.md",
+     "size": 2496
+    },
+    {
+     "path": ".agents/skills/local-data-safety/SKILL.md",
+     "size": 2972
+    },
+    {
+     "path": ".agents/skills/release-readiness/SKILL.md",
+     "size": 2594
+    },
+    {
+     "path": ".agents/skills/security-review/SKILL.md",
+     "size": 3644
+    },
+    {
+     "path": ".agents/skills/showroom-domain-workflows/SKILL.md",
+     "size": 2838
+    },
+    {
+     "path": ".agents/skills/source-driven-development/SKILL.md",
+     "size": 2997
+    },
+    {
+     "path": ".agents/skills/systematic-debugging/SKILL.md",
+     "size": 1939
+    },
+    {
+     "path": ".agents/skills/test-driven-development/SKILL.md",
+     "size": 1941
+    },
+    {
+     "path": ".agents/skills/verification-before-completion/SKILL.md",
+     "size": 2260
+    },
+    {
+     "path": "AGENTS.md",
+     "size": 6896
+    },
+    {
+     "path": "DELIVERY/INSTALLATION_GUIDE.md",
+     "size": 448
+    },
+    {
+     "path": "DELIVERY/RELEASE_NOTES_V020.md",
+     "size": 581
+    },
+    {
+     "path": "DELIVERY/SALE_READINESS_REPORT.md",
+     "size": 561
+    },
+    {
+     "path": "README.md",
+     "size": 5038
+    },
+    {
+     "path": "docs/ARCHITECTURE.md",
+     "size": 16043
+    },
+    {
+     "path": "docs/DECISIONS.md",
+     "size": 2250
+    },
+    {
+     "path": "docs/EXECUTION_CHECKLIST.md",
+     "size": 75122
+    },
+    {
+     "path": "docs/OPERATIONS_GUIDE.md",
+     "size": 10134
+    },
+    {
+     "path": "docs/PRODUCT.md",
+     "size": 1568
+    },
+    {
+     "path": "docs/README.md",
+     "size": 2222
+    },
+    {
+     "path": "docs/RELEASE_NOTES_V1.md",
+     "size": 9480
+    },
+    {
+     "path": "docs/RUNBOOK.md",
+     "size": 1278
+    },
+    {
+     "path": "docs/RUNTIME_QA.md",
+     "size": 15608
+    },
+    {
+     "path": "docs/STATUS.md",
+     "size": 1953
+    },
+    {
+     "path": "docs/adr/0001-web-pwa-supabase-only.md",
+     "size": 4772
+    },
+    {
+     "path": "docs/adr/0002-booking-advance-vs-security-deposit.md",
+     "size": 11828
+    },
+    {
+     "path": "docs/specs/features/CLOUD_BACKUP_COPIES_SPEC.md",
+     "size": 9259
+    },
+    {
+     "path": "docs/specs/features/CONDUCT_ATTRIBUTION_WAITLIST.md",
+     "size": 5938
+    },
+    {
+     "path": "docs/specs/features/CUSTOMER_REMINDERS.md",
+     "size": 4302
+    },
+    {
+     "path": "docs/specs/features/DRESS_DESIGNS_AND_VARIANTS.md",
+     "size": 4827
+    },
+    {
+     "path": "docs/specs/features/FILE_MEDIA_SYSTEM_SPEC.md",
+     "size": 10126
+    },
+    {
+     "path": "docs/specs/features/INVENTORY_PERFORMANCE_METRICS.md",
+     "size": 6024
+    },
+    {
+     "path": "docs/specs/features/LANDING_SHEIN_FIDELITY.md",
+     "size": 8746
+    },
+    {
+     "path": "docs/specs/features/LOCALIZATION_CONTENT_SYSTEM.md",
+     "size": 8851
+    },
+    {
+     "path": "docs/specs/features/MEASUREMENTS_AND_PRINTING.md",
+     "size": 6229
+    },
+    {
+     "path": "docs/specs/ops/CLIENT_SETUP_GUIDE.md",
+     "size": 3216
+    },
+    {
+     "path": "docs/specs/ops/INSTALLATION_GUIDE.md",
+     "size": 540
+    },
+    {
+     "path": "docs/specs/ops/MIGRATION_0019_APPLICATION_RUNBOOK.md",
+     "size": 10146
+    },
+    {
+     "path": "docs/specs/security/AUTHORITY_SURFACE_REMEDIATION.md",
+     "size": 7501
+    },
+    {
+     "path": "docs/specs/security/SUPABASE_AUTHORITY_REMEDIATION_DEPLOYMENT.md",
+     "size": 4594
+    },
+    {
+     "path": "docs/specs/standards/DATA_DISPLAY_DECISIONS.md",
+     "size": 13636
+    },
+    {
+     "path": "docs/specs/standards/FORM_COMPONENT_STANDARD.md",
+     "size": 12125
+    },
+    {
+     "path": "docs/specs/standards/INTERFACE_ROUTE_INVENTORY.md",
+     "size": 22290
+    },
+    {
+     "path": "docs/specs/standards/PAGE_CONTENT_ARCHITECTURE.md",
+     "size": 18185
+    },
+    {
+     "path": "docs/specs/standards/PAGE_TEMPLATE_MAP.md",
+     "size": 7869
+    },
+    {
+     "path": "docs/specs/standards/SHARED_COMPONENT_ARCHITECTURE.md",
+     "size": 13481
+    },
+    {
+     "path": "public/qa/README.md",
+     "size": 593
+    },
+    {
+     "path": "scripts/README_CLIENTS.md",
+     "size": 2839
+    },
+    {
+     "path": "src/features/dresses/BARCODE_README.md",
+     "size": 2344
+    }
+   ],
+   "agent_files": [
+    ".agents/skills/README.md",
+    ".agents/skills/code-review/SKILL.md",
+    ".agents/skills/database-postgres-rls/SKILL.md",
+    ".agents/skills/decision-governance/SKILL.md",
+    ".agents/skills/financial-correctness/SKILL.md",
+    ".agents/skills/frontend-mobile-rtl/SKILL.md",
+    ".agents/skills/frontend-rtl-design/SKILL.md",
+    ".agents/skills/implementation-planning/SKILL.md",
+    ".agents/skills/local-data-safety/SKILL.md",
+    ".agents/skills/release-readiness/SKILL.md",
+    ".agents/skills/security-review/SKILL.md",
+    ".agents/skills/showroom-domain-workflows/SKILL.md",
+    ".agents/skills/source-driven-development/SKILL.md",
+    ".agents/skills/systematic-debugging/SKILL.md",
+    ".agents/skills/test-driven-development/SKILL.md",
+    ".agents/skills/verification-before-completion/SKILL.md",
+    "AGENTS.md"
+   ],
+   "skills": [
+    "code-review",
+    "database-postgres-rls",
+    "decision-governance",
+    "financial-correctness",
+    "frontend-mobile-rtl",
+    "frontend-rtl-design",
+    "implementation-planning",
+    "local-data-safety",
+    "release-readiness",
+    "security-review",
+    "showroom-domain-workflows",
+    "source-driven-development",
+    "systematic-debugging",
+    "test-driven-development",
+    "verification-before-completion"
+   ],
+   "env_files": [
+    ".env.example"
+   ],
+   "workflows": [
+    ".github/workflows/build.yml",
+    ".github/workflows/supabase-schema.yml",
+    ".github/workflows/verify.yml"
+   ],
+   "tree_truncated": false
+  },
+  {
+   "full_name": "mohamedmasoud3030-tech/nilesys",
+   "visibility": "public",
+   "description": null,
+   "language": "TypeScript",
+   "pushed_at": "2026-10-23T01:07:52Z",
+   "default_branch": "main",
+   "files_total": 274,
+   "docs": [
+    {
+     "path": ".agents/skills/README.md",
+     "size": 2970
+    },
+    {
+     "path": ".agents/skills/code-review/SKILL.md",
+     "size": 2449
+    },
+    {
+     "path": ".agents/skills/database-postgres-rls/SKILL.md",
+     "size": 2532
+    },
+    {
+     "path": ".agents/skills/decision-governance/SKILL.md",
+     "size": 2621
+    },
+    {
+     "path": ".agents/skills/financial-correctness/SKILL.md",
+     "size": 3134
+    },
+    {
+     "path": ".agents/skills/frontend-rtl-design/SKILL.md",
+     "size": 2797
+    },
+    {
+     "path": ".agents/skills/implementation-planning/SKILL.md",
+     "size": 2496
+    },
+    {
+     "path": ".agents/skills/release-readiness/SKILL.md",
+     "size": 2594
+    },
+    {
+     "path": ".agents/skills/security-review/SKILL.md",
+     "size": 3644
+    },
+    {
+     "path": ".agents/skills/source-driven-development/SKILL.md",
+     "size": 2997
+    },
+    {
+     "path": ".agents/skills/systematic-debugging/SKILL.md",
+     "size": 1939
+    },
+    {
+     "path": ".agents/skills/test-driven-development/SKILL.md",
+     "size": 1941
+    },
+    {
+     "path": ".agents/skills/verification-before-completion/SKILL.md",
+     "size": 2260
+    },
+    {
+     "path": "AGENTS.md",
+     "size": 12374
+    },
+    {
+     "path": "README.md",
+     "size": 3108
+    },
+    {
+     "path": "docs/ARCHITECTURE.md",
+     "size": 7621
+    },
+    {
+     "path": "docs/DECISIONS.md",
+     "size": 5490
+    },
+    {
+     "path": "docs/FINANCIAL_RULES.md",
+     "size": 8855
+    },
+    {
+     "path": "docs/PRODUCT_PLAN.md",
+     "size": 25977
+    },
+    {
+     "path": "docs/README.md",
+     "size": 2050
+    },
+    {
+     "path": "docs/STATUS.md",
+     "size": 24659
+    },
+    {
+     "path": "docs/specs/README.md",
+     "size": 3173
+    },
+    {
+     "path": "docs/specs/projects/demo-prototype.md",
+     "size": 1339
+    },
+    {
+     "path": "docs/specs/projects/lena-showcase.md",
+     "size": 954
+    },
+    {
+     "path": "docs/specs/projects/nilesys-platform.md",
+     "size": 2842
+    },
+    {
+     "path": "docs/specs/sites/clinic.md",
+     "size": 2415
+    },
+    {
+     "path": "docs/specs/sites/courts.md",
+     "size": 2436
+    },
+    {
+     "path": "docs/specs/sites/fashion.md",
+     "size": 2482
+    },
+    {
+     "path": "docs/specs/sites/gym.md",
+     "size": 2383
+    },
+    {
+     "path": "docs/specs/sites/mobile.md",
+     "size": 2469
+    },
+    {
+     "path": "docs/specs/sites/realestate.md",
+     "size": 2408
+    },
+    {
+     "path": "docs/specs/sites/restaurant.md",
+     "size": 2431
+    },
+    {
+     "path": "docs/specs/systems/clinic.md",
+     "size": 6197
+    },
+    {
+     "path": "docs/specs/systems/courts.md",
+     "size": 5685
+    },
+    {
+     "path": "docs/specs/systems/hr.md",
+     "size": 8566
+    },
+    {
+     "path": "docs/specs/systems/inventory.md",
+     "size": 5121
+    },
+    {
+     "path": "docs/specs/systems/pos.md",
+     "size": 7278
+    },
+    {
+     "path": "docs/specs/systems/restaurant.md",
+     "size": 7821
+    },
+    {
+     "path": "docs/specs/systems/sites.md",
+     "size": 7987
+    },
+    {
+     "path": "docs/specs/windows/attendance.md",
+     "size": 4180
+    },
+    {
+     "path": "docs/specs/windows/cashier.md",
+     "size": 5708
+    },
+    {
+     "path": "docs/specs/windows/kitchen.md",
+     "size": 4475
+    },
+    {
+     "path": "docs/specs/windows/reports.md",
+     "size": 4185
+    },
+    {
+     "path": "docs/specs/windows/stock.md",
+     "size": 4470
+    }
+   ],
+   "agent_files": [
+    ".agents/skills/README.md",
+    ".agents/skills/code-review/SKILL.md",
+    ".agents/skills/database-postgres-rls/SKILL.md",
+    ".agents/skills/decision-governance/SKILL.md",
+    ".agents/skills/financial-correctness/SKILL.md",
+    ".agents/skills/frontend-rtl-design/SKILL.md",
+    ".agents/skills/implementation-planning/SKILL.md",
+    ".agents/skills/release-readiness/SKILL.md",
+    ".agents/skills/security-review/SKILL.md",
+    ".agents/skills/source-driven-development/SKILL.md",
+    ".agents/skills/systematic-debugging/SKILL.md",
+    ".agents/skills/test-driven-development/SKILL.md",
+    ".agents/skills/verification-before-completion/SKILL.md",
+    "AGENTS.md"
+   ],
+   "skills": [
+    "code-review",
+    "database-postgres-rls",
+    "decision-governance",
+    "financial-correctness",
+    "frontend-rtl-design",
+    "implementation-planning",
+    "release-readiness",
+    "security-review",
+    "source-driven-development",
+    "systematic-debugging",
+    "test-driven-development",
+    "verification-before-completion"
+   ],
+   "env_files": [],
+   "workflows": [
+    ".github/workflows/ci.yml"
+   ],
+   "tree_truncated": false
+  },
+  {
+   "full_name": "mohamedmasoud3030-tech/malek",
+   "visibility": "private",
+   "description": "MALEK — Arabic-first property operations and rent accounting.",
+   "language": "TypeScript",
+   "pushed_at": "2026-10-23T01:07:51Z",
+   "default_branch": "main",
+   "files_total": 1776,
+   "docs": [
+    {
+     "path": ".claude/README.md",
+     "size": 2087
+    },
+    {
+     "path": ".claude/THIRD_PARTY.md",
+     "size": 1510
+    },
+    {
+     "path": ".claude/agents/code-architect.md",
+     "size": 2259
+    },
+    {
+     "path": ".claude/agents/code-explorer.md",
+     "size": 2115
+    },
+    {
+     "path": ".claude/agents/code-reviewer.md",
+     "size": 2994
+    },
+    {
+     "path": ".claude/commands/execute-task.md",
+     "size": 4038
+    },
+    {
+     "path": ".claude/commands/final-review.md",
+     "size": 1883
+    },
+    {
+     "path": ".claude/rules/database-finance.md",
+     "size": 1680
+    },
+    {
+     "path": ".claude/rules/frontend-ui.md",
+     "size": 1455
+    },
+    {
+     "path": ".claude/rules/git-workflow.md",
+     "size": 1309
+    },
+    {
+     "path": ".claude/rules/validation.md",
+     "size": 1564
+    },
+    {
+     "path": ".claude/skills/architecture-decision/SKILL.md",
+     "size": 652
+    },
+    {
+     "path": ".claude/skills/database/SKILL.md",
+     "size": 623
+    },
+    {
+     "path": ".claude/skills/frontend-design/LICENSE.txt",
+     "size": 10164
+    },
+    {
+     "path": ".claude/skills/frontend-design/SKILL.md",
+     "size": 8260
+    },
+    {
+     "path": ".claude/skills/review/SKILL.md",
+     "size": 596
+    },
+    {
+     "path": ".github/ISSUE_TEMPLATE/feature_request.md",
+     "size": 595
+    },
+    {
+     "path": "AGENTS.md",
+     "size": 7910
+    },
+    {
+     "path": "AGENT_HANDOVER.md",
+     "size": 15699
+    },
+    {
+     "path": "CHANGELOG.md",
+     "size": 4745
+    },
+    {
+     "path": "CLAUDE.md",
+     "size": 3836
+    },
+    {
+     "path": "DATABASE_RULES.md",
+     "size": 10337
+    },
+    {
+     "path": "README.md",
+     "size": 4562
+    },
+    {
+     "path": "docs/FRONTEND_BACKEND_CONTRACT_HARDENING.md",
+     "size": 3033
+    },
+    {
+     "path": "docs/FRONTEND_BACKEND_CONTRACT_STATUS.md",
+     "size": 585
+    },
+    {
+     "path": "docs/GOVERNANCE.md",
+     "size": 2798
+    },
+    {
+     "path": "docs/GOVERNANCE_LOG.md",
+     "size": 3405
+    },
+    {
+     "path": "docs/RELEASE_EVIDENCE_LEDGER.md",
+     "size": 4944
+    },
+    {
+     "path": "docs/SEEDED_STAGING_READINESS_RUNBOOK.md",
+     "size": 3606
+    },
+    {
+     "path": "docs/accounting/ACCOUNTING_DECISION_GATES_AR.md",
+     "size": 4556
+    },
+    {
+     "path": "docs/accounting/S08_SIGN_OFF_PACKET_AR.md",
+     "size": 10753
+    },
+    {
+     "path": "docs/advisory/2026-10-21-delivery-consultation-ar.md",
+     "size": 33929
+    },
+    {
+     "path": "docs/agent-wiki/delivery-advisory.md",
+     "size": 2117
+    },
+    {
+     "path": "docs/agent-wiki/environment-capabilities.md",
+     "size": 5338
+    },
+    {
+     "path": "docs/agent-wiki/gap-execution-board.md",
+     "size": 5501
+    },
+    {
+     "path": "docs/agent-wiki/gap-priority-map.md",
+     "size": 3745
+    },
+    {
+     "path": "docs/agent-wiki/gate-inventory.md",
+     "size": 7599
+    },
+    {
+     "path": "docs/agent-wiki/index.md",
+     "size": 3659
+    },
+    {
+     "path": "docs/agent-wiki/known-traps.md",
+     "size": 5618
+    },
+    {
+     "path": "docs/agent-wiki/live-evidence.md",
+     "size": 2058
+    },
+    {
+     "path": "docs/agent-wiki/open-questions.md",
+     "size": 3545
+    },
+    {
+     "path": "docs/agent-wiki/release-process.md",
+     "size": 1731
+    },
+    {
+     "path": "docs/agent-wiki/session-decisions.md",
+     "size": 8524
+    },
+    {
+     "path": "docs/business/CANONICAL_BUSINESS_AND_CONTRACT_RULES_AR.md",
+     "size": 8758
+    },
+    {
+     "path": "docs/decisions/0001-product-accounting-policies.md",
+     "size": 5749
+    },
+    {
+     "path": "docs/decisions/0002-staging-live-verification-and-release-evidence.md",
+     "size": 2663
+    },
+    {
+     "path": "docs/decisions/0003-company-scoped-account-resolution.md",
+     "size": 2949
+    },
+    {
+     "path": "docs/decisions/0003-financial-security-ux-reporting-and-reconciliation-scope.md",
+     "size": 5607
+    },
+    {
+     "path": "docs/decisions/0004-proration-and-billing-basis.md",
+     "size": 1493
+    },
+    {
+     "path": "docs/decisions/0005-account-resolution-payment-receipt-void.md",
+     "size": 6762
+    },
+    {
+     "path": "docs/decisions/0006-owner-settlement-account-resolution-and-request-binding.md",
+     "size": 2046
+    },
+    {
+     "path": "docs/decisions/0008-financial-routes-ux-clarity.md",
+     "size": 7240
+    },
+    {
+     "path": "docs/decisions/0009-malek-canonical-accounting-model.md",
+     "size": 4715
+    },
+    {
+     "path": "docs/decisions/0010-stage3-general-ledger-core.md",
+     "size": 7088
+    },
+    {
+     "path": "docs/decisions/0011-final-business-accounting-and-operating-policies.md",
+     "size": 16929
+    },
+    {
+     "path": "docs/decisions/0014-r11-legacy-feature-disposition.md",
+     "size": 2986
+    },
+    {
+     "path": "docs/decisions/0015-owner-decisions-roles-void-due-from-owner-contract-governance.md",
+     "size": 3513
+    },
+    {
+     "path": "docs/decisions/0016-closeout-external-decision-packets.md",
+     "size": 11632
+    },
+    {
+     "path": "docs/decisions/0017-rc1-product-scope-closeout.md",
+     "size": 3866
+    },
+    {
+     "path": "docs/decisions/0018-platform-company-provisioning.md",
+     "size": 9268
+    },
+    {
+     "path": "docs/decisions/0019-rc1-scope-owner-agency-only.md",
+     "size": 3894
+    },
+    {
+     "path": "docs/decisions/0020-six-role-authorization-mapping.md",
+     "size": 3630
+    },
+    {
+     "path": "docs/decisions/0021-restored-session-verification.md",
+     "size": 3566
+    },
+    {
+     "path": "docs/decisions/CI_COST_POLICY.md",
+     "size": 1637
+    },
+    {
+     "path": "docs/decisions/README.md",
+     "size": 5497
+    },
+    {
+     "path": "docs/evidence/live-evidence.md",
+     "size": 5130
+    },
+    {
+     "path": "docs/execution/10_STAGE_AGENT_CHECKLIST_AR.md",
+     "size": 23933
+    },
+    {
+     "path": "docs/execution/10_STAGE_REVIEW_LEDGER_AR.md",
+     "size": 9795
+    },
+    {
+     "path": "docs/execution/10_STAGE_STATUS_AR.md",
+     "size": 8276
+    },
+    {
+     "path": "docs/execution/DETAIL_PRESENTATION_REFACTOR_PLAN_AR.md",
+     "size": 12999
+    },
+    {
+     "path": "docs/execution/G3_CONCURRENCY_VERIFICATION_STRATEGY.md",
+     "size": 12404
+    },
+    {
+     "path": "docs/execution/HANDOFF_20260909_STOP.md",
+     "size": 23446
+    },
+    {
+     "path": "docs/execution/HANDOFF_20260911_HISTORICAL.md",
+     "size": 119564
+    },
+    {
+     "path": "docs/execution/MALEK_RUNTIME_UI_UX_RECONSTRUCTION_BLUEPRINT.md",
+     "size": 17907
+    },
+    {
+     "path": "docs/execution/OWNER_EXPENSE_SOURCE_ALLOCATION_20260909.md",
+     "size": 9763
+    },
+    {
+     "path": "docs/execution/PHASE2_FIRST_BROKEN_MUTATION_TRACE.md",
+     "size": 19131
+    },
+    {
+     "path": "docs/execution/PHASE3_FIRST_BROKEN_MUTATION_TRACE.md",
+     "size": 13396
+    },
+    {
+     "path": "docs/execution/PHASE4_FIRST_BROKEN_MUTATION_TRACE.md",
+     "size": 11692
+    },
+    {
+     "path": "docs/execution/PHASE5_CORE_DATA_OPERATIONS_MATRIX.md",
+     "size": 12138
+    },
+    {
+     "path": "docs/execution/RECONSTRUCTION_COVERAGE.md",
+     "size": 8659
+    },
+    {
+     "path": "docs/execution/RECONSTRUCTION_DOD_CHECKLIST.md",
+     "size": 10108
+    },
+    {
+     "path": "docs/execution/RECONSTRUCTION_INVENTORY.md",
+     "size": 161618
+    },
+    {
+     "path": "docs/execution/evidence/hosted-verification-20260910/HOSTED_VERIFICATION.md",
+     "size": 24180
+    },
+    {
+     "path": "docs/execution/evidence/hosted-verification-20260910/not-applied-to-production.txt",
+     "size": 1643
+    },
+    {
+     "path": "docs/execution/evidence/live-parity-20260911/ledger-only-27.txt",
+     "size": 1523
+    },
+    {
+     "path": "docs/execution/evidence/live-parity-20260911/ledger-parity-crosswalk.md",
+     "size": 10155
+    },
+    {
+     "path": "docs/execution/evidence/live-parity-20260911/repo-only-18.txt",
+     "size": 1302
+    },
+    {
+     "path": "docs/inventory/README.md",
+     "size": 4241
+    },
+    {
+     "path": "docs/inventory/malek-files-ar.md",
+     "size": 277898
+    },
+    {
+     "path": "docs/malek-plus-rls-write-grants-audit.md",
+     "size": 5071
+    },
+    {
+     "path": "docs/operations/BACKUP_RESTORE_RUNBOOK.md",
+     "size": 8100
+    },
+    {
+     "path": "docs/operations/FINAL_RELEASE_CLOSURE_REPORT_20260917.md",
+     "size": 17754
+    },
+    {
+     "path": "docs/operations/HOSTED_EVIDENCE_RUNBOOK_AR.md",
+     "size": 5280
+    },
+    {
+     "path": "docs/operations/INCIDENT_RESPONSE_RUNBOOK.md",
+     "size": 5597
+    },
+    {
+     "path": "docs/operations/MONITORING_AND_ALERTS.md",
+     "size": 3871
+    },
+    {
+     "path": "docs/operations/PHASE3_SIGNOFF_REPORT.md",
+     "size": 10498
+    },
+    {
+     "path": "docs/operations/PHASE4_CONVERGENCE_REPORT_20260917.md",
+     "size": 15309
+    },
+    {
+     "path": "docs/operations/RELEASE_CONVERGENCE_REPORT_20260917.md",
+     "size": 27885
+    },
+    {
+     "path": "docs/operations/REPOSITORY_HYGIENE_2026-10-21.md",
+     "size": 6878
+    },
+    {
+     "path": "docs/releases/README.md",
+     "size": 1937
+    },
+    {
+     "path": "docs/releases/v1.0.0-rc.1/RELEASE.md",
+     "size": 4053
+    },
+    {
+     "path": "docs/releases/v1.0.0-rc.2/RELEASE.md",
+     "size": 4053
+    },
+    {
+     "path": "docs/reviews/FINANCE_OPERATING_MODEL_REVIEW_2026-08-22.md",
+     "size": 15777
+    },
+    {
+     "path": "docs/reviews/FINANCE_OPERATING_MODEL_REVIEW_2026-08-22_ADDENDUM.md",
+     "size": 6243
+    },
+    {
+     "path": "docs/security/2026-08-19_RUNTIME_REPAIR.md",
+     "size": 3031
+    },
+    {
+     "path": "docs/security/ACTIVE_COMPANY_RESOLUTION_AR.md",
+     "size": 8323
+    },
+    {
+     "path": "docs/security/FINANCIAL_WRITE_TRUST_MODEL_AR.md",
+     "size": 6514
+    },
+    {
+     "path": "docs/security/PHASE-FINANCIAL-CORRECTNESS-VERIFICATION.md",
+     "size": 11763
+    },
+    {
+     "path": "docs/security/PHASE6-SECRET-SCAN-REPORT.md",
+     "size": 14624
+    },
+    {
+     "path": "docs/source-of-truth/00_INDEX.md",
+     "size": 9269
+    },
+    {
+     "path": "docs/source-of-truth/01_PRODUCT_CHARTER_AND_SCOPE.md",
+     "size": 9037
+    },
+    {
+     "path": "docs/source-of-truth/02_OPERATING_MODELS_AND_JOURNEYS.md",
+     "size": 15258
+    },
+    {
+     "path": "docs/source-of-truth/03_DOMAIN_AND_DATA_MODEL.md",
+     "size": 14874
+    },
+    {
+     "path": "docs/source-of-truth/04_FINANCE_AND_ACCOUNTING_MODEL.md",
+     "size": 19892
+    },
+    {
+     "path": "docs/source-of-truth/05_SYSTEM_ARCHITECTURE_AND_SECURITY.md",
+     "size": 9357
+    },
+    {
+     "path": "docs/source-of-truth/06_UX_IA_AND_DESIGN_CONTRACT.md",
+     "size": 19144
+    },
+    {
+     "path": "docs/source-of-truth/07_IMPLEMENTATION_TRACEABILITY_AND_REALITY.md",
+     "size": 309628
+    },
+    {
+     "path": "docs/source-of-truth/08A_RC1_CLOSEOUT_ADDENDUM.md",
+     "size": 11168
+    },
+    {
+     "path": "docs/source-of-truth/08_CLOSEOUT_ROADMAP_AND_RELEASE_GATES.md",
+     "size": 27870
+    },
+    {
+     "path": "docs/ui-ux/REPORT-2026-09-16.md",
+     "size": 17514
+    },
+    {
+     "path": "docs/ui-ux/evidence/after/README.md",
+     "size": 562
+    },
+    {
+     "path": "governance/BUSINESS_RULES_CHANGELOG.md",
+     "size": 2309
+    },
+    {
+     "path": "malek-app/docs/source-of-truth/00_NAVIGATION_ARCHITECTURE.md",
+     "size": 345
+    },
+    {
+     "path": "malek-app/public/fonts/OFL-Cairo.txt",
+     "size": 4379
+    },
+    {
+     "path": "malek-app/public/fonts/OFL-Sora.txt",
+     "size": 4382
+    },
+    {
+     "path": "malek-app/public/robots.txt",
+     "size": 75
+    },
+    {
+     "path": "malek-app/scripts/README.frontend-backend-contract.md",
+     "size": 291
+    },
+    {
+     "path": "malek-app/scripts/frontend-backend-runtime-contract.README.md",
+     "size": 738
+    },
+    {
+     "path": "malek-app/src/services/documents/specifications/24-documents-contract-specification.md",
+     "size": 27266
+    },
+    {
+     "path": "malek-app/src/services/documents/specifications/24-documents-source-inventory.md",
+     "size": 5676
+    },
+    {
+     "path": "scripts/db0/README.md",
+     "size": 2216
+    },
+    {
+     "path": "scripts/guardian/README.md",
+     "size": 3660
+    },
+    {
+     "path": "skills/README.md",
+     "size": 1155
+    },
+    {
+     "path": "skills/architecture-decision/SKILL.md",
+     "size": 2159
+    },
+    {
+     "path": "skills/architecture-decision/references/decision-workflow.md",
+     "size": 1330
+    },
+    {
+     "path": "skills/code-review/SKILL.md",
+     "size": 2449
+    },
+    {
+     "path": "skills/database-postgres-rls/SKILL.md",
+     "size": 2532
+    },
+    {
+     "path": "skills/database/SKILL.md",
+     "size": 2502
+    },
+    {
+     "path": "skills/database/references/postgres-rls-checklist.md",
+     "size": 1157
+    },
+    {
+     "path": "skills/decision-governance/SKILL.md",
+     "size": 2621
+    },
+    {
+     "path": "skills/financial-correctness/SKILL.md",
+     "size": 3134
+    },
+    {
+     "path": "skills/frontend-rtl-design/SKILL.md",
+     "size": 2797
+    },
+    {
+     "path": "skills/implementation-planning/SKILL.md",
+     "size": 2496
+    },
+    {
+     "path": "skills/release-readiness/SKILL.md",
+     "size": 2594
+    },
+    {
+     "path": "skills/review/SKILL.md",
+     "size": 2110
+    },
+    {
+     "path": "skills/review/references/reviewer-matrix.md",
+     "size": 1520
+    },
+    {
+     "path": "skills/security-review/SKILL.md",
+     "size": 3644
+    },
+    {
+     "path": "skills/source-driven-development/SKILL.md",
+     "size": 2997
+    },
+    {
+     "path": "skills/systematic-debugging/SKILL.md",
+     "size": 1939
+    },
+    {
+     "path": "skills/test-driven-development/SKILL.md",
+     "size": 1941
+    },
+    {
+     "path": "skills/verification-before-completion/SKILL.md",
+     "size": 2260
+    },
+    {
+     "path": "supabase/migrations/README.md",
+     "size": 4847
+    },
+    {
+     "path": "supabase/migrations/rls_per_table/01_table_order.md",
+     "size": 2796
+    }
+   ],
+   "agent_files": [
+    ".claude/README.md",
+    ".claude/THIRD_PARTY.md",
+    ".claude/agents/code-architect.md",
+    ".claude/agents/code-explorer.md",
+    ".claude/agents/code-reviewer.md",
+    ".claude/commands/execute-task.md",
+    ".claude/commands/final-review.md",
+    ".claude/rules/database-finance.md",
+    ".claude/rules/frontend-ui.md",
+    ".claude/rules/git-workflow.md",
+    ".claude/rules/validation.md",
+    ".claude/skills/architecture-decision/SKILL.md",
+    ".claude/skills/database/SKILL.md",
+    ".claude/skills/frontend-design/LICENSE.txt",
+    ".claude/skills/frontend-design/SKILL.md",
+    ".claude/skills/review/SKILL.md",
+    "AGENTS.md",
+    "CLAUDE.md",
+    "skills/README.md",
+    "skills/architecture-decision/SKILL.md",
+    "skills/architecture-decision/references/decision-workflow.md",
+    "skills/code-review/SKILL.md",
+    "skills/database-postgres-rls/SKILL.md",
+    "skills/database/SKILL.md",
+    "skills/database/references/postgres-rls-checklist.md",
+    "skills/decision-governance/SKILL.md",
+    "skills/financial-correctness/SKILL.md",
+    "skills/frontend-rtl-design/SKILL.md",
+    "skills/implementation-planning/SKILL.md",
+    "skills/release-readiness/SKILL.md",
+    "skills/review/SKILL.md",
+    "skills/review/references/reviewer-matrix.md",
+    "skills/security-review/SKILL.md",
+    "skills/source-driven-development/SKILL.md",
+    "skills/systematic-debugging/SKILL.md",
+    "skills/test-driven-development/SKILL.md",
+    "skills/verification-before-completion/SKILL.md"
+   ],
+   "skills": [
+    "architecture-decision",
+    "code-review",
+    "database",
+    "database-postgres-rls",
+    "decision-governance",
+    "financial-correctness",
+    "frontend-design",
+    "frontend-rtl-design",
+    "implementation-planning",
+    "release-readiness",
+    "review",
+    "security-review",
+    "source-driven-development",
+    "systematic-debugging",
+    "test-driven-development",
+    "verification-before-completion"
+   ],
+   "env_files": [
+    ".env.production-demo.example",
+    ".env.qa.example"
+   ],
+   "workflows": [
+    ".github/workflows/browser-readiness.yml",
+    ".github/workflows/canonical-business-rules-guard.yml",
+    ".github/workflows/canonical-db-baseline.yml",
+    ".github/workflows/ci.yml",
+    ".github/workflows/database-governance.yml",
+    ".github/workflows/execution-plan-guard.yml",
+    ".github/workflows/hosted-qa-verification.yml",
+    ".github/workflows/hosted-staging-proof.yml",
+    ".github/workflows/release-blocker-gate.yml",
+    ".github/workflows/sonar-workflow-guard.yml",
+    ".github/workflows/sonar.yml",
+    ".github/workflows/supabase-ai-assistant-production-sync.yml",
+    ".github/workflows/supabase-live-readiness.yml",
+    ".github/workflows/supabase-production-migrations.yml"
+   ],
+   "tree_truncated": false
+  },
+  {
+   "full_name": "mohamedmasoud3030-tech/larabeauty-",
+   "visibility": "private",
+   "description": "Spa service ",
+   "language": "TypeScript",
+   "pushed_at": "2026-10-23T01:07:50Z",
+   "default_branch": "main",
+   "files_total": 759,
+   "docs": [
+    {
+     "path": ".agents/skills/code-review/SKILL.md",
+     "size": 2449
+    },
+    {
+     "path": ".agents/skills/database-postgres-rls/SKILL.md",
+     "size": 2532
+    },
+    {
+     "path": ".agents/skills/decision-governance/SKILL.md",
+     "size": 2621
+    },
+    {
+     "path": ".agents/skills/financial-correctness/SKILL.md",
+     "size": 3134
+    },
+    {
+     "path": ".agents/skills/frontend-rtl-design/SKILL.md",
+     "size": 2797
+    },
+    {
+     "path": ".agents/skills/implementation-planning/SKILL.md",
+     "size": 2496
+    },
+    {
+     "path": ".agents/skills/release-readiness/SKILL.md",
+     "size": 2594
+    },
+    {
+     "path": ".agents/skills/security-review/SKILL.md",
+     "size": 3644
+    },
+    {
+     "path": ".agents/skills/source-driven-development/SKILL.md",
+     "size": 2997
+    },
+    {
+     "path": ".agents/skills/systematic-debugging/SKILL.md",
+     "size": 1939
+    },
+    {
+     "path": ".agents/skills/test-driven-development/SKILL.md",
+     "size": 1941
+    },
+    {
+     "path": ".agents/skills/verification-before-completion/SKILL.md",
+     "size": 2260
+    },
+    {
+     "path": "AGENTS.md",
+     "size": 2714
+    },
+    {
+     "path": "README.md",
+     "size": 10932
+    },
+    {
+     "path": "design-system/lara-beauty-salon/MASTER.md",
+     "size": 7067
+    },
+    {
+     "path": "design-system/lara-beauty-salon/pages/home.md",
+     "size": 7066
+    },
+    {
+     "path": "docs/ARCHITECTURE.md",
+     "size": 20477
+    },
+    {
+     "path": "docs/DECISIONS.md",
+     "size": 1710
+    },
+    {
+     "path": "docs/DELIVERY-GUIDE.md",
+     "size": 21162
+    },
+    {
+     "path": "docs/FIRST_CUSTOMER_LAUNCH_PACK.md",
+     "size": 13414
+    },
+    {
+     "path": "docs/FREE_PLAN_SECURITY_LIMITATIONS.md",
+     "size": 4406
+    },
+    {
+     "path": "docs/OPERATIONAL_DATA_CONTRACT.md",
+     "size": 7082
+    },
+    {
+     "path": "docs/PRODUCT.md",
+     "size": 1411
+    },
+    {
+     "path": "docs/PRODUCTION_READINESS.md",
+     "size": 3532
+    },
+    {
+     "path": "docs/README.md",
+     "size": 2560
+    },
+    {
+     "path": "docs/RUNBOOK.md",
+     "size": 1628
+    },
+    {
+     "path": "docs/STATUS.md",
+     "size": 1743
+    },
+    {
+     "path": "docs/database-contract/00_BASELINE.md",
+     "size": 8234
+    },
+    {
+     "path": "docs/database-contract/01_SCHEMA_INVENTORY.md",
+     "size": 5380
+    },
+    {
+     "path": "docs/database-contract/02_CONTRACT_MATRIX.md",
+     "size": 2665
+    },
+    {
+     "path": "docs/database-contract/03_VERIFIED_DRIFT_REGISTER.md",
+     "size": 3386
+    },
+    {
+     "path": "docs/database-contract/04_ROOT_CAUSE_REMEDIATION_PLAN.md",
+     "size": 1618
+    },
+    {
+     "path": "docs/database-contract/CI_WIRING.md",
+     "size": 1068
+    },
+    {
+     "path": "docs/landing/README.md",
+     "size": 18575
+    },
+    {
+     "path": "docs/specs/architecture/ADR-008-DEPLOYMENT-MODEL.md",
+     "size": 5185
+    },
+    {
+     "path": "docs/specs/architecture/authorization-matrix.md",
+     "size": 2329
+    },
+    {
+     "path": "docs/specs/architecture/database-blueprint.md",
+     "size": 2949
+    },
+    {
+     "path": "docs/specs/architecture/frontend-architecture.md",
+     "size": 1503
+    },
+    {
+     "path": "docs/specs/architecture/module-inventory.md",
+     "size": 1715
+    },
+    {
+     "path": "docs/specs/architecture/supabase-integration-plan.md",
+     "size": 1917
+    },
+    {
+     "path": "docs/specs/ops/APPLY_OVERLAP_MIGRATION_DEMO_RUNBOOK.md",
+     "size": 3980
+    },
+    {
+     "path": "docs/specs/ops/BACKUP_AND_RESTORE_RUNBOOK.ar.md",
+     "size": 13321
+    },
+    {
+     "path": "docs/specs/ops/CLIENT_LAUNCH_RUNBOOK.ar.md",
+     "size": 12267
+    },
+    {
+     "path": "docs/specs/ops/CLIENT_TRIAL_HANDOFF.md",
+     "size": 5162
+    },
+    {
+     "path": "docs/specs/ops/DEMO_OPERATOR_GUIDE.md",
+     "size": 3646
+    },
+    {
+     "path": "docs/specs/ops/ENVIRONMENT_SEPARATION.md",
+     "size": 3176
+    },
+    {
+     "path": "docs/specs/ops/GEMINI_ASSISTANT_KEY.ar.md",
+     "size": 5660
+    },
+    {
+     "path": "docs/specs/ops/MANUAL_PRE_SALE_ACCEPTANCE_CHECKLIST.md",
+     "size": 3270
+    },
+    {
+     "path": "docs/specs/ops/MEMBERSHIP_BOOTSTRAP.md",
+     "size": 2260
+    },
+    {
+     "path": "docs/specs/ops/MIGRATION_HISTORY_RECONCILIATION.md",
+     "size": 5477
+    },
+    {
+     "path": "docs/specs/ops/SUPABASE_FRONTEND_ACTIVATION_CHECKLIST.md",
+     "size": 1949
+    },
+    {
+     "path": "docs/specs/ops/SUPABASE_LIVE_QA_RUNBOOK.md",
+     "size": 7253
+    },
+    {
+     "path": "docs/specs/ops/SUPABASE_SETUP_CHECKOUT.md",
+     "size": 2231
+    },
+    {
+     "path": "docs/specs/ops/VERCEL_SUPABASE_SETUP.md",
+     "size": 790
+    },
+    {
+     "path": "docs/specs/ops/WHATSAPP_AGENT_SETUP.ar.md",
+     "size": 10472
+    },
+    {
+     "path": "docs/specs/product/VISIT_LIFECYCLE_SLICES.md",
+     "size": 11187
+    },
+    {
+     "path": "docs/specs/security/RLS_HARDENING_REPORT.md",
+     "size": 3309
+    },
+    {
+     "path": "docs/specs/standards/DATA_DISPLAY_DECISIONS.md",
+     "size": 8366
+    },
+    {
+     "path": "docs/specs/standards/FORM_COMPONENT_STANDARD.md",
+     "size": 4130
+    },
+    {
+     "path": "docs/specs/standards/INTERFACE_CURRENT_STATE.md",
+     "size": 5977
+    },
+    {
+     "path": "docs/specs/standards/INTERFACE_ROUTE_INVENTORY.md",
+     "size": 14849
+    },
+    {
+     "path": "docs/specs/standards/PAGE_CONTENT_ARCHITECTURE.md",
+     "size": 16580
+    },
+    {
+     "path": "docs/specs/standards/PAGE_TEMPLATE_MAP.md",
+     "size": 5749
+    },
+    {
+     "path": "docs/specs/standards/SHARED_COMPONENT_ARCHITECTURE.md",
+     "size": 7497
+    },
+    {
+     "path": "supabase/rollbacks/20260810000002_operational_data_integrity.md",
+     "size": 2685
+    },
+    {
+     "path": "supabase/rollbacks/20260810000003_appointment_overlap_integrity.md",
+     "size": 1474
+    },
+    {
+     "path": "supabase/rollbacks/20260810000005_security_hardening_auth.md",
+     "size": 2872
+    },
+    {
+     "path": "supabase/rollbacks/20260810000006_security_grant_repair.md",
+     "size": 768
+    },
+    {
+     "path": "supabase/rollbacks/20260811004000_financial_entitlements.md",
+     "size": 2494
+    },
+    {
+     "path": "supabase/rollbacks/20260816000001_production_integrity_hardening.md",
+     "size": 759
+    },
+    {
+     "path": "supabase/rollbacks/20260816000002_checkout_idempotency.md",
+     "size": 581
+    },
+    {
+     "path": "supabase/rollbacks/20260817000001_authorization_boundary_repair.md",
+     "size": 1915
+    },
+    {
+     "path": "supabase/rollbacks/20260817000002_financial_reporting_repair.md",
+     "size": 780
+    },
+    {
+     "path": "supabase/rollbacks/20260817000003_payroll_transaction_repair.md",
+     "size": 1025
+    },
+    {
+     "path": "supabase/rollbacks/20260817000004_attendance_integrity.md",
+     "size": 1509
+    },
+    {
+     "path": "supabase/rollbacks/20260817000005_storage_upload_hardening.md",
+     "size": 1210
+    },
+    {
+     "path": "supabase/rollbacks/20260818000001_data_api_grant_contract.md",
+     "size": 1476
+    },
+    {
+     "path": "supabase/rollbacks/20260915000001_ai_gateway.md",
+     "size": 3274
+    },
+    {
+     "path": "supabase/rollbacks/20260915000002_whatsapp_agent.md",
+     "size": 3459
+    },
+    {
+     "path": "supabase/seeds/README.md",
+     "size": 1553
+    },
+    {
+     "path": "website/README.md",
+     "size": 12095
+    },
+    {
+     "path": "website/robots.txt",
+     "size": 122
+    }
+   ],
+   "agent_files": [
+    ".agents/skills/code-review/SKILL.md",
+    ".agents/skills/database-postgres-rls/SKILL.md",
+    ".agents/skills/decision-governance/SKILL.md",
+    ".agents/skills/financial-correctness/SKILL.md",
+    ".agents/skills/frontend-rtl-design/SKILL.md",
+    ".agents/skills/implementation-planning/SKILL.md",
+    ".agents/skills/release-readiness/SKILL.md",
+    ".agents/skills/security-review/SKILL.md",
+    ".agents/skills/source-driven-development/SKILL.md",
+    ".agents/skills/systematic-debugging/SKILL.md",
+    ".agents/skills/test-driven-development/SKILL.md",
+    ".agents/skills/verification-before-completion/SKILL.md",
+    "AGENTS.md"
+   ],
+   "skills": [
+    "code-review",
+    "database-postgres-rls",
+    "decision-governance",
+    "financial-correctness",
+    "frontend-rtl-design",
+    "implementation-planning",
+    "release-readiness",
+    "security-review",
+    "source-driven-development",
+    "systematic-debugging",
+    "test-driven-development",
+    "verification-before-completion"
+   ],
+   "env_files": [
+    ".env.example"
+   ],
+   "workflows": [
+    ".github/workflows/demo-supabase-migrations.yml",
+    ".github/workflows/production-supabase-release.yml",
+    ".github/workflows/website-menu-sync.yml"
+   ],
+   "tree_truncated": false
+  }
+ ]
+}
