@@ -42,7 +42,26 @@ built almost entirely by AI agents. Your job, in priority order:
 **Conflict rule:** newer code beats older docs. When you find a contradiction, fix the doc or
 flag it to the owner — never leave two active "truths".
 
-## 4. Project registry (2026-10-21 scan)
+## 4. Mandatory skill routing
+
+**Every task must run under a declared skill.** Before starting, classify the task against the
+routing table in [`skills/README.md`](skills/README.md), load that skill, and announce it:
+
+> first line of any task: `Skill in use: <skill-name>`
+
+The library holds 13 canonical skills (planning, TDD, source-verification, code review,
+debugging, security, database/RLS, financial correctness, RTL design, verification gate,
+release readiness, decision governance, skill engineering). Highlights:
+
+- Design/user-facing work → `frontend-rtl-design` is mandatory (all portfolio products are Arabic RTL).
+- Anything touching money → `financial-correctness` (decimals, append-only, no double counting).
+- Anything touching RLS/migrations → `database-postgres-rls`.
+- Any "done" claim → `verification-before-completion`; any merge/release claim → `release-readiness`.
+- This library is the **canonical master**. Duplicated skill copies inside repos are downstream;
+  on conflict, this library wins and a sync PR is opened. Changing a skill itself requires
+  `skill-engineering`.
+
+## 5. Project registry (2026-10-21 scan)
 
 | Repo | Product | Visibility | Phase |
 |---|---|---|---|
@@ -59,15 +78,15 @@ flag it to the owner — never leave two active "truths".
 
 Full details: `PROJECTS.md`. Machine-readable scan: `data/inventory-2026-10-21.json`.
 
-## 5. Standard operating loop (every management session)
+## 6. Standard operating loop (every management session)
 
 1. **Sync** — fetch repo list + latest pushes via GitHub API (read-only first).
 2. **Read before write** — repo `AGENTS.md` → status file → recent commits. State what you understood in 5 lines before acting.
 3. **Report** — compare against `PROJECTS.md`; list what changed, what's stale, what needs the owner.
-4. **Propose → get approval → execute** — one batch at a time.
+4. **Propose → get approval → execute** — one batch at a time, with a declared skill per task (§4).
 5. **Update the center** — reflect completed work in `README.md` / `PROJECTS.md` the same session.
 
-## 6. Documentation governance rules
+## 7. Documentation governance rules
 
 - **Multi-session rule (added after the 2026-10-22 double-run incident):** before any portfolio-affecting work (doc sweeps, cleanups, releases), check the last 24 hours of pushes/PRs across the portfolio for another active session. If one is found (e.g. a `docs/canonical-single-source` sweep mid-flight), STOP and tell the owner before touching overlapping files. Parallel sessions must hand over using `prompts/SESSION-HANDOVER-PROMPT.md`.
 - Each repo has **exactly one** live status file. Per-agent status files are forbidden (merge into the canonical one).
@@ -76,7 +95,7 @@ Full details: `PROJECTS.md`. Machine-readable scan: `data/inventory-2026-10-21.j
 - New doc types follow existing repo conventions; do not invent a new folder structure when one exists.
 - Status files use the template in `templates/STATUS.md`.
 
-## 7. Boundaries
+## 8. Boundaries
 
 **Always:**
 - Work read-only until the owner approves a write plan.
@@ -95,7 +114,7 @@ Full details: `PROJECTS.md`. Machine-readable scan: `data/inventory-2026-10-21.j
 - Mark a task "done" without evidence (test output, CI green, or a merged PR).
 - Create duplicate docs when a canonical one exists.
 
-## 8. Verification
+## 9. Verification
 
 A management change is complete only when:
 1. The file(s) changed are listed,
@@ -103,7 +122,7 @@ A management change is complete only when:
 3. `README.md` dashboard reflects the new reality,
 4. The owner received the Arabic summary with pending decisions.
 
-## 9. Known issues register (from 2026-10-21 scan)
+## 10. Known issues register (from 2026-10-21 scan)
 
 | # | Issue | Severity | Proposed action |
 |---|---|---|---|

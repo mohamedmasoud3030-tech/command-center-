@@ -98,21 +98,36 @@
 
 ---
 
+## 🧰 مكتبة المهارات (المرجع الوحيد — 13 مهارة)
+
+**القاعدة الإلزامية:** أي وكيل يمسك مهمة يعلن أول سطر: «المهارة المستخدمة: X» — بناءً على جدول التوجيه في [`skills/README.md`](skills/README.md).
+
+| نوع المهمة | المهارة |
+|---|---|
+| 💻 برمجة | `implementation-planning` ← `test-driven-development` ← `code-review` |
+| 🎨 تصميم واجهة (عربي RTL) | `frontend-rtl-design` |
+| 🔍 تدقيق/مراجعة | `code-review` + `verification-before-completion` |
+| 🐞 تحليل مشكلة | `systematic-debugging` |
+| 🗄️ قواعد بيانات/RLS | `database-postgres-rls` |
+| 💰 محاسبة/نقود | `financial-correctness` |
+| 🛡️ أمن | `security-review` |
+| 🚀 إصدار | `release-readiness` |
+
+> المهارات محصودة وموحدة من أفضل ما في مشاريعك نفسها (مهارات nilesys المبنية على `obra/superpowers` + carmen + malek + platform) على المعيار المفتوح Agent Skills. أي نسخة داخل مستودع تخالفها — **المكتبة هنا تكسب**.
+
 ## 🗺️ خريطة مركز القيادة
 
 ```
 command-center/
 ├── README.md                    ← أنت هنا — لوحة التحكم
-├── AGENTS.md                    ← الوكيل المدير: إزاي أي AI يدير المحفظة
+├── AGENTS.md                    ← الوكيل المدير: قواعد + توجيه مهارات إلزامي
 ├── PROJECTS.md                  ← بطاقة تفصيلية لكل مشروع من العشرة
-├── reports/
-│   ├── 2026-10-21-inventory.md  ← تقرير الجرد الكامل (النتائج والأدلة)
-│   └── cleanup-plan.md          ← خطة التنظيف لكل مستودع
-├── templates/
-│   ├── STATUS.md                ← قالب «مستند الحالة» الموحد لكل مشروع
-│   └── REPO-AGENTS.md           ← قالب AGENTS.md للمشاريع اللي مفيهاش
-└── data/
-    └── inventory-2026-10-21.json← بيانات الجرد الخام (للوكلاء)
+├── skills/                      ← 🧰 مكتبة المهارات (13 مهارة مرجعية)
+│   └── README.md                ← جدول التوجيه: نوع المهمة ← المهارة
+├── reports/                     ← تقارير الجرد وخطة التنظيف (بأدلتها)
+├── templates/                   ← قوالب STATUS.md و AGENTS.md الموحدة
+├── prompts/                     ← برومبتات معتمدة (تسليم الجلسات…)
+└── data/                        ← الجرد الخام JSON (للمقارنة مستقبلاً)
 ```
 
 ## 📜 قواعد المحفظة الذهبية
