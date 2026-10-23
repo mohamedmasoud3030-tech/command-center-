@@ -69,6 +69,7 @@ Full details: `PROJECTS.md`. Machine-readable scan: `data/inventory-2026-10-21.j
 
 ## 6. Documentation governance rules
 
+- **Multi-session rule (added after the 2026-10-22 double-run incident):** before any portfolio-affecting work (doc sweeps, cleanups, releases), check the last 24 hours of pushes/PRs across the portfolio for another active session. If one is found (e.g. a `docs/canonical-single-source` sweep mid-flight), STOP and tell the owner before touching overlapping files. Parallel sessions must hand over using `prompts/SESSION-HANDOVER-PROMPT.md`.
 - Each repo has **exactly one** live status file. Per-agent status files are forbidden (merge into the canonical one).
 - Dated/one-off reports go to `docs/archive/` with an `ARCHIVED — YYYY-MM-DD` banner on top. Nothing is deleted without owner approval.
 - Duplicate skills/docs across repos: keep one canonical copy; others link to it.
