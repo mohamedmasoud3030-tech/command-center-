@@ -1,143 +1,105 @@
-# AGENTS.md — Portfolio Manager (Command Center)
+# AGENTS.md — Command Center
 
-> **For the owner (بالعربي):** الملف ده موجّه لأي وكيل AI يشتغل على مشاريعك. هو «عقد الشغل» بينك وبين الوكيل.
-> لو حابب تفهمه: اقرأ قسم «Owner communication» و«Boundaries» — الباقي تعليمات تقنية للوكيل.
+This repository is the entry point for the portfolio of `mohamedmasoud3030-tech`.
+Owner communication: simple Egyptian Arabic; explain technical terms in one line.
 
-This is the **master instruction file** for any AI agent managing the GitHub portfolio of
-`mohamedmasoud3030-tech` (10 repositories). It follows the AGENTS.md open standard.
+## 1. Start here — every session
 
----
+1. Read this file, [PROJECTS.md](PROJECTS.md), the current session registry in
+   [README.md](README.md), and [handoffs](reports/handoffs/INDEX.md).
+2. Read [skill routing](skills/README.md), select the relevant skills, read their
+   complete SKILL.md files, and announce: `المهارة المستخدمة: <names>`.
+3. Check the target repository's default branch and open PRs through GitHub.
+   Record the exact base SHA. Fetch a clean checkout; do not trust an old clone.
+4. Read the target's AGENTS.md, declared canonical status, relevant decisions,
+   and applicable local skills. Read nested instructions before changing files.
+   MALEK uses its Canonical Pack; mosaid has its own agent system. Do not impose
+   a parallel STATUS.md or AGENTS.md on those exceptions.
+5. State in five lines: objective, current evidence, scope, checks, next action.
+   Use [the start prompt](prompts/START-HERE.md).
 
-## 1. Agent role
+## 2. Authority and evidence
 
-You are the **Portfolio Manager Agent** for a non-technical owner running 10 software projects
-built almost entirely by AI agents. Your job, in priority order:
+- Explicit current owner instructions govern task scope and supersede stale
+  session reservations. Do not infer permission to merge/deploy from permission
+  to prepare a change.
+- PROJECTS.md owns project cards; README.md owns session reservations and owner
+  decisions. The target repository owns its detailed current technical state.
+- Reports, inventory snapshots and handoffs are dated evidence, not live state.
+  This includes legacy `reports/README.md` and `reports/PROJECTS.md`.
+- For current claims record source link, checked-at date/time, and commit SHA
+  when applicable. Say "reported", "verified", "stale", or "not verified".
+- Distinguish implemented, checked, merged, deployed and real-user validated.
+  An HTTP 200, green unit tests, or a merged PR alone does not prove readiness.
+- Never present no checks, skipped checks, or missing access as a pass. Inspect
+  failures before attributing them to artifact quota or an environment issue.
 
-1. **Keep the portfolio legible** — the owner must always be able to answer in 60 seconds:
-   "what is each project, what state is it in, what's next?"
-2. **Prevent documentation chaos** — one canonical status file per repo; dated reports are archived, never deleted, never duplicated.
-3. **Execute owner-approved tasks** — inventory updates, doc cleanup, cross-repo hygiene, reporting.
-4. You are a **manager, not a feature developer**. Do not change product code unless the owner explicitly assigns a coding task.
+## 3. Ownership and concurrency
 
-## 2. Owner communication
+The single session registry is in README.md. On 2026-10-24 the owner explicitly
+confirmed there are no parallel sessions; old reservations are historical.
+Open PRs still preserve unfinished work and are not automatically abandoned.
 
-- **Always reply to the owner in Egyptian Arabic (مصري بسيط).** The owner is non-technical:
-  no jargon without a one-line explanation, no raw logs unless asked.
-- Every report ends with **clear decisions the owner must make** (numbered), each with your recommendation.
-- Never surprise the owner: if a task grows beyond what was approved, stop and ask.
-- Tables over walls of text. Honest "I don't know / not verified" over guesses.
+Before writing, inspect current upstream changes and PRs in the affected scope.
+Reserve this session's repository, branch, paths and purpose in its PR and in
+README.md. Do not change another session's row. If new overlapping work appears,
+stop overlapping writes and coordinate; independent authorized work may continue.
+Recheck the base before publishing. Never force-push or silently overwrite work.
+A timestamp expiring does not transfer ownership; record an explicit handoff.
 
-## 3. Source of truth (canonical map)
+## 4. Skills: canonical source and usable local copies
 
-| Layer | File | Role |
-|---|---|---|
-| Portfolio (this repo) | `README.md` | Owner dashboard — the daily entry point |
-| Portfolio | `PROJECTS.md` | Detailed card per project |
-| Portfolio | `reports/` | Evidence & dated scans (append-only) |
-| Per repo | `AGENTS.md` | How agents work in that repo |
-| Per repo | `docs/STATUS.md` or `README.md` | The ONE live status file |
-| Per repo | `docs/decisions/` or `docs/adr/` | Immutable decisions (ADR) |
-| Per repo | `docs/archive/` | Frozen history — read-only |
+- `skills/` here is the canonical shared library. Discover the count from the
+  filesystem; do not maintain counts in multiple documents.
+- Shared skills needed by a project must be available locally in
+  `.agents/skills/` (or its documented native path). A link alone is insufficient.
+- Copy the complete required skill directory, including referenced resources.
+  Record source repository, source commit, copied paths and verification in the
+  sync PR. Preserve project-specific skills and instructions.
+- On drift, review the difference against the canonical version and prepare a
+  project-scoped sync PR. Do not silently overwrite local additions.
+- Do not assume an agent automatically loaded a skill. Name the actual file read
+  and include the evidence required by that skill in delivery.
+- UI work requires `frontend-rtl-design`; money requires
+  `financial-correctness`; database/RLS work requires `database-postgres-rls`.
+- Skill changes require `skill-engineering`; completion claims require
+  `verification-before-completion`; merging/releasing requires `release-readiness`.
 
-**Conflict rule:** newer code beats older docs. When you find a contradiction, fix the doc or
-flag it to the owner — never leave two active "truths".
+## 5. Authorized execution
 
-## 4. Mandatory skill routing
+Owner requests to improve/fix a defined scope authorize preparing reversible
+changes and a reviewable PR in that scope. Do not repeatedly ask for the same
+authorization. Ask for a decision only when scope or a material choice is missing.
 
-**Every task must run under a declared skill.** Before starting, classify the task against the
-routing table in [`skills/README.md`](skills/README.md), load that skill, and announce it:
+Use a task branch and a small reviewable PR. No direct main writes.
+Do not merge, deploy, change hosted data, rotate credentials, remove branches,
+change CI/release configuration, or broaden into product code without authorization
+for that action. Never commit secrets, delete documents/history, or force-push.
 
-> first line of any task: `Skill in use: <skill-name>`
+Plan multi-file work before edits; reuse existing tools. Test behavior changes
+with meaningful failing cases before implementation. Keep documentation changes
+proportionate; do not add frameworks or duplicate status systems.
 
-The library holds 13 canonical skills (planning, TDD, source-verification, code review,
-debugging, security, database/RLS, financial correctness, RTL design, verification gate,
-release readiness, decision governance, skill engineering). Highlights:
+## 6. Delivery gate
 
-- Design/user-facing work → `frontend-rtl-design` is mandatory (all portfolio products are Arabic RTL).
-- Anything touching money → `financial-correctness` (decimals, append-only, no double counting).
-- Anything touching RLS/migrations → `database-postgres-rls`.
-- Any "done" claim → `verification-before-completion`; any merge/release claim → `release-readiness`.
-- This library is the **canonical master**. Duplicated skill copies inside repos are downstream;
-  on conflict, this library wins and a sync PR is opened. Changing a skill itself requires
-  `skill-engineering`.
+For changes to this center, run from the repository root:
 
-## 5. Project registry (2026-10-21 scan)
+```bash
+python3 -m unittest discover -s tools -p 'test_*.py'
+python3 tools/validate-center.py --base-ref <reviewed-base-sha>
+git diff --check
+```
 
-| Repo | Product | Visibility | Phase |
-|---|---|---|---|
-| `larabeauty-` | LenaBeauty salon PWA (Oman) | private | Phase 2: first real customer launch |
-| `malek` | MALEK property/rent accounting | private | v1.0.0-rc.2 |
-| `nilesys` | Nile Systems business-engines catalogue | public | R1 shipped (production POS) |
-| `carmen-gallery-` | LENA Dress showroom | private | v020 sale-readiness |
-| `Terranex` | Investment platform (realty/agri/livestock) | private | pre-pilot |
-| `platform` | LENA Digital House website | public | live |
-| `mosaid` | Personal AI agent (Android/Termux) | public | Phase 14 phone-kit |
-| `starting` | Hospitality Ops (Oman events) | private | pre-release, strong engineering |
-| `bug-free-garbanzo` | "Kayyal" recycling warehouse | private | Stage 0 — dormant since 2026-09-15 |
-| `Lenastore` | "LENA Supply" construction materials | private | production-ready — dormant since 2026-09-11 |
+The validator is local and read-only. It checks required entry documents, inline
+relative file links in active documentation, skill metadata, and missing documents
+relative to the supplied base. It does not verify external URLs, anchor fragments,
+GitHub branch protection, product tests, or downstream skill synchronization.
 
-Full details: `PROJECTS.md`. Machine-readable scan: `data/inventory-2026-10-21.json`.
+Before delivery:
+- Review the diff for requirements, correctness and scope.
+- Update README.md / PROJECTS.md only where reality changed.
+- Add a dated handoff using [the template](templates/HANDOFF.md); index it.
+- Report changed files, exact checks/results, PR link, remaining gaps and the
+  first next action. Say "PR prepared" until GitHub confirms merged.
+- End with real owner decisions and a recommendation; if none, say none.
 
-## 6. Standard operating loop (every management session)
-
-1. **Sync** — fetch repo list + latest pushes via GitHub API (read-only first).
-2. **Check the session registry** — read README's «سجل الجلسات النشطة والـ PRs المفتوحة» (single ownership registry). Open PRs listed there belong to their owning sessions: **never touch, rebase, merge, close, or delete their branches.** Only an owning session updates its own row; the portfolio manager verifies claims against the API before recording (2026-10-23 handovers: all claims verified, plus one unreported PR found).
-3. **Read before write** — repo `AGENTS.md` → status file → recent commits. State what you understood in 5 lines before acting.
-4. **Report** — compare against `PROJECTS.md`; list what changed, what's stale, what needs the owner.
-5. **Propose → get approval → execute** — one batch at a time, with a declared skill per task (§4).
-6. **Update the center** — reflect completed work in `README.md` / `PROJECTS.md` / `reports/` the same session.
-
-## 7. Documentation governance rules
-
-- **Multi-session rule (added after the 2026-10-22 double-run incident):** before any portfolio-affecting work (doc sweeps, cleanups, releases), check the last 24 hours of pushes/PRs across the portfolio for another active session. If one is found (e.g. a `docs/canonical-single-source` sweep mid-flight), STOP and tell the owner before touching overlapping files. Parallel sessions must hand over using `prompts/SESSION-HANDOVER-PROMPT.md`.
-- Each repo has **exactly one** live status file. Per-agent status files are forbidden (merge into the canonical one).
-- Dated/one-off reports go to `docs/archive/` with an `ARCHIVED — YYYY-MM-DD` banner on top. Nothing is deleted without owner approval.
-- Duplicate skills/docs across repos: keep one canonical copy; others link to it.
-- New doc types follow existing repo conventions; do not invent a new folder structure when one exists.
-- Status files use the template in `templates/STATUS.md`.
-
-## 8. Boundaries
-
-**Always:**
-- Work read-only until the owner approves a write plan.
-- Make changes via small, reviewable pull requests (never push straight to `main` in repos that use PR workflows).
-- Reply in Egyptian Arabic to the owner; keep repo docs in the repo's own documentation language.
-
-**Ask first:**
-- Creating/archiving/deleting repositories or branches.
-- Moving or merging documentation sets.
-- Touching anything under `supabase/migrations/`, CI workflows, or release files.
-- Publishing anything externally (Vercel, Supabase, stores).
-
-**Never:**
-- Commit secrets or real `.env` files; if found in git history, flag immediately (the one known case — `Terranex/.env.production`, publishable key — was removed from git on 2026-10-22; key rotation is the owner's manual step).
-- Force-push, delete history, or rotate credentials without explicit owner instruction.
-- Mark a task "done" without evidence (test output, CI green, or a merged PR).
-- Create duplicate docs when a canonical one exists.
-
-## 9. Verification
-
-A management change is complete only when:
-1. The file(s) changed are listed,
-2. Links between center docs still resolve (no dead relative links),
-3. `README.md` dashboard reflects the new reality,
-4. The owner received the Arabic summary with pending decisions.
-
-## 10. Known issues register (updated 2026-10-23, post-merge + post-handover)
-
-**Resolved by the 20-PR merge (2026-10-22/23):** 1 (`.env.production` removed; key rotation = owner's manual step) · 2 (Lenastore + garbanzo resumed & equipped) · 4 (phase-0 copies tagged as pointers) · 5 (carmen DELIVERY merged) · 6 (duplicates pointer-stubbed) · 7 (111 skill files synced from master; center library wins).
-
-| # | Issue | Severity | Status / action |
-|---|---|---|---|
-| 1 | `Terranex/.env.production` key rotation | Low | ✅ removed from git · ⏳ **owner manual:** rotate Supabase key (Settings → API) |
-| 2 | `malek#1844` open, **0 check-runs on head `9e74b75`** (verified) | Medium | Do NOT merge until checks appear & pass; deployed prod runs from `e5b19ef` (2 commits # apart: deploy + docs record) |
-| 3 | `mosaid#9` open; needs rebase onto main (`a0557b4` + later) | Medium | **Only its owning session** (`arena/480a335a-mosaid`) rebases; then merge. Post-merge: move 9.5MB windows zip to a GitHub Release |
-| 4 | `Terranex#188` open — marketing-ops session **actively pushing** (head moved `e9c169f`→`b95d759` between reports) | Info | Never touch; head-branch deletion once nearly killed it — **always API-confirm `merged:true` before deleting any PR head branch** |
-| 5 | ~~`bug-free-garbanzo#2`~~ **MERGED 2026-10-23** (`9fe973c`) after security review + owner-approved unified rebase; 7 local gates green; byte-parity with reviewed head proven | ✅ done | Remaining for readiness: first CI run watch (artifact-quota reds possible), Supabase attach (apply 0001–0018), Vercel deploy, day-1 real-data trial; records: `reports/2026-10-23-garbanzo-pr2-security-review.md` + `reports/2026-10-23-garbanzo-stage1-merge.md` |
-| 6 | GitHub artifact-storage quota full → CI red at upload step despite green tests | Info | Transient (6–12h); re-run failed upload jobs only |
-| 7 | `/home/user/office/` local "HQ" (ROADMAP/PORTFOLIO/CHARTER) **not in git** | Medium | Retired as authority: command-center- (this repo) is the single HQ; essence archived in `reports/handoffs/` |
-| 8 | Local clones `/home/user/*` are stale vs origin/main | Medium | Any session MUST start from a fresh clone; never trust local copies |
-| 9 | `nilesys` API release 2.3 blocked on owner creating DB login (role `nile_app`) via Supabase dashboard | Info | Owner action when ready to run cashier on live data (demo data currently on `nilesys-seven.vercel.app`) |
-| 10 | Lenastore future undecided (internal activation vs sale-demo) | Info | Owner decision; office session + manager both recommend sale-demo first |
-| 11 | malek has no `docs/STATUS.md` **by design** — Canonical Pack governs (AGENTS.md forbids parallel status docs); deployment reality logged in `docs/source-of-truth/07_*.md` | Info | Accepted exception; do not force a STATUS.md there |
-| 12 | Owner PAT shared in chat (2026-10-22) | High | **Owner manual:** revoke at github.com/settings/tokens after this work concludes (walkthrough promised) |
