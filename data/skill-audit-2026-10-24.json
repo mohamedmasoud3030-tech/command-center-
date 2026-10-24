@@ -1,0 +1,810 @@
+{
+  "checked_on": "2026-10-24",
+  "source_repository": "mohamedmasoud3030-tech/command-center-",
+  "source_commit": "07017ed028b7b9e9090c177a350fb0e8a499e871",
+  "method": "Compare Git blob IDs at recorded refs for identically named shared SKILL.md files; preserve custom skills. Missing names are not automatically applicability failures.",
+  "canonical": [
+    {
+      "path": "skills/code-review/SKILL.md",
+      "sha": "9ab47a9396ae1f2796ded42aa1ccf4a773a72a41"
+    },
+    {
+      "path": "skills/database-postgres-rls/SKILL.md",
+      "sha": "6c54e219bace7dc1acfdb717b7e77f43fa1338c2"
+    },
+    {
+      "path": "skills/decision-governance/SKILL.md",
+      "sha": "87a997691132c3fa3f23280cd03d3f293b9621c1"
+    },
+    {
+      "path": "skills/financial-correctness/SKILL.md",
+      "sha": "bd1dd835771a1b3ef9b0a0c8153845e709347740"
+    },
+    {
+      "path": "skills/frontend-rtl-design/SKILL.md",
+      "sha": "d609ffd81b64e20584acf98e3d4c558e3747ae72"
+    },
+    {
+      "path": "skills/implementation-planning/SKILL.md",
+      "sha": "46b7ca2ed1cc325be08101639ceb3547d33612d1"
+    },
+    {
+      "path": "skills/release-readiness/SKILL.md",
+      "sha": "71641b6fc7f517012e7f451ed3ce45d84da268f5"
+    },
+    {
+      "path": "skills/security-review/SKILL.md",
+      "sha": "ee2d66249e1e3bbdc59605dd0b73f395de1631e1"
+    },
+    {
+      "path": "skills/skill-engineering/SKILL.md",
+      "sha": "3ce1285d2342e416bb2262817b453e1c4c735f15"
+    },
+    {
+      "path": "skills/source-driven-development/SKILL.md",
+      "sha": "c9a7fad46f2eaab71375c2f7f5eedf9839733786"
+    },
+    {
+      "path": "skills/systematic-debugging/SKILL.md",
+      "sha": "67eaf9f930726745ccd43b61503074643753a4b5"
+    },
+    {
+      "path": "skills/test-driven-development/SKILL.md",
+      "sha": "af5897dc7ca50844128c1fa8cfb81ff447f79f16"
+    },
+    {
+      "path": "skills/verification-before-completion/SKILL.md",
+      "sha": "584ba2305badc2f725d4fc8de487e7c05c9be9c4"
+    }
+  ],
+  "repositories": [
+    {
+      "repo": "larabeauty-",
+      "ref": "01515f27f9eb6a21cfa3f67b0561f75d1cdeac94",
+      "shared": 12,
+      "custom": 0,
+      "drift": [],
+      "missing": [
+        "skill-engineering"
+      ],
+      "skills": [
+        {
+          "path": ".agents/skills/code-review/SKILL.md",
+          "sha": "9ab47a9396ae1f2796ded42aa1ccf4a773a72a41"
+        },
+        {
+          "path": ".agents/skills/database-postgres-rls/SKILL.md",
+          "sha": "6c54e219bace7dc1acfdb717b7e77f43fa1338c2"
+        },
+        {
+          "path": ".agents/skills/decision-governance/SKILL.md",
+          "sha": "87a997691132c3fa3f23280cd03d3f293b9621c1"
+        },
+        {
+          "path": ".agents/skills/financial-correctness/SKILL.md",
+          "sha": "bd1dd835771a1b3ef9b0a0c8153845e709347740"
+        },
+        {
+          "path": ".agents/skills/frontend-rtl-design/SKILL.md",
+          "sha": "d609ffd81b64e20584acf98e3d4c558e3747ae72"
+        },
+        {
+          "path": ".agents/skills/implementation-planning/SKILL.md",
+          "sha": "46b7ca2ed1cc325be08101639ceb3547d33612d1"
+        },
+        {
+          "path": ".agents/skills/release-readiness/SKILL.md",
+          "sha": "71641b6fc7f517012e7f451ed3ce45d84da268f5"
+        },
+        {
+          "path": ".agents/skills/security-review/SKILL.md",
+          "sha": "ee2d66249e1e3bbdc59605dd0b73f395de1631e1"
+        },
+        {
+          "path": ".agents/skills/source-driven-development/SKILL.md",
+          "sha": "c9a7fad46f2eaab71375c2f7f5eedf9839733786"
+        },
+        {
+          "path": ".agents/skills/systematic-debugging/SKILL.md",
+          "sha": "67eaf9f930726745ccd43b61503074643753a4b5"
+        },
+        {
+          "path": ".agents/skills/test-driven-development/SKILL.md",
+          "sha": "af5897dc7ca50844128c1fa8cfb81ff447f79f16"
+        },
+        {
+          "path": ".agents/skills/verification-before-completion/SKILL.md",
+          "sha": "584ba2305badc2f725d4fc8de487e7c05c9be9c4"
+        }
+      ]
+    },
+    {
+      "repo": "carmen-gallery-",
+      "ref": "d9439f5d465cdddc2458db43c2ec1ca0d9e8d164",
+      "shared": 12,
+      "custom": 3,
+      "drift": [],
+      "missing": [
+        "skill-engineering"
+      ],
+      "skills": [
+        {
+          "path": ".agents/skills/code-review/SKILL.md",
+          "sha": "9ab47a9396ae1f2796ded42aa1ccf4a773a72a41"
+        },
+        {
+          "path": ".agents/skills/database-postgres-rls/SKILL.md",
+          "sha": "6c54e219bace7dc1acfdb717b7e77f43fa1338c2"
+        },
+        {
+          "path": ".agents/skills/decision-governance/SKILL.md",
+          "sha": "87a997691132c3fa3f23280cd03d3f293b9621c1"
+        },
+        {
+          "path": ".agents/skills/financial-correctness/SKILL.md",
+          "sha": "bd1dd835771a1b3ef9b0a0c8153845e709347740"
+        },
+        {
+          "path": ".agents/skills/frontend-mobile-rtl/SKILL.md",
+          "sha": "51fd26fed3fe441ffaaf38a6fea1202f41c93226"
+        },
+        {
+          "path": ".agents/skills/frontend-rtl-design/SKILL.md",
+          "sha": "d609ffd81b64e20584acf98e3d4c558e3747ae72"
+        },
+        {
+          "path": ".agents/skills/implementation-planning/SKILL.md",
+          "sha": "46b7ca2ed1cc325be08101639ceb3547d33612d1"
+        },
+        {
+          "path": ".agents/skills/local-data-safety/SKILL.md",
+          "sha": "22944af8e052979bc9d4243b98d6c96fcaf3e8df"
+        },
+        {
+          "path": ".agents/skills/release-readiness/SKILL.md",
+          "sha": "71641b6fc7f517012e7f451ed3ce45d84da268f5"
+        },
+        {
+          "path": ".agents/skills/security-review/SKILL.md",
+          "sha": "ee2d66249e1e3bbdc59605dd0b73f395de1631e1"
+        },
+        {
+          "path": ".agents/skills/showroom-domain-workflows/SKILL.md",
+          "sha": "95901a7d13560f2b369aba7821b65059999fa819"
+        },
+        {
+          "path": ".agents/skills/source-driven-development/SKILL.md",
+          "sha": "c9a7fad46f2eaab71375c2f7f5eedf9839733786"
+        },
+        {
+          "path": ".agents/skills/systematic-debugging/SKILL.md",
+          "sha": "67eaf9f930726745ccd43b61503074643753a4b5"
+        },
+        {
+          "path": ".agents/skills/test-driven-development/SKILL.md",
+          "sha": "af5897dc7ca50844128c1fa8cfb81ff447f79f16"
+        },
+        {
+          "path": ".agents/skills/verification-before-completion/SKILL.md",
+          "sha": "584ba2305badc2f725d4fc8de487e7c05c9be9c4"
+        }
+      ]
+    },
+    {
+      "repo": "Lenastore",
+      "ref": "c4c800f781e81c2c6c4e47562c6a9d9d392a2314",
+      "shared": 12,
+      "custom": 0,
+      "drift": [],
+      "missing": [
+        "skill-engineering"
+      ],
+      "skills": [
+        {
+          "path": ".agents/skills/code-review/SKILL.md",
+          "sha": "9ab47a9396ae1f2796ded42aa1ccf4a773a72a41"
+        },
+        {
+          "path": ".agents/skills/database-postgres-rls/SKILL.md",
+          "sha": "6c54e219bace7dc1acfdb717b7e77f43fa1338c2"
+        },
+        {
+          "path": ".agents/skills/decision-governance/SKILL.md",
+          "sha": "87a997691132c3fa3f23280cd03d3f293b9621c1"
+        },
+        {
+          "path": ".agents/skills/financial-correctness/SKILL.md",
+          "sha": "bd1dd835771a1b3ef9b0a0c8153845e709347740"
+        },
+        {
+          "path": ".agents/skills/frontend-rtl-design/SKILL.md",
+          "sha": "d609ffd81b64e20584acf98e3d4c558e3747ae72"
+        },
+        {
+          "path": ".agents/skills/implementation-planning/SKILL.md",
+          "sha": "46b7ca2ed1cc325be08101639ceb3547d33612d1"
+        },
+        {
+          "path": ".agents/skills/release-readiness/SKILL.md",
+          "sha": "71641b6fc7f517012e7f451ed3ce45d84da268f5"
+        },
+        {
+          "path": ".agents/skills/security-review/SKILL.md",
+          "sha": "ee2d66249e1e3bbdc59605dd0b73f395de1631e1"
+        },
+        {
+          "path": ".agents/skills/source-driven-development/SKILL.md",
+          "sha": "c9a7fad46f2eaab71375c2f7f5eedf9839733786"
+        },
+        {
+          "path": ".agents/skills/systematic-debugging/SKILL.md",
+          "sha": "67eaf9f930726745ccd43b61503074643753a4b5"
+        },
+        {
+          "path": ".agents/skills/test-driven-development/SKILL.md",
+          "sha": "af5897dc7ca50844128c1fa8cfb81ff447f79f16"
+        },
+        {
+          "path": ".agents/skills/verification-before-completion/SKILL.md",
+          "sha": "584ba2305badc2f725d4fc8de487e7c05c9be9c4"
+        }
+      ]
+    },
+    {
+      "repo": "platform",
+      "ref": "f8fb6a081763523005c62766221e88252fd2f135",
+      "shared": 12,
+      "custom": 6,
+      "drift": [],
+      "missing": [
+        "skill-engineering"
+      ],
+      "skills": [
+        {
+          "path": ".agents/skills/code-review/SKILL.md",
+          "sha": "9ab47a9396ae1f2796ded42aa1ccf4a773a72a41"
+        },
+        {
+          "path": ".agents/skills/database-postgres-rls/SKILL.md",
+          "sha": "6c54e219bace7dc1acfdb717b7e77f43fa1338c2"
+        },
+        {
+          "path": ".agents/skills/decision-governance/SKILL.md",
+          "sha": "87a997691132c3fa3f23280cd03d3f293b9621c1"
+        },
+        {
+          "path": ".agents/skills/financial-correctness/SKILL.md",
+          "sha": "bd1dd835771a1b3ef9b0a0c8153845e709347740"
+        },
+        {
+          "path": ".agents/skills/frontend-rtl-design/SKILL.md",
+          "sha": "d609ffd81b64e20584acf98e3d4c558e3747ae72"
+        },
+        {
+          "path": ".agents/skills/implementation-planning/SKILL.md",
+          "sha": "46b7ca2ed1cc325be08101639ceb3547d33612d1"
+        },
+        {
+          "path": ".agents/skills/platform-architecture-decisions/SKILL.md",
+          "sha": "35d567708bc7b0a9c8a1b39f9dab596d2d514516"
+        },
+        {
+          "path": ".agents/skills/platform-database/SKILL.md",
+          "sha": "4421e75d858b199b5ddb7ebe9282013a556b41ae"
+        },
+        {
+          "path": ".agents/skills/platform-implementation-planning/SKILL.md",
+          "sha": "f7acf706e40a0d38d30dc37ed8b7d36a17a7f220"
+        },
+        {
+          "path": ".agents/skills/platform-implementation/SKILL.md",
+          "sha": "3d1b698b3de78e4ae6cc8d661049ffab33944807"
+        },
+        {
+          "path": ".agents/skills/platform-review/SKILL.md",
+          "sha": "a5907122cfcf1f771b4c2bdd4b381295bd4898d0"
+        },
+        {
+          "path": ".agents/skills/platform-skill-engineering/SKILL.md",
+          "sha": "aff1de8c480662dd58682891b7a5308779e2f04a"
+        },
+        {
+          "path": ".agents/skills/release-readiness/SKILL.md",
+          "sha": "71641b6fc7f517012e7f451ed3ce45d84da268f5"
+        },
+        {
+          "path": ".agents/skills/security-review/SKILL.md",
+          "sha": "ee2d66249e1e3bbdc59605dd0b73f395de1631e1"
+        },
+        {
+          "path": ".agents/skills/source-driven-development/SKILL.md",
+          "sha": "c9a7fad46f2eaab71375c2f7f5eedf9839733786"
+        },
+        {
+          "path": ".agents/skills/systematic-debugging/SKILL.md",
+          "sha": "67eaf9f930726745ccd43b61503074643753a4b5"
+        },
+        {
+          "path": ".agents/skills/test-driven-development/SKILL.md",
+          "sha": "af5897dc7ca50844128c1fa8cfb81ff447f79f16"
+        },
+        {
+          "path": ".agents/skills/verification-before-completion/SKILL.md",
+          "sha": "584ba2305badc2f725d4fc8de487e7c05c9be9c4"
+        }
+      ]
+    },
+    {
+      "repo": "nilesys",
+      "ref": "262c79988054488844eccd85ae4d12bff09ef9e7",
+      "shared": 12,
+      "custom": 0,
+      "drift": [],
+      "missing": [
+        "skill-engineering"
+      ],
+      "skills": [
+        {
+          "path": ".agents/skills/code-review/SKILL.md",
+          "sha": "9ab47a9396ae1f2796ded42aa1ccf4a773a72a41"
+        },
+        {
+          "path": ".agents/skills/database-postgres-rls/SKILL.md",
+          "sha": "6c54e219bace7dc1acfdb717b7e77f43fa1338c2"
+        },
+        {
+          "path": ".agents/skills/decision-governance/SKILL.md",
+          "sha": "87a997691132c3fa3f23280cd03d3f293b9621c1"
+        },
+        {
+          "path": ".agents/skills/financial-correctness/SKILL.md",
+          "sha": "bd1dd835771a1b3ef9b0a0c8153845e709347740"
+        },
+        {
+          "path": ".agents/skills/frontend-rtl-design/SKILL.md",
+          "sha": "d609ffd81b64e20584acf98e3d4c558e3747ae72"
+        },
+        {
+          "path": ".agents/skills/implementation-planning/SKILL.md",
+          "sha": "46b7ca2ed1cc325be08101639ceb3547d33612d1"
+        },
+        {
+          "path": ".agents/skills/release-readiness/SKILL.md",
+          "sha": "71641b6fc7f517012e7f451ed3ce45d84da268f5"
+        },
+        {
+          "path": ".agents/skills/security-review/SKILL.md",
+          "sha": "ee2d66249e1e3bbdc59605dd0b73f395de1631e1"
+        },
+        {
+          "path": ".agents/skills/source-driven-development/SKILL.md",
+          "sha": "c9a7fad46f2eaab71375c2f7f5eedf9839733786"
+        },
+        {
+          "path": ".agents/skills/systematic-debugging/SKILL.md",
+          "sha": "67eaf9f930726745ccd43b61503074643753a4b5"
+        },
+        {
+          "path": ".agents/skills/test-driven-development/SKILL.md",
+          "sha": "af5897dc7ca50844128c1fa8cfb81ff447f79f16"
+        },
+        {
+          "path": ".agents/skills/verification-before-completion/SKILL.md",
+          "sha": "584ba2305badc2f725d4fc8de487e7c05c9be9c4"
+        }
+      ]
+    },
+    {
+      "repo": "malek",
+      "ref": "fb84e20aa9156a36f9366de28f7d0bea5ed2d1c7",
+      "shared": 12,
+      "custom": 7,
+      "drift": [],
+      "missing": [
+        "skill-engineering"
+      ],
+      "skills": [
+        {
+          "path": ".claude/skills/architecture-decision/SKILL.md",
+          "sha": "e5ee941a4b240a5b53a2978962d5ab2455eb68a9"
+        },
+        {
+          "path": ".claude/skills/database/SKILL.md",
+          "sha": "5f86788a1b20224bc576921f2385b5eaeae1ddf2"
+        },
+        {
+          "path": ".claude/skills/frontend-design/SKILL.md",
+          "sha": "decdff43d05908b4c1fc2cfd2d80fc5743440934"
+        },
+        {
+          "path": ".claude/skills/review/SKILL.md",
+          "sha": "9777202ef57ebc058373b15c2dcead8d3cf457bf"
+        },
+        {
+          "path": "skills/architecture-decision/SKILL.md",
+          "sha": "b5002c3aeb12b179f348d97a664c6795821cb1b8"
+        },
+        {
+          "path": "skills/code-review/SKILL.md",
+          "sha": "9ab47a9396ae1f2796ded42aa1ccf4a773a72a41"
+        },
+        {
+          "path": "skills/database-postgres-rls/SKILL.md",
+          "sha": "6c54e219bace7dc1acfdb717b7e77f43fa1338c2"
+        },
+        {
+          "path": "skills/database/SKILL.md",
+          "sha": "5f2f91ee907d79762ac2ca5f64048b4d69010558"
+        },
+        {
+          "path": "skills/decision-governance/SKILL.md",
+          "sha": "87a997691132c3fa3f23280cd03d3f293b9621c1"
+        },
+        {
+          "path": "skills/financial-correctness/SKILL.md",
+          "sha": "bd1dd835771a1b3ef9b0a0c8153845e709347740"
+        },
+        {
+          "path": "skills/frontend-rtl-design/SKILL.md",
+          "sha": "d609ffd81b64e20584acf98e3d4c558e3747ae72"
+        },
+        {
+          "path": "skills/implementation-planning/SKILL.md",
+          "sha": "46b7ca2ed1cc325be08101639ceb3547d33612d1"
+        },
+        {
+          "path": "skills/release-readiness/SKILL.md",
+          "sha": "71641b6fc7f517012e7f451ed3ce45d84da268f5"
+        },
+        {
+          "path": "skills/review/SKILL.md",
+          "sha": "97190b98d90ee5563010a3f2b5a82537a28a4df6"
+        },
+        {
+          "path": "skills/security-review/SKILL.md",
+          "sha": "ee2d66249e1e3bbdc59605dd0b73f395de1631e1"
+        },
+        {
+          "path": "skills/source-driven-development/SKILL.md",
+          "sha": "c9a7fad46f2eaab71375c2f7f5eedf9839733786"
+        },
+        {
+          "path": "skills/systematic-debugging/SKILL.md",
+          "sha": "67eaf9f930726745ccd43b61503074643753a4b5"
+        },
+        {
+          "path": "skills/test-driven-development/SKILL.md",
+          "sha": "af5897dc7ca50844128c1fa8cfb81ff447f79f16"
+        },
+        {
+          "path": "skills/verification-before-completion/SKILL.md",
+          "sha": "584ba2305badc2f725d4fc8de487e7c05c9be9c4"
+        }
+      ]
+    },
+    {
+      "repo": "Terranex",
+      "ref": "dbae92a72ff94d1f2445333e6605e69355228be6",
+      "shared": 12,
+      "custom": 7,
+      "drift": [],
+      "missing": [
+        "skill-engineering"
+      ],
+      "skills": [
+        {
+          "path": ".agents/skills/code-review/SKILL.md",
+          "sha": "9ab47a9396ae1f2796ded42aa1ccf4a773a72a41"
+        },
+        {
+          "path": ".agents/skills/database-postgres-rls/SKILL.md",
+          "sha": "6c54e219bace7dc1acfdb717b7e77f43fa1338c2"
+        },
+        {
+          "path": ".agents/skills/decision-governance/SKILL.md",
+          "sha": "87a997691132c3fa3f23280cd03d3f293b9621c1"
+        },
+        {
+          "path": ".agents/skills/financial-correctness/SKILL.md",
+          "sha": "bd1dd835771a1b3ef9b0a0c8153845e709347740"
+        },
+        {
+          "path": ".agents/skills/frontend-rtl-design/SKILL.md",
+          "sha": "d609ffd81b64e20584acf98e3d4c558e3747ae72"
+        },
+        {
+          "path": ".agents/skills/implementation-planning/SKILL.md",
+          "sha": "46b7ca2ed1cc325be08101639ceb3547d33612d1"
+        },
+        {
+          "path": ".agents/skills/release-readiness/SKILL.md",
+          "sha": "71641b6fc7f517012e7f451ed3ce45d84da268f5"
+        },
+        {
+          "path": ".agents/skills/security-review/SKILL.md",
+          "sha": "ee2d66249e1e3bbdc59605dd0b73f395de1631e1"
+        },
+        {
+          "path": ".agents/skills/source-driven-development/SKILL.md",
+          "sha": "c9a7fad46f2eaab71375c2f7f5eedf9839733786"
+        },
+        {
+          "path": ".agents/skills/systematic-debugging/SKILL.md",
+          "sha": "67eaf9f930726745ccd43b61503074643753a4b5"
+        },
+        {
+          "path": ".agents/skills/terranex-architecture-decision/SKILL.md",
+          "sha": "aa031f88adc71220220a7b4b840d9df9cca710a4"
+        },
+        {
+          "path": ".agents/skills/terranex-code-review/SKILL.md",
+          "sha": "5891a648bb7f91352a164fe86aa51c3c7a088935"
+        },
+        {
+          "path": ".agents/skills/terranex-database/SKILL.md",
+          "sha": "b404818d485ca2133a22e6b45d7a579ad082ed40"
+        },
+        {
+          "path": ".agents/skills/terranex-implementation-planning/SKILL.md",
+          "sha": "fe0a79d32168f0799be049e94fb52cfddb670cfb"
+        },
+        {
+          "path": ".agents/skills/terranex-implementation/SKILL.md",
+          "sha": "b08bd26abcb1c97abb4964a9699e45d89bf4ba0e"
+        },
+        {
+          "path": ".agents/skills/terranex-threat-model/SKILL.md",
+          "sha": "1934967ef22ec3a8fa96291bbd0c153eed425eb8"
+        },
+        {
+          "path": ".agents/skills/test-driven-development/SKILL.md",
+          "sha": "af5897dc7ca50844128c1fa8cfb81ff447f79f16"
+        },
+        {
+          "path": ".agents/skills/verification-before-completion/SKILL.md",
+          "sha": "584ba2305badc2f725d4fc8de487e7c05c9be9c4"
+        },
+        {
+          "path": "التسويق-والإدارة/تسويق/مواد-وهوية/terranex-ops/SKILL.md",
+          "sha": "813df32941293e30c682e49c3038fc52432326fc"
+        }
+      ]
+    },
+    {
+      "repo": "starting",
+      "ref": "c3bc7446abf1f3c46ae5a41ebbb55582e1eaafce",
+      "shared": 12,
+      "custom": 3,
+      "drift": [],
+      "missing": [
+        "skill-engineering"
+      ],
+      "skills": [
+        {
+          "path": ".agents/skills/code-review/SKILL.md",
+          "sha": "9ab47a9396ae1f2796ded42aa1ccf4a773a72a41"
+        },
+        {
+          "path": ".agents/skills/database-postgres-rls/SKILL.md",
+          "sha": "6c54e219bace7dc1acfdb717b7e77f43fa1338c2"
+        },
+        {
+          "path": ".agents/skills/decision-governance/SKILL.md",
+          "sha": "87a997691132c3fa3f23280cd03d3f293b9621c1"
+        },
+        {
+          "path": ".agents/skills/financial-correctness/SKILL.md",
+          "sha": "bd1dd835771a1b3ef9b0a0c8153845e709347740"
+        },
+        {
+          "path": ".agents/skills/frontend-rtl-design/SKILL.md",
+          "sha": "d609ffd81b64e20584acf98e3d4c558e3747ae72"
+        },
+        {
+          "path": ".agents/skills/implementation-planning/SKILL.md",
+          "sha": "46b7ca2ed1cc325be08101639ceb3547d33612d1"
+        },
+        {
+          "path": ".agents/skills/implementation/SKILL.md",
+          "sha": "f82ee09cab93d603e9e3c539ef85273076d08f03"
+        },
+        {
+          "path": ".agents/skills/postgres-rls/SKILL.md",
+          "sha": "9dbf46b841cb84ad36a09604dc068723d5d565a0"
+        },
+        {
+          "path": ".agents/skills/release-readiness/SKILL.md",
+          "sha": "71641b6fc7f517012e7f451ed3ce45d84da268f5"
+        },
+        {
+          "path": ".agents/skills/security-review/SKILL.md",
+          "sha": "ee2d66249e1e3bbdc59605dd0b73f395de1631e1"
+        },
+        {
+          "path": ".agents/skills/security-threat-model/SKILL.md",
+          "sha": "257adbc0972d88bf1fad09e348469004ee6723d1"
+        },
+        {
+          "path": ".agents/skills/source-driven-development/SKILL.md",
+          "sha": "c9a7fad46f2eaab71375c2f7f5eedf9839733786"
+        },
+        {
+          "path": ".agents/skills/systematic-debugging/SKILL.md",
+          "sha": "67eaf9f930726745ccd43b61503074643753a4b5"
+        },
+        {
+          "path": ".agents/skills/test-driven-development/SKILL.md",
+          "sha": "af5897dc7ca50844128c1fa8cfb81ff447f79f16"
+        },
+        {
+          "path": ".agents/skills/verification-before-completion/SKILL.md",
+          "sha": "584ba2305badc2f725d4fc8de487e7c05c9be9c4"
+        }
+      ]
+    },
+    {
+      "repo": "bug-free-garbanzo",
+      "ref": "8e8c724a3b4c8709dd1dd530cdd1d9864535cf4f",
+      "shared": 11,
+      "custom": 1,
+      "drift": [],
+      "missing": [
+        "release-readiness",
+        "skill-engineering"
+      ],
+      "skills": [
+        {
+          "path": ".agents/skills/code-review/SKILL.md",
+          "sha": "9ab47a9396ae1f2796ded42aa1ccf4a773a72a41"
+        },
+        {
+          "path": ".agents/skills/database-postgres-rls/SKILL.md",
+          "sha": "6c54e219bace7dc1acfdb717b7e77f43fa1338c2"
+        },
+        {
+          "path": ".agents/skills/decision-governance/SKILL.md",
+          "sha": "87a997691132c3fa3f23280cd03d3f293b9621c1"
+        },
+        {
+          "path": ".agents/skills/financial-correctness/SKILL.md",
+          "sha": "bd1dd835771a1b3ef9b0a0c8153845e709347740"
+        },
+        {
+          "path": ".agents/skills/frontend-rtl-design/SKILL.md",
+          "sha": "d609ffd81b64e20584acf98e3d4c558e3747ae72"
+        },
+        {
+          "path": ".agents/skills/implementation-planning/SKILL.md",
+          "sha": "46b7ca2ed1cc325be08101639ceb3547d33612d1"
+        },
+        {
+          "path": ".agents/skills/security-review/SKILL.md",
+          "sha": "ee2d66249e1e3bbdc59605dd0b73f395de1631e1"
+        },
+        {
+          "path": ".agents/skills/source-driven-development/SKILL.md",
+          "sha": "c9a7fad46f2eaab71375c2f7f5eedf9839733786"
+        },
+        {
+          "path": ".agents/skills/systematic-debugging/SKILL.md",
+          "sha": "67eaf9f930726745ccd43b61503074643753a4b5"
+        },
+        {
+          "path": ".agents/skills/test-driven-development/SKILL.md",
+          "sha": "af5897dc7ca50844128c1fa8cfb81ff447f79f16"
+        },
+        {
+          "path": ".agents/skills/ui-ux-pro-max/SKILL.md",
+          "sha": "41f8e2fd7f8c568228d0b55186ebe3f7b4007377"
+        },
+        {
+          "path": ".agents/skills/verification-before-completion/SKILL.md",
+          "sha": "584ba2305badc2f725d4fc8de487e7c05c9be9c4"
+        }
+      ]
+    },
+    {
+      "repo": "mosaid",
+      "ref": "d1d16a6f9c67058d1718bfb52faa496ff1aa597c",
+      "shared": 5,
+      "custom": 4,
+      "drift": [],
+      "missing": [
+        "database-postgres-rls",
+        "decision-governance",
+        "financial-correctness",
+        "frontend-rtl-design",
+        "implementation-planning",
+        "release-readiness",
+        "security-review",
+        "skill-engineering"
+      ],
+      "skills": [
+        {
+          "path": ".agents/skills/code-review/SKILL.md",
+          "sha": "9ab47a9396ae1f2796ded42aa1ccf4a773a72a41"
+        },
+        {
+          "path": ".agents/skills/source-driven-development/SKILL.md",
+          "sha": "c9a7fad46f2eaab71375c2f7f5eedf9839733786"
+        },
+        {
+          "path": ".agents/skills/systematic-debugging/SKILL.md",
+          "sha": "67eaf9f930726745ccd43b61503074643753a4b5"
+        },
+        {
+          "path": ".agents/skills/test-driven-development/SKILL.md",
+          "sha": "af5897dc7ca50844128c1fa8cfb81ff447f79f16"
+        },
+        {
+          "path": ".agents/skills/verification-before-completion/SKILL.md",
+          "sha": "584ba2305badc2f725d4fc8de487e7c05c9be9c4"
+        },
+        {
+          "path": "skills/coding/SKILL.md",
+          "sha": "d8958e95603620299a90bb265d799b7da626f53b"
+        },
+        {
+          "path": "skills/image-generation/SKILL.md",
+          "sha": "e42e64ac769370569d6ba2ff576bf59c57e76ccb"
+        },
+        {
+          "path": "skills/research/SKILL.md",
+          "sha": "8b8277fabc50d1cac7e2333188c681d93a63f561"
+        },
+        {
+          "path": "skills/social-publishing/SKILL.md",
+          "sha": "dbbb300370734e7151bf8ac9776f449a6d125f1c"
+        }
+      ]
+    }
+  ],
+  "proposed_sync_prs": [
+    {
+      "repo": "bug-free-garbanzo",
+      "number": 16,
+      "url": "https://github.com/mohamedmasoud3030-tech/bug-free-garbanzo/pull/16",
+      "head": "7420a610f835c747e07672879f16fc3565078e3c",
+      "base": "8e8c724a3b4c8709dd1dd530cdd1d9864535cf4f"
+    },
+    {
+      "repo": "mosaid",
+      "number": 14,
+      "url": "https://github.com/mohamedmasoud3030-tech/mosaid/pull/14",
+      "head": "57d52af2455fb549acfb22d44a8055cb0997f3d7",
+      "base": "d1d16a6f9c67058d1718bfb52faa496ff1aa597c"
+    }
+  ],
+  "verification": [
+    {
+      "repo": "bug-free-garbanzo",
+      "files": [
+        {
+          "path": ".agents/skills/release-readiness/SKILL.md",
+          "status": "added"
+        },
+        {
+          "path": "AGENTS.md",
+          "status": "modified"
+        },
+        {
+          "path": "docs/STATUS.md",
+          "status": "modified"
+        }
+      ],
+      "skill_blob": "71641b6fc7f517012e7f451ed3ce45d84da268f5",
+      "exact": true
+    },
+    {
+      "repo": "mosaid",
+      "files": [
+        {
+          "path": ".agents/skills/release-readiness/SKILL.md",
+          "status": "added"
+        }
+      ],
+      "skill_blob": "71641b6fc7f517012e7f451ed3ce45d84da268f5",
+      "exact": true
+    }
+  ]
+}
