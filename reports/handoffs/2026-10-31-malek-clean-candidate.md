@@ -43,3 +43,15 @@
 - **GitHub checks:** 10 ناجحة و4 متخطّاة (heavy-validation، browser-smoke، hosted-staging-proof، seeded-staging-smoke). 0 فشل على الرأس عند هذا الفحص. لا توجد مراجعات PR submitted.
 - **التصنيف:** repository/CI proof متحقق؛ QA/production/browser verification **غير متحقق**؛ governed stage credit بدون تغيير. رغم موافقة مالك مذكورة في تعليق GitHub سابق بشأن الدمج، هذه المتابعة لم تدمج PR في main، لأن النسخة الواجهة جديدة وفحوص البيئة المستضافة والمتصفح غير متاحة، مع احتمال أثر Git-integrated deployment لا يمكن التحقق منه في موصل Vercel الحالي.
 - **الإجراء الموصى به:** إتاحة مشروع `malek-plus` ضمن اتصال Vercel أو بيئة QA قابلة للاختبار، ثم إثبات browser/RTL/Auth/financial flows ونسخة SHA قبل الدمج/الإصدار. لا تستخدم URL production لعمليات مالية دون موافقة منفصلة.
+
+## إثبات متصفح النسخة المبنية — 2026-10-31
+
+- **PR #1844** head `6ab1beeaff965ad4607638f2ab01ec2602b60a68` (فحص 2026-10-31 14:34 UTC)، لم يدمج إلى main.
+- أضيفت وظيفة CI اختيارية `.github/workflows/property-operations-browser-qa.yml` تُفعّل بعلامة مقصودة في وصف PR وتبني Property Operations مع خلفية اختبار `.invalid`، ثم تفتح **مخرجات البناء المباشرة** بمتصفح Chromium على ثلاث فئات.
+- عُدّل `malek-app/playwright.config.ts` بإعداد `E2E_SERVE_PROPERTY_BUILD=true` لخدمة `dist/property-operations` بدلاً من Vite dev في هذا المسار فقط. لم تتغير دلالة QA/staging الحقيقية.
+- المحاولة الأولى [run 41210337746](https://github.com/mohamedmasoud3030-tech/malek/actions/runs/41210337746) كشفت فشل سيناريو يستدعي حدث `malek-dashboard-e2e-refetch` الاصطناعي، وهو مقيد في المصدر بـ `import.meta.env.VITE_E2E` وبالتالي غير موجود في بناء الإنتاج. 19 passed + 1 failed + 1 skipped لكل جهاز.
+- فُصل سيناريو إعادة التحديث الاصطناعي في `malek-app/e2e/dashboard-workspace.spec.ts` وبقي مخصصًا لمسار Dev E2E (لم يحذف). اختبار empty/initial error لا يزال يعمل على نسخة البناء؛ لا حقن لاختبار Dev في المخرجات الإنتاجية.
+- **اختبار النسخة المبنية ناجح:** [run 41210615368](https://github.com/mohamedmasoud3030-tech/malek/actions/runs/41210615368)، desktop **20 pass/2 skip**، tablet **20 pass/2 skip**، mobile **20 pass/2 skip**؛ الإجمالي **60 passed، 6 skips**. الاستبعادات في كل جهاز: synthetic stale-refetch dev-only وstaging seeded login بدون credentials. تُحفظ سجلات وآثار المتصفح كـGitHub artifacts.
+- **حدود الإثبات:** هذا Chromium على حزمة compiled محلية ببيانات متصفح مزيفة، وليس متصفحًا على URL مستضاف أو قاعدة إنتاج أو تجربة مكتب حقيقية. يُصنف WP-06 كدليل Repo/CI UI، ولا يمنح Stage Credit أو يغلق Hosted QA.
+- **Canonical DB baseline** على الرأس الأخير أصابته مشكلة سحب صور Supabase `Data limit exceeded` في المحاولة الأولى وأعيد تشغيل failed jobs (run `41210615383`، نتيجة إعادة التشغيل لم تتحدد عند كتابة هذا الجزء). `build` و`sonarcloud` فحوص الرأس الأخير ما زالت قيد التشغيل وقت الجرد؛ لا تختزل نجاح browser إلى نجاح كامل CI.
+- لا نشر، ولا Merge، ولا تغيير بيانات مالية أو Supabase في هذه الجولة.
