@@ -25,3 +25,12 @@
 4. لا دمج أو نشر أو تفويض Stage Credit دون قرار مالك صريح.
 
 **المهارات المقروءة:** `implementation-planning`، `test-driven-development`، `code-review`، `verification-before-completion`، `release-readiness`، و`skills/review/SKILL.md` الخاص بـMALEK.
+
+## استكمال فحوص CI — تحديث لاحق بتاريخ 2026-10-31
+
+- تقدّم رأس PR #1844 إلى `83d6f91f502ba88df55b32696c569589943a7eb7` بثلاثة commits من جلسة أخرى على نفس الفرع؛ أصلحت فقط تواريخ الإثبات في ثلاثة اختبارات مالية، دون تعديل محاسبة المنتج.
+- **GitHub build على هذا SHA: PASS**، ويتضمن 571 ملف اختبار و**4106/4106 اختبار تطبيق ناجح**، typecheck/architecture/واجهة ↔ DB contract، و**84/84 RLS**، وبناء نسخة `property-operations`. المصدر: [GitHub Actions run 41206684703](https://github.com/mohamedmasoud3030-tech/malek/actions/runs/41206684703)، job `124553305404`.
+- **Canonical Database Baseline:** المحاولة الأولى على الرأس الجديد فشلت أثناء سحب صور `public.ecr.aws/supabase/*` برسالة `Data limit exceeded`، وليس بخطأ SQL. المصدر: [run 41206684678](https://github.com/mohamedmasoud3030-tech/malek/actions/runs/41206684678)، job `124553112196`.
+- أعيد تشغيل الـfailed jobs للمحاولة الثانية، **ولا تُعتبر PASS إلا بعد فحص نتيجتها النهائية**.
+- `browser` و`hosted` و`seeded staging` متخطاة على PR، ولا تتوفر صلاحية مشروع `malek-plus` في اتصال Vercel الحالي؛ موصل Supabase المتصل يرى مشروع `kayyal` فقط، وليس MALEK. لذلك لا يوجد ادعاء runtime verification للمرشح.
+- **Merge/production:** لا دمج/نشر في هذه المتابعة. المرجع النهائي الآن رأس PR وليس SHA الاستئناف القديم؛ تابع تحديثه قبل أي عمل.
