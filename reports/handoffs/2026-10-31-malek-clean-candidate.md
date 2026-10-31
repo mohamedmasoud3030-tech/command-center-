@@ -34,3 +34,12 @@
 - أعيد تشغيل الـfailed jobs للمحاولة الثانية، **ولا تُعتبر PASS إلا بعد فحص نتيجتها النهائية**.
 - `browser` و`hosted` و`seeded staging` متخطاة على PR، ولا تتوفر صلاحية مشروع `malek-plus` في اتصال Vercel الحالي؛ موصل Supabase المتصل يرى مشروع `kayyal` فقط، وليس MALEK. لذلك لا يوجد ادعاء runtime verification للمرشح.
 - **Merge/production:** لا دمج/نشر في هذه المتابعة. المرجع النهائي الآن رأس PR وليس SHA الاستئناف القديم؛ تابع تحديثه قبل أي عمل.
+
+## فحص الرأس النهائي — 2026-10-31 14:06 UTC
+
+- **PR #1844 HEAD:** `83d6f91f502ba88df55b32696c569589943a7eb7`; `main` `fb84e20aa9156a36f9366de28f7d0bea5ed2d1c7`. مقارنة GitHub: `ahead=27, behind=0`، `mergeable=true`.
+- **Canonical Baseline إعادة التشغيل (المحاولة الثانية): PASS** بتاريخ 2026-10-31 14:06:12 UTC على نفس الرأس، [Run 41206684678](https://github.com/mohamedmasoud3030-tech/malek/actions/runs/41206684678). فشل Docker ECR المؤقت زال دون تغيير CI أو إضعاف البوابة.
+- **Build: PASS**، مع 4106/4106 اختبار تطبيق و84/84 RLS ونسخة Property Operations مبنية؛ [Run 41206684703](https://github.com/mohamedmasoud3030-tech/malek/actions/runs/41206684703).
+- **GitHub checks:** 10 ناجحة و4 متخطّاة (heavy-validation، browser-smoke، hosted-staging-proof، seeded-staging-smoke). 0 فشل على الرأس عند هذا الفحص. لا توجد مراجعات PR submitted.
+- **التصنيف:** repository/CI proof متحقق؛ QA/production/browser verification **غير متحقق**؛ governed stage credit بدون تغيير. رغم موافقة مالك مذكورة في تعليق GitHub سابق بشأن الدمج، هذه المتابعة لم تدمج PR في main، لأن النسخة الواجهة جديدة وفحوص البيئة المستضافة والمتصفح غير متاحة، مع احتمال أثر Git-integrated deployment لا يمكن التحقق منه في موصل Vercel الحالي.
+- **الإجراء الموصى به:** إتاحة مشروع `malek-plus` ضمن اتصال Vercel أو بيئة QA قابلة للاختبار، ثم إثبات browser/RTL/Auth/financial flows ونسخة SHA قبل الدمج/الإصدار. لا تستخدم URL production لعمليات مالية دون موافقة منفصلة.
