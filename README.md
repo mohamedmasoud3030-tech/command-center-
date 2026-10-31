@@ -25,7 +25,7 @@
 |---|---|---|---|
 | تطوير مركز القيادة — هذه الجلسة | `command-center-` / `chore/command-center-operating-contract-2026-10-24` | وثائق التشغيل + أداة تحقق محلية + اختبارات؛ لا تغييرات بمنتجات المحفظة | [PR #1 مدموج](https://github.com/mohamedmasoud3030-tech/command-center-/pull/1)؛ يُرجع إلى [تسليم الجلسة](reports/handoffs/2026-10-24-command-center-upgrade.md) |
 | متابعة هذه الجلسة: تدقيق المهارات | المركز + PR كيّال #16 + PR مساعد #14 | توثيق ونسخة release-readiness؛ لا كود منتجات | انتهى الإعداد؛ PRs المشروعين بانتظار المراجعة، بلا حجز عمل جارٍ؛ [التسليم](reports/handoffs/2026-10-24-skills-audit.md) |
-| استكمال نسخة MALEK النظيفة — 2026-10-31 | `malek` / `arena/9785b644-malek` | مزامنة `main` مع PR #1844 + تقوية اختبار هوية الإصدار؛ لا دمج أو نشر | [PR #1844](https://github.com/mohamedmasoud3030-tech/malek/pull/1844) عند `7c7ae096`؛ CI وإثبات المتصفح/الاستضافة لم يكتملا؛ [محضر الاستئناف](reports/handoffs/2026-10-31-malek-clean-candidate.md) |
+| استكمال نسخة MALEK النظيفة — 2026-10-31 | `malek` / `arena/9785b644-malek` | مزامنة `main` مع PR #1844 + تقوية اختبار هوية الإصدار؛ لا دمج أو نشر | [PR #1844](https://github.com/mohamedmasoud3030-tech/malek/pull/1844) عند `83d6f91`؛ فحوص الكود وقاعدة البيانات نجحت، والمتصفح/الاستضافة لم يثبتا؛ [محضر الاستئناف](reports/handoffs/2026-10-31-malek-clean-candidate.md) |
 | جلسات موازية | لا توجد بحسب تأكيد المالك | لا توجد حجوزات نشطة سابقة | يعاد التحقق عند كل جلسة جديدة |
 
 الـPR المفتوح دليل شغل محفوظ، وليس دليلاً أن صاحبه يعمل الآن.
@@ -37,7 +37,7 @@
 
 | PR | الحالة المتحققة | الرأس | التالي |
 |---|---|---|---|
-| [malek #1844](https://github.com/mohamedmasoud3030-tech/malek/pull/1844) | مفتوح، غير مدموج؛ تحديث 2026-10-31 | `7c7ae096` | بعد دمج `main` داخل فرع PR، فحوص الرأس الجديد قيد التنفيذ؛ مراجعة hosted/browser قبل أي قرار |
+| [malek #1844](https://github.com/mohamedmasoud3030-tech/malek/pull/1844) | مفتوح، غير مدموج؛ تحديث 2026-10-31 | `83d6f91` | فحوص CI على الرأس الجديد ناجحة؛ 4 فحوص متخطّاة، وhosted/browser غير مثبت قبل أي قرار |
 | [Terranex #188](https://github.com/mohamedmasoud3030-tech/Terranex/pull/188) | مفتوح، غير مدموج | `b95d7593` | مراجعة ما اكتمل وما تبقى من التسويق |
 | [mosaid #9](https://github.com/mohamedmasoud3030-tech/mosaid/pull/9) | مفتوح، غير مدموج | `2f967080` | إعادة فحص التعارض والفحوص؛ لا نفترض أن النتيجة القديمة ما زالت صالحة |
 
