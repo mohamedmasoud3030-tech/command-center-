@@ -23,9 +23,9 @@
 - `AGENTS.md`: تصحيح اسم المستودع والنسخ الحالية (Node>=22، CI Node 24.22.2، Next 16.4.3).
 - `main` والإنتاج وبيانات Supabase لم تُعدل.
 
-## النواقص وحكم التسليم
+## نتائج التحقق والنواقص
 
-- لا يجوز رفع الحالة من `PARTIAL/BLOCKED` قبل اكتمال GitHub CI الجديد على الرأس المحدث، مع مراجعة نتائج `verify` و`browser-e2e` كل على حدة.
+- [GitHub CI 41426833894](https://github.com/mohamedmasoud3030-tech/kiyyal/actions/runs/41426833894) على رأس `f2ad9d695827b228cbbe0d227869f75094d6716a`: `verify=success` (Vitest **327/327**)، `browser-e2e=success` (Playwright **21/21** باستخدام عامل واحد)، `staging-gate=skipped`. نجاح CI مثبت على هذا الرأس بالذات، ولا يكفي لموافقة الدمج/الإنتاج. أي رأس أحدث يتطلب فحصه مستقلاً.
 - Branch protection / required checks لحماية `main` لم تُفعّل من هذه الجلسة: أدوات GitHub المتاحة هنا لا تقدم تعديل Rulesets. يجب تفعيل مراجعات PR وRequired checks (`verify` و`browser-e2e`) ومنع force push/delete من واجهة GitHub، والتحقق من سياسة ربط الإنتاج في Vercel بصلاحيات المشروع.
 - أي مشكلة مستمرة في `next-http` أو بوابة staging يجب أن تُعالج على أساس دليل جديد وليس نسبة نجاح جزئية.
 - لا يوجد تفويض merge أو production deploy.
