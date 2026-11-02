@@ -25,7 +25,7 @@
 |---|---|---|---|
 | تطوير مركز القيادة — هذه الجلسة | `command-center-` / `chore/command-center-operating-contract-2026-10-24` | وثائق التشغيل + أداة تحقق محلية + اختبارات؛ لا تغييرات بمنتجات المحفظة | [PR #1 مدموج](https://github.com/mohamedmasoud3030-tech/command-center-/pull/1)؛ يُرجع إلى [تسليم الجلسة](reports/handoffs/2026-10-24-command-center-upgrade.md) |
 | متابعة هذه الجلسة: تدقيق المهارات | المركز + PR كيّال #16 + PR مساعد #14 | توثيق ونسخة release-readiness؛ لا كود منتجات | انتهى الإعداد؛ PRs المشروعين بانتظار المراجعة، بلا حجز عمل جارٍ؛ [التسليم](reports/handoffs/2026-10-24-skills-audit.md) |
-| مراجعة كيّال — 2026-11-02 | `kiyyal` / `chore/kayyal-deep-repository-cleanup` + المركز / `docs/kiyyal-2026-11-02-review-handoff` | إصلاح عزل Playwright CI وتحديث الربط الرسمي بالمركز؛ لا `main`/إنتاج | [kiyyal PR #26](https://github.com/mohamedmasoud3030-tech/kiyyal/pull/26) Draft؛ فحوص الرأس الجديد قيد التحقق |
+| مراجعة كيّال — 2026-11-02 | `kiyyal` / `chore/kayyal-deep-repository-cleanup` + المركز / `docs/kiyyal-2026-11-02-review-handoff` | إصلاح عزل Playwright CI وتحديث الربط الرسمي بالمركز؛ لا `main`/إنتاج | [kiyyal PR #26](https://github.com/mohamedmasoud3030-tech/kiyyal/pull/26) Draft؛ CI على `3e318c6`: `verify` و`browser-e2e` ناجحان، staging متخطى |
 | جلسات موازية أقدم | لا توجد بحسب تأكيد المالك 2026-10-24 | لا توجد حجوزات نشطة سابقة | يعاد التحقق عند كل جلسة جديدة |
 
 الـPR المفتوح دليل شغل محفوظ، وليس دليلاً أن صاحبه يعمل الآن.
