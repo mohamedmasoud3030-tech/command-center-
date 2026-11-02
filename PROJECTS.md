@@ -111,7 +111,7 @@
 
 ### 9) ♻️ كيّال (kiyyal) — `kiyyal` 🔒
 
-> تحديث تحقق مستقل بتاريخ 2026-11-02: المستودع الرسمي هو `mohamedmasoud3030-tech/kiyyal`، والاسم القديم `bug-free-garbanzo` مرجع تاريخي. `main` هو قاعدة [PR #26](https://github.com/mohamedmasoud3030-tech/kiyyal/pull/26) عند `1b3186d`، وPR #26 ما زال Draft. سجلّ CI القديم كان `verify=success` و`browser-e2e=failure` بسبب تزامن قاعدة الاختبار، ويجري التحقق من تعديل العزل على فرع المراجعة. حالة الإنتاج أدناه من تقرير سابق ولا تمثل فحص نشر جديدًا.
+> تحديث تحقق مستقل بتاريخ 2026-11-02: المستودع الرسمي هو `mohamedmasoud3030-tech/kiyyal`، والاسم القديم `bug-free-garbanzo` مرجع تاريخي. `main` هو قاعدة [PR #26](https://github.com/mohamedmasoud3030-tech/kiyyal/pull/26) عند `1b3186d`، وPR #26 ما زال Draft. سجلّ CI القديم كان `verify=success` و`browser-e2e=failure` بسبب تزامن قاعدة الاختبار، ونجح تعديل العزل على `3e318c6` في `verify` و`browser-e2e` بتاريخ 2026-11-02؛ لكن staging متخطى ولا يوجد موافقة دمج. حالة الإنتاج أدناه من تقرير سابق ولا تمثل فحص نشر جديدًا.
 
 | الحقل | القيمة |
 |---|---|
