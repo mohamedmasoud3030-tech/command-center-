@@ -41,3 +41,5 @@
 - لم تتغير إعدادات Vercel ولا Rulesets في GitHub. ما زال واجبًا فرض PR review و`verify` و`browser-e2e` مع منع push/force-push المباشر على `main` قدر ما تسمح الخطة، والتحقق من إعداد النشر والإذن اليدوي قبل الإنتاج.
 - **فجوة بوابة أساسية:** `staging-gate` في `.github/workflows/ci.yml` ينفذ فقط إذا كان `github.ref == 'refs/heads/main'`؛ لم يعمل على PR #26، فلا يعدّ اختبار staging قبل الدمج أو ضمانًا ضد نشر production تلقائي عند الدمج.
 - اختبار GitHub E2E الناجح لا يعني تحقق مسار Supabase staging الحقيقي؛ لا يوجد اعتماد staging مفوض في هذه الجلسة. قرار الجاهزية: `CI VERIFIED / RELEASE BLOCKED`.
+
+- **حماية GitHub (تحقق 2026-11-04):** قراءة `GET /repos/mohamedmasoud3030-tech/kiyyal/rulesets` أعادت `[]`، فلا توجد Rulesets مفعلة/معرّفة على مستوى المستودع. قراءة `/branches/main/protection` أعادت `403 Resource not accessible by integration`؛ لذا لا يمكن الجزم بوجود أو غياب حماية الفرع التقليدية. قبل الدمج: تفعيل/تأكيد الحماية يدويًا لدى مدير المستودع، مع مراجعات PR وفحوص `verify` و`browser-e2e`، وضبط مصادر الحالات المطلوبة، ومنع force pushes والحذف.
