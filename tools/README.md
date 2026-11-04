@@ -31,3 +31,12 @@ git diff --check
 الفحص محلي يدوي حالياً؛ لا يوجد CI جديد أو حماية GitHub مفروضة بهذا التغيير.
 عند ترقية الأداة إلى بوابة CI، يلزم تفويض لتغيير workflow.
 
+## بوابة جودة المهارات — مقترح PR (2026-11-04)
+
+```bash
+python3 tools/skill_gate.py
+python3 tools/skill_gate.py --downstream ../kiyyal/.agents/skills --require frontend-rtl-design
+python3 -m unittest discover -s tools -p 'test_*.py'
+```
+
+الأولى تفحص بنية المراجع و26 حالة Canary **مكتوبة فقط**؛ لا تشغّل وكيل AI. الثانية تقارن النسخ المشتركة المتاحة مقارنة حرفية؛ المهارات الاختيارية المفقودة لا تعتبر خطأ. تفاصيل التجارب الحقيقية في [بروتوكول الجودة](../skills/QUALITY_PROTOCOL.md). ملف workflow جديد مقترح في PR؛ لا يُعتبر CI مفروضًا على main قبل دمجه وتشغيله بنجاح.
