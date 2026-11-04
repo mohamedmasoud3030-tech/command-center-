@@ -40,20 +40,22 @@
 - `python3 -m unittest discover -s tools -p 'test_*.py'`: **20 tests، OK** (2026-11-04؛ يشمل 3 اختبارات التقرير الجديد و17 اختبار baseline).
 - `python3 tools/validate-center.py --base-ref 0587041fc8f3a3b2d87f8df71b40e6823f64228f`: **PASS**؛ required docs، الروابط المحلية، metadata، وعدم حذف الوثائق.
 - `git diff --check`: **PASS**.
-- تقرير GitHub: شُغّل read-only؛ API العام أثبت بعض repos، ونتائج 404/403 أو rate limit صُنفت NOT VERIFIED. لم يُنفذ أي write خارجي.
+- تقرير GitHub: شُغّل read-only؛ API العام أثبت بعض repos، ونتائج 404/403 أو rate limit صُنفت NOT VERIFIED. لم تُكتب هذه النتائج إلى status ledger.
+- بعد النشر: `contracts=success` على رأس PR #5 `8cac7372f625725e538544f70dc88375b47a0690`؛ PR #3 و#4 أُغلقتا superseded، وPR #5 بقيت Draft/open.
 
 ## الحدود والحالة الخارجية
 
-- لا push، لا تعديل GitHub، لا إغلاق #3/#4، لا merge إلى `main`، ولا deploy حتى هذه اللحظة.
-- حالة GitHub المذكورة في README/PROJECTS هي نطاق متابعة وروابط canonical؛ الحالة الدقيقة للرأس والـchecks مصدرها `tools/portfolio_report.py` وقت التشغيل.
+- تم push fast-forward إلى فرع PR #5 فقط، بلا force-push؛ لم يحدث merge إلى `main` أو deploy.
+- تم إغلاق #3 و#4 بعد التحقق من أن ملفات MALEK وKiyyal وREADME/PROJECTS/INDEX موجودة في رأس #5؛ لم تُحذف فروعهما.
+- الحالة الدقيقة للرأس والـchecks مصدرها GitHub/`tools/portfolio_report.py` وقت التشغيل؛ الصفوف المحلية توثق قرار consolidation لا status ledger بديل.
 - Kiyyal PR #26–#29 أعمال مفتوحة/للمتابعة فقط حسب نطاق المالك؛ لا إصلاح أو تعديل منتج من هذا الفرع.
 - المستودعات التاريخية التي أعادت API العام 404 (`larabeauty-`, `carmen-gallery-`, `Lenastore`, `Terranex`, `starting`) لم تُعلن غائبة؛ بقيت NOT VERIFIED.
 
 ## نقطة الاستئناف
 
-1. شغّل بوابات التسليم النهائية من جذر المستودع.
-2. راجع `git diff 0587041...HEAD`، خصوصاً عدم وجود سجل status ثانٍ أو claim hosted غير مثبت.
-3. بعد موافقة المالك وcredential جديد غير محفوظ: ادفع **فرع PR #5 فقط** بلا force-push، أعد قراءة PR #3/#4/#5 وCI، ثم اطلب قرار الإغلاق/الدمج؛ لا تنفذ merge/deploy تلقائياً.
+1. راجع PR #5 والـdiff المنشور على GitHub، خصوصاً عدم وجود سجل status ثانٍ أو claim hosted غير مثبت.
+2. راجع check `contracts=success` وقرار حماية `main` من إعدادات GitHub الفعلية.
+3. إن وافق المالك: حوّل PR #5 من Draft إلى Ready ثم قرر merge بشكل منفصل؛ لا تنفذ merge/deploy تلقائياً.
 
 ## حالة حجز الجلسة
 

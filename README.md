@@ -34,13 +34,15 @@
 ### حسم تداخل PRs المركز — P0
 
 لا نفتح PR رابعاً لتعديل `README.md` و`reports/handoffs/INDEX.md`.
-PR #5 هو **هدف التجميع** لأنه يحمل بوابة جودة المهارات الجديدة؛ تُستوعب فيه التغييرات الفريدة من #3 و#4 عبر merge عادي قابل للمراجعة، ثم تُغلق #3 و#4 باعتبارهما superseded فقط بعد التأكد من وجود محتواهما الفريد في #5.
+تم تنفيذ القرار: PR #5 هو **هدف التجميع الوحيد**، واستُوعبت فيه التغييرات الفريدة من #3 و#4 عبر merge عادي قابل للمراجعة؛ بعد النشر وفحص `contracts=success` أُغلقت #3 و#4 باعتبارهما superseded، من غير حذف فروعهما.
+
+> **آخر تحقق لهذه الصفوف:** بعد نشر رأس #5 `8cac737...`؛ إعادة التحقق التفصيلية والـchecks تبقى عبر GitHub/التقرير الحي.
 
 | PR | ما يضيفه فعلاً | التداخل | القرار التشغيلي |
 |---|---|---|---|
-| [#3 MALEK](https://github.com/mohamedmasoud3030-tech/command-center-/pull/3) | محضر MALEK + سطر سجل + handoff index | `README.md` و`handoffs/INDEX.md` | يُستوعب في #5؛ لا حذف للـhandoff؛ يغلق بعد فحص diff وCI |
-| [#4 Kiyyal](https://github.com/mohamedmasoud3030-tech/command-center-/pull/4) | تصحيح الاسم الرسمي Kiyyal + handoff CI | `README.md` و`PROJECTS.md` و`handoffs/INDEX.md` | يُستوعب في #5؛ يبقى Kiyyal خارج التنفيذ؛ يغلق بعد فحص diff وCI |
-| [#5 Skills](https://github.com/mohamedmasoud3030-tech/command-center-/pull/5) | `QUALITY_PROTOCOL`، canaries، `skill_gate`، workflow، قالب PR | `README.md` و`handoffs/INDEX.md` | **PR التجميع الوحيد**؛ يبقى Draft حتى اكتمال الفحص |
+| [#3 MALEK](https://github.com/mohamedmasoud3030-tech/command-center-/pull/3) | محضر MALEK + سطر سجل + handoff index | `README.md` و`handoffs/INDEX.md` | **Closed / superseded**؛ المحتوى محفوظ في #5؛ لا حذف للـhandoff أو الفرع |
+| [#4 Kiyyal](https://github.com/mohamedmasoud3030-tech/command-center-/pull/4) | تصحيح الاسم الرسمي Kiyyal + handoff CI | `README.md` و`PROJECTS.md` و`handoffs/INDEX.md` | **Closed / superseded**؛ Kiyyal خارج تنفيذ المركز؛ لا حذف للفرع |
+| [#5 Skills](https://github.com/mohamedmasoud3030-tech/command-center-/pull/5) | `QUALITY_PROTOCOL`، canaries، `skill_gate`، workflow، قالب PR، وطبقة v2 | `README.md` و`PROJECTS.md` و`handoffs/INDEX.md` | **Draft / open**؛ `contracts=success`؛ ينتظر مراجعة المالك ولا merge تلقائي |
 
 ### محفظة المشاريع — live مقابل التاريخ
 
