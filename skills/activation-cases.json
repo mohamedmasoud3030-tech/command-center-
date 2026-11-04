@@ -1,0 +1,210 @@
+[
+  {
+    "id": "planning-positive",
+    "prompt": "Implement a new customer credits workflow across the API, UI and database; plan small reversible steps before coding.",
+    "expected": [
+      "implementation-planning"
+    ],
+    "excluded": []
+  },
+  {
+    "id": "planning-near-miss",
+    "prompt": "Correct one misspelled word in a README title only.",
+    "expected": [],
+    "excluded": [
+      "implementation-planning"
+    ]
+  },
+  {
+    "id": "tdd-positive",
+    "prompt": "Fix a wrong inventory deduction by writing a failing regression test first, then the smallest code change.",
+    "expected": [
+      "test-driven-development"
+    ],
+    "excluded": []
+  },
+  {
+    "id": "tdd-near-miss",
+    "prompt": "Read and explain existing code without modifying behavior or files.",
+    "expected": [],
+    "excluded": [
+      "test-driven-development"
+    ]
+  },
+  {
+    "id": "sources-positive",
+    "prompt": "Upgrade our Next.js integration and confirm changed API behavior against the official versioned docs.",
+    "expected": [
+      "source-driven-development"
+    ],
+    "excluded": []
+  },
+  {
+    "id": "sources-near-miss",
+    "prompt": "Translate the Arabic paragraph provided in the current message without consulting any external library API.",
+    "expected": [],
+    "excluded": [
+      "source-driven-development"
+    ]
+  },
+  {
+    "id": "review-positive",
+    "prompt": "Review a completed feature PR diff against requirements and architecture and issue a severity-ranked verdict.",
+    "expected": [
+      "code-review"
+    ],
+    "excluded": []
+  },
+  {
+    "id": "review-near-miss",
+    "prompt": "Plan an initial feature idea before any diff exists; there is no code change to review.",
+    "expected": [],
+    "excluded": [
+      "code-review"
+    ]
+  },
+  {
+    "id": "debug-positive",
+    "prompt": "A previously passing Playwright test is intermittently failing; establish the root cause before attempting a fix.",
+    "expected": [
+      "systematic-debugging"
+    ],
+    "excluded": []
+  },
+  {
+    "id": "debug-near-miss",
+    "prompt": "Design a brand-new module from approved requirements with no observed failure to diagnose.",
+    "expected": [],
+    "excluded": [
+      "systematic-debugging"
+    ]
+  },
+  {
+    "id": "postgres-positive",
+    "prompt": "Change a PostgreSQL RLS policy and test tenant isolation including forced permission bypass attempts.",
+    "expected": [
+      "database-postgres-rls"
+    ],
+    "excluded": []
+  },
+  {
+    "id": "postgres-near-miss",
+    "prompt": "Adjust spacing in a static dashboard card; there are no SQL or database changes.",
+    "expected": [],
+    "excluded": [
+      "database-postgres-rls"
+    ]
+  },
+  {
+    "id": "financial-positive",
+    "prompt": "Correct weighted-average cost after a regrade and reconcile cash, profit, audit history and closed-day reports.",
+    "expected": [
+      "financial-correctness"
+    ],
+    "excluded": []
+  },
+  {
+    "id": "financial-near-miss",
+    "prompt": "Rewrite the marketing slogan on an informational landing page; do not change balances or prices.",
+    "expected": [],
+    "excluded": [
+      "financial-correctness"
+    ]
+  },
+  {
+    "id": "rtl-positive",
+    "prompt": "Redesign the Arabic RTL purchase form for mobile including keyboard focus, validation and visual browser proof.",
+    "expected": [
+      "frontend-rtl-design"
+    ],
+    "excluded": []
+  },
+  {
+    "id": "rtl-near-miss",
+    "prompt": "Refactor a backend queue worker with no visible UI or user interaction changes.",
+    "expected": [],
+    "excluded": [
+      "frontend-rtl-design"
+    ]
+  },
+  {
+    "id": "security-positive",
+    "prompt": "Change operator session cookies and authorization boundaries; assess abuse paths and privilege escalation.",
+    "expected": [
+      "security-review"
+    ],
+    "excluded": []
+  },
+  {
+    "id": "security-near-miss",
+    "prompt": "Update a purely decorative color token without touching data, access or input boundaries.",
+    "expected": [],
+    "excluded": [
+      "security-review"
+    ]
+  },
+  {
+    "id": "verify-positive",
+    "prompt": "Before claiming the patch is complete and all tests pass, run fresh relevant checks and report the evidence.",
+    "expected": [
+      "verification-before-completion"
+    ],
+    "excluded": []
+  },
+  {
+    "id": "verify-near-miss",
+    "prompt": "Brainstorm five possible feature names; no completed implementation or test result is being claimed.",
+    "expected": [],
+    "excluded": [
+      "verification-before-completion"
+    ]
+  },
+  {
+    "id": "release-positive",
+    "prompt": "Prepare a candidate for merging into main and production; prove release readiness and identify any blocking gate.",
+    "expected": [
+      "release-readiness"
+    ],
+    "excluded": []
+  },
+  {
+    "id": "release-near-miss",
+    "prompt": "Discuss an early local prototype idea; no merge, staging, release or production claim is requested.",
+    "expected": [],
+    "excluded": [
+      "release-readiness"
+    ]
+  },
+  {
+    "id": "decision-positive",
+    "prompt": "A requested module rewrite conflicts with an accepted ADR; surface trade-offs and get a decision before proceeding.",
+    "expected": [
+      "decision-governance"
+    ],
+    "excluded": []
+  },
+  {
+    "id": "decision-near-miss",
+    "prompt": "Rename a local temporary variable without changing behavior, contracts or architectural boundaries.",
+    "expected": [],
+    "excluded": [
+      "decision-governance"
+    ]
+  },
+  {
+    "id": "skills-positive",
+    "prompt": "Evaluate whether to modify, merge or remove an Agent Skill and test its positive and near-miss triggers.",
+    "expected": [
+      "skill-engineering"
+    ],
+    "excluded": []
+  },
+  {
+    "id": "skills-near-miss",
+    "prompt": "Implement a routine inventory page feature without modifying any skill instructions or metadata.",
+    "expected": [],
+    "excluded": [
+      "skill-engineering"
+    ]
+  }
+]

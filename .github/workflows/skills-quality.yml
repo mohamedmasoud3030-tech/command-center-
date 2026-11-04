@@ -1,0 +1,37 @@
+name: Skills quality
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  contracts:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Python unit tests
+        run: python3 -m unittest discover -s tools -p 'test_*.py'
+      - name: Center document structure
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          if [ -n "$BASE_SHA" ]; then
+            python3 tools/validate-center.py --base-ref "$BASE_SHA"
+          else
+            python3 tools/validate-center.py
+          fi
+      - name: Skill metadata, activation-case specification
+        run: python3 tools/skill_gate.py
+      - name: Whitespace check
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          if [ -n "$BASE_SHA" ]; then
+            git diff --check "$BASE_SHA" HEAD
+          else
+            git diff --check HEAD^ HEAD
+          fi
