@@ -75,7 +75,8 @@ def audit(root, cases_path=None, downstream=None, required=()):
                 errors.append(f"case {index}: invalid id")
             elif ident in seen_ids:
                 errors.append(f"case {index}: duplicate id")
-            seen_ids.add(ident)
+            if isinstance(ident, str):
+                seen_ids.add(ident)
             prompt = case.get("prompt")
             expected, excluded = case.get("expected"), case.get("excluded")
             if not isinstance(prompt, str) or len(prompt.strip()) < 8:
@@ -91,7 +92,7 @@ def audit(root, cases_path=None, downstream=None, required=()):
                 if any(not isinstance(n, str) or n not in names for n in group):
                     errors.append(f"case {index}: references an unknown skill")
                 bucket.update(n for n in group if isinstance(n, str) and n in names)
-            if set(expected) & set(excluded):
+            if {n for n in expected if isinstance(n, str)} & {n for n in excluded if isinstance(n, str)}:
                 errors.append(f"case {index}: expected and excluded overlap")
         for name in sorted(names):
             if name not in positive:
