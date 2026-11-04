@@ -110,6 +110,11 @@ def project_snapshot(key: str, label: str, slug: str, headers: dict[str, str], f
             }
             for pr in raw_prs
         ]
+        # GitHub's REST endpoint is paginated. Never present the first 100 as complete.
+        result["pr_observation"] = (
+            {"state": "partial", "source": prs_url, "reason": "first 100 open PRs only; further pages not checked"}
+            if len(raw_prs) >= 100 else {"state": "verified", "source": prs_url}
+        )
         for pr_item in result["open_prs"]:
             head = pr_item.get("head")
             if not head:
@@ -164,8 +169,11 @@ def render_markdown(data: Json) -> str:
         if item["state"] != "verified":
             lines.append(f"| {item['label']} | `{item['repository']}` | — | — | **NOT VERIFIED** — {item['reason']} |")
             continue
-        branch = item.get("default_branch", "—")
+        branch = item.get("default_branch") or "—"
         sha = str(item.get("default_sha") or "—")[:12]
+        branch_text = f"`{branch}@{sha}`"
+        if item.get("branch_observation", {}).get("state") != "verified":
+            branch_text += " **HEAD NOT VERIFIED**"
         prs = item.get("open_prs", [])
         pr_parts = []
         for pr in prs:
@@ -178,8 +186,14 @@ def render_markdown(data: Json) -> str:
             elif "checks_observation" in pr:
                 check_text = " [checks NOT VERIFIED]"
             pr_parts.append(f"[#{pr['number']}]({pr['url']}){' draft' if pr['draft'] else ''}{check_text}")
-        pr_text = ", ".join(pr_parts) or "none observed"
-        lines.append(f"| {item['label']} | `{item['repository']}` | `{branch}@{sha}` | {pr_text} | verified at API |")
+        pr_state = item.get("pr_observation", {}).get("state")
+        if pr_state == "not-verified" or pr_state is None:
+            pr_text = "**PRs NOT VERIFIED**"
+        elif pr_state == "partial":
+            pr_text = (", ".join(pr_parts) or "none observed") + " **PARTIAL (first 100 only)**"
+        else:
+            pr_text = ", ".join(pr_parts) or "none observed"
+        lines.append(f"| {item['label']} | `{item['repository']}` | {branch_text} | {pr_text} | repository verified at API |")
     lines.extend([
         "",
         "## Operating interpretation",
