@@ -34,3 +34,7 @@
 ## مراجعة kiyyal — 2026-11-02
 
 - [تسليم عزل Playwright في كيّال](2026-11-02-kiyyal-ci-isolation.md): أدلة فشل CI على PR #26، تعديل عزل الاختبارات على فرع Draft، الربط بالمستودع الرسمي، والحماية المطلوبة قبل الدمج.
+
+## Command Center v2 — 2026-11-04
+
+- [محضر توحيد مركز القيادة](2026-11-04-command-center-v2.md): دمج محلي صريح لتغييرات #3/#4 داخل هدف #5، live-vs-history، task/agent lifecycle، تقرير GitHub read-only، وحدود `main`/التجريبي/الإنتاج. لا push أو merge أو deploy؛ Kiyyal خارج نطاق الكود.

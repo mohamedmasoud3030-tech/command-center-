@@ -1,11 +1,31 @@
 # 📇 سجل المشاريع التفصيلي
 
 > بطاقات مرجعية مبنية على جرد 2026-10-21 وتحديثات 2026-10-23. أرقام الاختبارات والجاهزية والنشر أدلة تاريخية، وليست إعادة تحقق بتاريخ اليوم.
-> **تحديث 2026-10-24:** المالك أكد عدم وجود جلسات موازية. أي وصف أدناه لجلسة «نشطة» هو وصف وقت التقرير فقط؛ [سجل README](README.md) هو المرجع الحالي للملكية. PRs malek#1844 وTerranex#188 وmosaid#9 ما زالت مفتوحة بحسب GitHub؛ فحوصها وتعارضاتها لم تُعد هنا.
+> **ملاحظة تاريخية 2026-10-24:** المالك أكد وقتها عدم وجود جلسات موازية. أي وصف في البطاقات القديمة لجلسة «نشطة» أو PR مفتوحة هو وصف وقت التقرير فقط؛ [سجل README](README.md) والحالة التي يعيدها `tools/portfolio_report.py` هما المرجعان التشغيليان.
 > **تدقيق المهارات 2026-10-24:** [النتيجة المثبتة بالـcommits](reports/handoffs/2026-10-24-skills-audit.md): 112 نسخة مشتركة مطابقة؛ PRs استكمال بوابة الإصدار لكيّال ومساعد ما زالت مقترحة. الأعداد القديمة بالبطاقات لا تُستخدم لإثبات مزامنة حديثة.
 > «الصحة» = تنظيم المستندات + وجود تعليمات وكيل + CI + اختبارات.
 
 ---
+
+> **طبقتان:** الجدول التالي هو سجل حي مختصر بتاريخ `2026-11-04`؛ البطاقات التفصيلية بعده تحتفظ بالسياق التاريخي ولا تُستخدم وحدها لإثبات الحالة الحالية. شغّل [`tools/portfolio_report.py`](tools/portfolio_report.py) لإعادة قراءة GitHub؛ `NOT VERIFIED` تعني عدم توفر إثبات API، لا أن المشروع غير موجود.
+
+## سجل المحفظة الحي — 2026-11-04
+
+| المشروع | المستودع الرسمي / canonical link | نطاق الملكية والمتابعة | الحالة الحية ومصدرها |
+|---|---|---|---|
+| Command Center | [`command-center-`](https://github.com/mohamedmasoud3030-tech/command-center-) | توحيد PRs #3/#4/#5؛ #5 هدف التجميع؛ المركز فقط | الفرع/الرأس/الحالة/checks من [`portfolio_report.py`](tools/portfolio_report.py) وGitHub، لا من هذا الصف |
+| Kiyyal | [`kiyyal`](https://github.com/mohamedmasoud3030-tech/kiyyal) | PR #26–#29؛ متابعة فقط وخارج تنفيذ المركز | الفرع/الرأس/الحالة/checks من التقرير؛ لا تعديل منتج |
+| MALEK | [`malek`](https://github.com/mohamedmasoud3030-tech/malek) | PR #1844؛ مراجعة مستقلة | التقرير الحي؛ لا hosted readiness من المركز |
+| Nile Systems | [`nilesys`](https://github.com/mohamedmasoud3030-tech/nilesys) | PR #19 و#30؛ قرار الإصدار منفصل | التقرير الحي؛ لا دمج تلقائي |
+| Mosaid | [`mosaid`](https://github.com/mohamedmasoud3030-tech/mosaid) | PR #9 و#14؛ لا إعادة تأسيس من المركز | التقرير الحي؛ الملكية لا تنتقل للمركز |
+| LENA Digital House | [`platform`](https://github.com/mohamedmasoud3030-tech/platform) | رابط canonical وملكية فقط | التقرير الحي؛ أي claim منتج منفصل |
+| LenaBeauty | `larabeauty-` كما في السجل التاريخي | يحتاج canonical repo link | التقرير العام؛ 404/403 = **NOT VERIFIED** لا «غائب» |
+| LENA Dress Roomshow | `carmen-gallery-` كما في السجل التاريخي | يحتاج canonical repo link | التقرير العام؛ 404/403 = **NOT VERIFIED** |
+| LENA SUPPLY | `Lenastore` كما في السجل التاريخي | يحتاج canonical repo link | التقرير العام؛ 404/403 = **NOT VERIFIED** |
+| Terranex | `Terranex` كما في السجل التاريخي | يحتاج canonical repo link؛ PR قديم ليس حالة حية | التقرير العام؛ 404/403 = **NOT VERIFIED** |
+| Hospitality Ops | `starting` كما في السجل التاريخي | الاسم المحلي ليس دليلاً على slug GitHub | التقرير العام؛ 404/403 = **NOT VERIFIED** |
+
+> التفاصيل القديمة في البطاقات التالية محفوظة عمداً. عند التعارض، السجل الحي ومصدر GitHub الحالي يكسبان؛ لا نعدّل التاريخ كي يبدو حديثاً.
 
 ## ⛱️ مظلة LENA
 

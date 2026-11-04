@@ -23,8 +23,14 @@ Owner communication: simple Egyptian Arabic; explain technical terms in one line
 - Explicit current owner instructions govern task scope and supersede stale
   session reservations. Do not infer permission to merge/deploy from permission
   to prepare a change.
-- PROJECTS.md owns project cards; README.md owns session reservations and owner
-  decisions. The target repository owns its detailed current technical state.
+- PROJECTS.md owns canonical project cards and links; its live registry does not
+  become a hand-maintained copy of GitHub PR/check state. README.md owns session
+  reservations and owner decisions. The target repository owns its detailed
+  current technical state.
+- `tools/portfolio_report.py` is the read-only runtime view for GitHub branches,
+  PRs, heads, draft state and check-runs. Its `checked_at` and `NOT VERIFIED`
+  outcomes must be preserved when quoted; never turn a missing/403/404 result
+  into an assertion that a repository is absent.
 - Reports, inventory snapshots and handoffs are dated evidence, not live state.
   This includes legacy `reports/README.md` and `reports/PROJECTS.md`.
 - For current claims record source link, checked-at date/time, and commit SHA
@@ -80,7 +86,25 @@ Plan multi-file work before edits; reuse existing tools. Test behavior changes
 with meaningful failing cases before implementation. Keep documentation changes
 proportionate; do not add frameworks or duplicate status systems.
 
-## 6. Delivery gate
+## 6. Main protection and release boundaries
+
+The center's minimum policy is procedural until the owner verifies the GitHub
+settings: changes enter through a PR; `main` requires an approving review; the
+required center checks are the unit tests, `validate-center.py`, `skill_gate.py`,
+and whitespace check; force-push and branch deletion are denied where the
+repository plan permits; and a stale base or failing/skipped required check
+blocks merge. GitHub settings, not this document, are the authority for whether
+those rules are actually enabled.
+
+Experimental/staging work must use a separate branch and environment with
+non-production data and an explicit `staging`/`preview` check. A passing CI run
+or HTTP response is not permission to publish. Production requires an explicit
+owner decision, a reviewed PR merged to `main`, a release/deploy check tied to
+that commit, and a rollback/next-step handoff. The center may record that a
+claim is `NOT VERIFIED`; it may not manufacture production readiness for a
+product repository.
+
+## 7. Delivery gate
 
 For changes to this center, run from the repository root:
 
