@@ -41,7 +41,7 @@
 - `python3 tools/validate-center.py --base-ref 0587041fc8f3a3b2d87f8df71b40e6823f64228f`: **PASS**؛ required docs، الروابط المحلية، metadata، وعدم حذف الوثائق.
 - `git diff --check`: **PASS**.
 - تقرير GitHub: شُغّل read-only؛ API العام أثبت بعض repos، ونتائج 404/403 أو rate limit صُنفت NOT VERIFIED. لم تُكتب هذه النتائج إلى status ledger.
-- بعد النشر: `contracts=success` على رأس PR #5 `8cac7372f625725e538544f70dc88375b47a0690`؛ PR #3 و#4 أُغلقتا superseded، وPR #5 بقيت Draft/open.
+- بعد النشر: `contracts=success` على PR #5؛ PR #3 و#4 أُغلقتا superseded، وPR #5 بقيت Draft/open. الرأس والـcheck الحاليان يُعادان من GitHub.
 
 ## الحدود والحالة الخارجية
 
