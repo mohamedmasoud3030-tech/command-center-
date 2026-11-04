@@ -51,6 +51,13 @@ class SkillGateTests(unittest.TestCase):
         self.cases.write_text(json.dumps(invalid), encoding="utf-8")
         self.assertTrue(any("overlap" in issue for issue in self.check()))
 
+    def test_malformed_values_fail_cleanly(self):
+        malformed = self.valid + [{"id": ["bad"], "prompt": "Long enough to validate", "expected": [{"bad": "type"}], "excluded": []}]
+        self.cases.write_text(json.dumps(malformed), encoding="utf-8")
+        issues = self.check()
+        self.assertTrue(any("invalid id" in issue for issue in issues))
+        self.assertTrue(any("unknown skill" in issue for issue in issues))
+
     def test_mismatched_name_is_rejected(self):
         path = self.root / "skills" / "financial-correctness" / "SKILL.md"
         path.write_text(self.sample.replace("name: financial-correctness", "name: other"), encoding="utf-8")
